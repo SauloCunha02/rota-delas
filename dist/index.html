@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101f2b">
+  <meta name="description" content="Explore iniciativas e materiais de ciência e tecnologia para meninas no Ceará, com fontes públicas e caminhos de estudo.">
+  <title>Rota Delas — ciência e tecnologia ao seu alcance</title>
+  <link rel="icon" type="image/svg+xml" href="assets/marca/favicon.svg">
+  <script src="acessibilidade.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="acessibilidade.css">
+  <script defer src="leitor.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="libras.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Rota Delas, início"><img class="brand-logo" src="assets/marca/logo-cabecalho.svg" alt="" width="205" height="58"></a>
+      <nav aria-label="Navegação principal"><a href="#explorar">Explorar</a><a href="#rota">Minha rota</a><a href="#metodo">Como funciona</a></nav>
+      <span class="header-tag">Ciência Delas · Ceará</span>
+    </div>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section class="intro shell" id="inicio" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="eyebrow-line"></span> Um ponto de partida para descobrir possibilidades</div>
+      <div class="intro-grid">
+        <div><h1 id="page-title">Seu próximo passo na <em>ciência</em> começa aqui.</h1><p>Encontre projetos, competições e materiais de estudo em fontes públicas. Escolha um interesse e construa sua rota sem criar conta.</p></div>
+        <div class="intro-note"><img class="intro-flower" src="assets/marca/simbolo-claro.svg" alt="" width="58" height="58" aria-hidden="true"><p>Feito para quem está no Ensino Médio e quer conhecer caminhos reais em ciência e tecnologia.</p></div>
+      </div>
+    </section>
+    <section class="workspace shell" id="explorar" aria-labelledby="explore-title">
+      <div class="section-heading"><div><span class="section-index">01 / EXPLORAR</span><h2 id="explore-title">Descubra por onde começar</h2></div><p id="result-count" role="status" aria-live="polite"></p></div>
+      <div class="search-row"><label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Buscar por nome ou palavra-chave</span><input id="search" type="search" placeholder="Busque por projeto, área ou palavra-chave" autocomplete="off"></label><button id="clear-filters" class="clear-button" type="button">Limpar filtros</button></div>
+      <div class="filter-group" aria-label="Filtrar por área"><span class="filter-label">Área</span><div id="area-filters" class="filter-buttons"></div></div>
+      <div class="filter-group" aria-label="Filtrar por tipo"><span class="filter-label">Tipo</span><div id="type-filters" class="filter-buttons"></div></div>
+      <div id="cards" class="card-grid"></div>
+      <p id="app-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div id="empty-state" class="empty-state" hidden><h3>Nenhum resultado para essa combinação</h3><p>Tente outra palavra ou limpe os filtros.</p><button id="empty-reset" type="button">Mostrar tudo</button></div>
+    </section>
+    <section class="route-section" id="rota" aria-labelledby="route-title"><div class="shell route-layout"><div><span class="section-index">02 / MINHA ROTA</span><h2 id="route-title">Uma rota para começar hoje</h2><p>Escolha o que desperta sua curiosidade. A sugestão usa apenas as opções desta página e não envia respostas para nenhum servidor.</p><div class="route-options" id="route-options" role="group" aria-label="Escolha uma área de interesse"></div></div><div class="route-output" id="route-output"><div class="route-placeholder"><img src="assets/marca/simbolo-claro.svg" alt="" width="52" height="52" aria-hidden="true"><p>Sua rota aparece aqui depois que você escolhe uma área.</p></div></div></div></section>
+    <section class="saved-section shell" id="salvos" aria-labelledby="saved-title"><div class="section-heading"><div><span class="section-index">03 / PARA REVER</span><h2 id="saved-title">Itens salvos neste aparelho</h2></div><span class="saved-count" id="saved-count"></span></div><div id="saved-cards" class="card-grid compact-grid"></div><p class="privacy-note">Os favoritos ficam somente no navegador deste aparelho. Limpar os dados do navegador pode apagá-los.</p></section>
+    <section class="method-section shell" id="metodo" aria-labelledby="method-title"><div class="method-heading"><span class="section-index">04 / SOBRE O PROJETO</span><h2 id="method-title">Fontes claras. Escolhas livres.</h2></div><div class="method-grid"><article><span class="method-num">01</span><h3>Fontes públicas</h3><p>Cada item leva à página da instituição responsável. Os links foram conferidos em 28/09/2026.</p></article><article><span class="method-num">02</span><h3>Sem inscrição aqui</h3><p>Esta página organiza caminhos. Confirme datas, requisitos e disponibilidade diretamente no site de origem.</p></article><article><span class="method-num">03</span><h3>Sem identificação</h3><p>A busca e a rota funcionam no navegador. Não pedimos nome, e-mail ou respostas de pesquisa.</p></article></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><span class="brand brand-footer"><img class="brand-logo" src="assets/marca/logo-cabecalho.svg" alt="Rota Delas" width="170" height="48" loading="lazy"></span><p>Projeto educacional independente · Ciência Delas · Ceará, 2026</p><a href="#inicio">Voltar ao início ↑</a></div></footer>
+  <button class="a11y-launcher" id="a11y-open" type="button" aria-haspopup="dialog" aria-controls="a11y-panel" aria-expanded="false" aria-label="Abrir opções de acessibilidade" title="Opções de acessibilidade (Alt + A)" hidden>
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M4 8l8 2 8-2M12 10v5m0 0-4 6m4-6 4 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <div id="reading-guide" class="reading-guide" aria-hidden="true" hidden></div>
+  <div id="reading-mask" class="reading-mask" aria-hidden="true" hidden><div class="reading-mask-top"></div><div class="reading-mask-bottom"></div></div>
+  <button id="a11y-guide-handle" class="a11y-guide-handle" type="button" aria-label="Mover faixa de leitura. Use as setas para cima e para baixo ou arraste." title="Mover faixa de leitura" hidden>↕</button>
+  <div id="a11y-player" class="a11y-player" role="region" tabindex="0" aria-label="Player de leitura. Setas esquerda e direita navegam entre trechos; espaço inicia ou pausa." hidden>
+    <div class="reader-topline"><span id="a11y-player-location">Leitor do Rota Delas</span><span id="a11y-player-rate-badge">1×</span><button id="a11y-player-collapse" type="button" aria-label="Recolher detalhes do player" aria-expanded="true" title="Recolher ou expandir player">⌄</button><button id="a11y-player-close" type="button" aria-label="Fechar controles e parar leitura" title="Fechar leitor">✕</button></div>
+    <div class="reader-settings"><label for="a11y-player-scope">Ler<select id="a11y-player-scope"><option value="conteudo">Toda a página</option><option value="inicio">Apresentação</option><option value="explorar">Resultados da busca</option><option value="rota">Minha rota</option><option value="salvos">Itens salvos</option><option value="metodo">Como funciona</option><option value="selection" disabled>Texto selecionado</option></select></label><label for="a11y-player-rate">Velocidade<select id="a11y-player-rate"><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1" selected>1×</option><option value="1.25">1,25×</option><option value="1.5">1,5×</option><option value="1.75">1,75×</option><option value="2">2×</option></select></label></div>
+    <div class="a11y-player-buttons"><button id="a11y-player-prev" type="button" aria-label="Trecho anterior" title="Trecho anterior (seta esquerda)">◀</button><button id="a11y-player-play" type="button" aria-label="Iniciar leitura">▶ Play</button><button id="a11y-player-next" type="button" aria-label="Próximo trecho" title="Próximo trecho (seta direita)">▶</button><button id="a11y-player-stop" type="button">■ Parar</button><button id="a11y-player-slower" type="button" aria-label="Diminuir velocidade em 0,25" title="Diminuir velocidade">−</button><button id="a11y-player-faster" type="button" aria-label="Aumentar velocidade em 0,25" title="Aumentar velocidade">+</button></div>
+    <div class="reader-progress-label"><label for="a11y-player-position">Posição no texto</label><output id="a11y-player-progress" for="a11y-player-position">Nenhum trecho</output></div>
+    <input id="a11y-player-position" type="range" min="1" max="1" step="1" value="1" aria-valuetext="Nenhum trecho" disabled>
+    <p id="a11y-player-text" class="reader-current-text" aria-live="off">Ative Play ou toque em um parágrafo para escolher de onde começar.</p>
+    <div class="reader-options"><label><input id="a11y-player-follow" type="checkbox" checked>Acompanhar trecho na página</label><button id="a11y-player-locate" type="button">Localizar trecho</button></div>
+    <p id="a11y-player-status" role="status" aria-live="polite">Play inicia; as setas do player voltam ou avançam.</p>
+  </div>
+  <dialog id="a11y-panel" class="a11y-panel" aria-labelledby="a11y-title" aria-describedby="a11y-intro">
+    <div class="a11y-top"><div><span class="a11y-kicker">ACESSIBILIDADE · ROTA DELAS</span><h2 id="a11y-title">Como você prefere ler</h2></div><button id="a11y-close" class="a11y-close" type="button" aria-label="Fechar painel de acessibilidade" autofocus>✕</button></div>
+    <div class="a11y-body">
+      <p id="a11y-intro">Ajuste a página para sua leitura. Suas preferências ficam neste navegador.</p>
+      <fieldset class="a11y-profiles-group"><legend>Perfis rápidos</legend><div class="a11y-profiles">
+        <button id="a11y-assisted" class="a11y-profile" type="button" aria-pressed="false"><span class="a11y-profile-icon" aria-hidden="true">Aa</span><span><b>Leitura assistida</b><small>Fonte legível, espaço e controles de voz</small></span></button>
+        <button id="a11y-lowvision" class="a11y-profile" type="button" aria-pressed="false"><span class="a11y-profile-icon" aria-hidden="true">◉</span><span><b>Baixa visão</b><small>Texto maior, contraste e cursor ampliado</small></span></button>
+        <button id="a11y-calm" class="a11y-profile" type="button" aria-pressed="false"><span class="a11y-profile-icon" aria-hidden="true">◎</span><span><b>Menos movimento</b><small>Desativa animações e rolagem suave</small></span></button>
+        <button id="a11y-focus-profile" class="a11y-profile" type="button" aria-pressed="false"><span class="a11y-profile-icon" aria-hidden="true">▤</span><span><b>Foco na linha</b><small>Máscara que escurece fora da faixa lida</small></span></button>
+      </div></fieldset>
+      <fieldset><legend>Letras e leitura</legend>
+        <div class="a11y-label-row"><label for="a11y-size">Tamanho das letras</label><output id="a11y-size-value" for="a11y-size">100%</output></div>
+        <div class="a11y-size-row"><button id="a11y-smaller" type="button" aria-label="Diminuir letras">A−</button><input id="a11y-size" type="range" min="100" max="200" step="25" value="100" aria-valuetext="100 por cento"><button id="a11y-larger" type="button" aria-label="Aumentar letras">A+</button></div>
+        <label class="a11y-switch"><span>Fonte de alta legibilidade <small>Atkinson Hyperlegible, incluída no projeto</small></span><input id="a11y-font" type="checkbox" role="switch"></label>
+        <label class="a11y-switch"><span>Mais espaço no texto <small>Entre linhas, letras e palavras</small></span><input id="a11y-spacing" type="checkbox"></label>
+        <label class="a11y-switch"><span>Destacar links <small>Sublinhado e peso maior</small></span><input id="a11y-links" type="checkbox"></label>
+        <label class="a11y-switch"><span>Guia de leitura <small>Faixa horizontal para acompanhar o texto</small></span><input id="a11y-guide" type="checkbox"></label>
+        <label class="a11y-switch"><span>Máscara de leitura <small>Escurece a página fora da faixa de leitura</small></span><input id="a11y-mask" type="checkbox" role="switch"></label>
+        <p class="a11y-help">A faixa acompanha o ponteiro. Você também pode arrastá-la pelo botão ↕ ou movê-la com as setas quando esse botão estiver em foco.</p>
+      </fieldset>
+      <fieldset><legend>Cores e contraste</legend>
+        <label for="a11y-theme" class="a11y-field-label">Escolha a aparência</label>
+        <select id="a11y-theme"><option value="normal">Cores da marca</option><option value="light">Alto contraste · claro</option><option value="dark">Alto contraste · escuro</option><option value="blue">Daltonismo · azul e amarelo</option><option value="mono">Sem cores · tons de cinza</option></select>
+        <p class="a11y-help">Escolha a paleta que facilita sua leitura. Filtros, favoritos e avisos também usam texto ou símbolos, sem depender só da cor.</p>
+        <label for="a11y-colors" class="a11y-field-label">Paletas alternativas para daltonismo</label>
+        <select id="a11y-colors"><option value="none">Sem adaptação adicional</option><option value="protan">Protanopia · azul/amarelo</option><option value="deutan">Deuteranopia · azul/laranja</option><option value="tritan">Tritanopia · vinho/turquesa</option><option value="achromat">Acromatopsia · cinza</option></select>
+        <p class="a11y-help">São alternativas de cores para sua preferência de leitura. Os modos de alto contraste têm prioridade sobre esta paleta.</p>
+      </fieldset>
+      <fieldset><legend>Movimento e navegação</legend>
+        <label class="a11y-switch"><span>Reduzir movimento <small>Desativa animações e rolagem suave</small></span><input id="a11y-motion" type="checkbox" role="switch"></label>
+        <label class="a11y-switch"><span>Cursor ampliado <small>Ponteiro maior com contorno contrastante</small></span><input id="a11y-cursor" type="checkbox" role="switch"></label>
+        <label class="a11y-switch"><span>Foco reforçado <small>Contorno maior ao navegar com o teclado</small></span><input id="a11y-focus" type="checkbox" role="switch"></label>
+      </fieldset>
+      <fieldset><legend>Áudio e conteúdo escrito</legend>
+        <p class="a11y-help">Ouça o texto, se preferir. Para pessoas surdas ou com baixa audição, as informações e os avisos permanecem disponíveis por escrito.</p>
+        <label class="a11y-switch"><span>Leitura por parágrafo <small>Mostra os controles de voz na página. Toque num parágrafo para ouvir.</small></span><input id="a11y-listen" type="checkbox" role="switch"></label>
+        <label for="a11y-scope" class="a11y-field-label">O que você quer ouvir?</label>
+        <select id="a11y-scope"><option value="conteudo">Toda a página</option><option value="inicio">Apresentação</option><option value="explorar">Resultados da busca</option><option value="rota">Minha rota</option><option value="salvos">Itens salvos</option><option value="metodo">Como funciona</option><option value="selection" disabled>Texto selecionado na página</option></select>
+        <label for="a11y-rate" class="a11y-field-label">Velocidade da voz</label>
+        <select id="a11y-rate"><option value="0.5">Bem devagar · 0,5×</option><option value="0.75">Mais devagar · 0,75×</option><option value="1">Normal · 1×</option><option value="1.25">Mais rápido · 1,25×</option><option value="1.5">Rápido · 1,5×</option><option value="1.75">Mais rápido · 1,75×</option><option value="2">Muito rápido · 2×</option></select>
+        <p class="a11y-help">O player mostra o trecho atual e sua posição. Você pode navegar mesmo com a voz pausada, mudar a velocidade durante a leitura e localizar o trecho. O destaque por palavra depende dos eventos enviados pela voz do navegador.</p>
+        <div class="a11y-speech-actions"><button id="a11y-read" type="button">Ouvir texto</button><button id="a11y-pause" type="button" disabled>Pausar</button><button id="a11y-stop" type="button" disabled>Parar</button></div>
+        <p id="a11y-speech-status" class="a11y-help" role="status" aria-live="polite" aria-atomic="true">A voz depende do navegador e do aparelho. Algumas vozes precisam de internet.</p>
+        <div id="a11y-transcript" class="a11y-transcript" hidden><span>Trecho da leitura</span><p id="a11y-current-text"></p></div>
+      </fieldset>
+      <fieldset><legend>Libras</legend>
+        <label class="a11y-switch"><span>Tradutor de Libras <small>Mostra o botão oficial do VLibras</small></span><input id="a11y-libras-enabled" type="checkbox" role="switch" checked></label>
+        <p class="a11y-help">Traduza textos para a Língua Brasileira de Sinais com o VLibras. Use o botão de mãos na lateral da página ou abra o tradutor aqui.</p>
+        <button id="a11y-libras" class="a11y-preset" type="button" aria-describedby="a11y-libras-status">Abrir tradutor de Libras <span aria-hidden="true">↗</span></button>
+        <p id="a11y-libras-status" class="a11y-help a11y-libras-status" role="status" aria-live="polite">Carregando VLibras. A tradução precisa de internet.</p>
+      </fieldset>
+      <details class="a11y-details"><summary>Atalhos e leitores de tela</summary><p><kbd>Alt</kbd> + <kbd>A</kbd> abre ou fecha o painel. <kbd>Alt</kbd> + <kbd>L</kbd> inicia a leitura da seção escolhida. <kbd>Esc</kbd> fecha o painel ou interrompe a voz.</p><p>Use <kbd>Tab</kbd> para avançar e <kbd>Shift</kbd> + <kbd>Tab</kbd> para voltar. Ative botões com <kbd>Enter</kbd> ou <kbd>Espaço</kbd>. O primeiro link pula para o conteúdo. Busca, filtros, favoritos e rota têm rótulos e avisos para leitores de tela.</p></details>
+      <p id="a11y-status" class="a11y-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
+    <div class="a11y-bottom"><button id="a11y-reset" class="a11y-reset" type="button">Restaurar padrão</button><span id="a11y-count">Nenhum ajuste ativo</span></div>
+  </dialog>
+</body>
+</html>

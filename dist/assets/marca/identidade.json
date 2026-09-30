@@ -1,0 +1,12 @@
+{
+  "projeto": "Rota Delas",
+  "direcao": 6,
+  "nome": "Flor de circuitos",
+  "paleta": {
+    "azul": "#101f2b",
+    "verde": "#108a82",
+    "menta": "#67dfd0",
+    "terracota": "#da754d",
+    "detalhe_no_escuro": "#efac81"
+  }
+}

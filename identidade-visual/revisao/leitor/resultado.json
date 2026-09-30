@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "name": "Player visível",
+      "value": true
+    },
+    {
+      "name": "Leitura ligada ao título",
+      "value": true
+    },
+    {
+      "name": "Palavra destacada no player e na página",
+      "value": true
+    },
+    {
+      "name": "Callbacks antigos ignorados",
+      "value": true
+    },
+    {
+      "name": "Avançar mantém pausa e não fala",
+      "value": true
+    },
+    {
+      "name": "Mudar velocidade pausado não fala",
+      "value": true
+    },
+    {
+      "name": "Continuar usa nova velocidade",
+      "value": true
+    },
+    {
+      "name": "Velocidade ativa conserva posição",
+      "value": true
+    },
+    {
+      "name": "Pular para trecho escolhido",
+      "value": true
+    },
+    {
+      "name": "Busca de trecho conserva pausa",
+      "value": true
+    },
+    {
+      "name": "Navegação funciona após parar",
+      "value": true
+    },
+    {
+      "name": "Seta direita navega no player",
+      "value": true
+    },
+    {
+      "name": "Seta esquerda retorna",
+      "value": true
+    },
+    {
+      "name": "Limite máximo",
+      "value": true
+    },
+    {
+      "name": "Mudança de resultados cancela conteúdo antigo",
+      "value": true
+    },
+    {
+      "name": "Avanço automático ao fim do trecho",
+      "value": true
+    },
+    {
+      "name": "Controle de acompanhamento",
+      "value": true
+    },
+    {
+      "name": "Player sem rolagem horizontal 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Player sem rolagem horizontal 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Fechar encerra e remove destaque",
+      "value": true
+    }
+  ],
+  "errors": [],
+  "limite": "Eventos de voz simulados para validar estados, sincronização e mapa do texto. Reprodução sonora real depende do navegador."
+}

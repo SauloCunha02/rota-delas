@@ -1,0 +1,65 @@
+# Rota Delas
+
+Aplicação web de consulta a iniciativas, competições, visitas e materiais de estudo em ciência e tecnologia, com foco em estudantes do Ensino Médio no Ceará. Feita em HTML, CSS e JavaScript, sem cadastro ou servidor de dados.
+
+**Site:** https://saulocunha02.github.io/rota-delas/  
+**Código:** https://github.com/SauloCunha02/rota-delas
+
+## Identidade visual
+
+A identidade visual adotada é a **direção 6 — Flor de circuitos**. A marca está no cabeçalho, rodapé e favicon; o símbolo também aparece na introdução e na área de rota. Os arquivos claro, escuro, monocromático e símbolo estão em `dist/assets/marca`. A paleta usa azul #101F2B, verde #108A82, menta #67DFD0 e terracota #DA754D. Para o cabeçalho, a versão compacta preserva a leitura do nome em tamanhos pequenos.
+
+## Executar
+
+Na pasta do projeto:
+
+```powershell
+python -m http.server 8765 --directory dist
+```
+
+Abra `http://localhost:8765/`. Também pode publicar a pasta `dist` em qualquer hospedagem estática.
+
+## Publicação no GitHub
+
+O workflow `.github/workflows/pages.yml` publica a pasta `dist` no GitHub Pages a cada atualização da branch `main`. O repositório usa GitHub Actions como fonte do Pages. HTML, CSS, JavaScript, ícones e fontes locais ficam na pasta `dist`.
+
+## Funcionalidades
+
+- Busca por nome, descrição, local e palavras-chave, inclusive sem acentos.
+- Filtros combináveis de área e tipo.
+- Treze recursos com acesso à fonte institucional.
+- Três rotas de estudo/ação com três passos cada.
+- Favoritos salvos apenas no navegador do aparelho.
+- Cópia da rota para a área de transferência e versão para impressão.
+- Layout responsivo e controles utilizáveis por teclado.
+- Painel de acessibilidade com preferências de leitura salvas no navegador.
+
+## Acessibilidade
+
+Use o botão circular com o **símbolo de acessibilidade**, no canto inferior direito, ou **Alt + A**. O painel lateral segue a organização de [Cartografias do Abandono](https://saulocunha02.github.io/cartografias-do-abandono/), com quatro perfis rápidos: leitura assistida, baixa visão, menos movimento e foco na linha.
+
+Os ajustes incluem letras de 100% a 200%, fonte Atkinson Hyperlegible incluída localmente, maior espaçamento, destaque de links, guia e máscara de leitura, redução de movimento, cursor ampliado, foco reforçado e alto contraste claro/escuro. As paletas alternativas oferecem azul/amarelo, azul/laranja, vinho/turquesa e cinza; o alto contraste tem prioridade. A máscara e o guia podem ser movidos pelo ponteiro, pelo toque ou pelas setas no botão ↕.
+
+O tradutor **VLibras** fica disponível pelo botão de mãos na lateral direita e pela seção Libras do painel. O widget oficial é carregado pela internet e permite traduzir textos para Libras.
+
+A leitura em voz alta permite escolher uma seção, o texto selecionado ou um parágrafo, ajustar a velocidade, pausar, continuar, avançar, voltar e parar. Os controles flutuantes ficam acessíveis após fechar o painel. **Alt + L** inicia a leitura da seção escolhida; **Esc** fecha o painel ou interrompe a voz. A voz é fornecida pelo navegador/aparelho; algumas vozes precisam de internet. Os trechos lidos e os estados dos controles aparecem por escrito. O conteúdo, os favoritos e os filtros também oferecem informações textuais e rótulos para leitores de tela.
+
+Veja os detalhes de uso e o escopo da revisão em `ACESSIBILIDADE.md`.
+
+### Player de leitura
+
+O player mostra o trecho atual, sua posição no texto e os controles **Play/Pausa**, **anterior/próximo**, **Parar**, velocidade de **0,5× a 2×** e uma barra para escolher o trecho. É possível navegar com a voz parada ou pausada. No player, as setas esquerda/direita mudam de trecho; Espaço inicia ou pausa quando a região do player está em foco. Os seletores e a barra de posição mantêm seus controles nativos de teclado.
+
+A narração destaca o trecho na página e a palavra quando a voz do navegador fornece eventos de sincronização. O botão **Localizar trecho** leva ao trecho selecionado, e **Acompanhar trecho na página** permite ligar/desligar a rolagem automática. A velocidade muda durante a leitura, retomando da última palavra informada pela voz; sem eventos por palavra, o trecho atual é retomado. O botão de recolher reduz o tamanho do player.
+
+## Dados e atualização
+
+Os registros são editados no vetor `resources` em `dist/app.js`. Cada item tem título, tipo, área, local, descrição, URL, palavras-chave e função na rota. Antes de acrescentar um item, confira na fonte oficial se a iniciativa existe e se o texto descreve corretamente o público e a disponibilidade. A aplicação não apresenta inscrições como abertas sem confirmação no site de origem.
+
+Fontes consultadas em 28/09/2026: IFCE, UFC, Programa Meninas Digitais, OBI/Unicamp, OBMEP/IMPA e Feira do Conhecimento. Os endereços específicos estão nos cartões. A disponibilidade de cursos, projetos, visitas e competições pode mudar; cada estudante deve conferir a página oficial antes de participar.
+
+## Privacidade e limites
+
+A busca, os filtros e a rota são calculados no navegador. Os favoritos e as preferências de acessibilidade usam `localStorage` e não são enviados pela aplicação. Não há formulários de pesquisa, contas, análise de uso ou coleta de respostas de pessoas. O carregamento da fonte tipográfica usa Google Fonts, e a abertura dos links externos passa a seguir as práticas de cada site de origem. A leitura em voz alta usa o serviço de voz do navegador; o processamento local ou pela internet depende da voz disponível. O VLibras carrega o widget oficial de `vlibras.gov.br` e usa os serviços externos da ferramenta para tradução.
+
+A aplicação demonstra uma solução técnica; ainda não há evidência de que ela aumente a participação de meninas na ciência. Qualquer estudo posterior com participantes deve ser planejado com o professor orientador e conforme as exigências éticas aplicáveis.

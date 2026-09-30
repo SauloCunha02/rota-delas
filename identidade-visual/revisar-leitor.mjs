@@ -1,0 +1,77 @@
+import {spawn} from 'node:child_process';
+import {mkdtemp,mkdir,writeFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,dirname} from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+const root=dirname(fileURLToPath(import.meta.url));
+const output=join(root,'revisao','leitor');await mkdir(output,{recursive:true});
+const profile=await mkdtemp(join(tmpdir(),'rota-a11y-review-'));
+const chrome=spawn('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',['--headless=new','--disable-gpu','--no-sandbox','--disable-background-networking','--no-first-run','--user-data-dir='+profile,'--remote-debugging-port=0','about:blank'],{windowsHide:true});
+let socket;
+try{
+ const endpoint=await new Promise((resolve,reject)=>{let text='';const timer=setTimeout(()=>reject(Error('Chrome não respondeu')),15000);chrome.stderr.on('data',data=>{text+=data;const found=text.match(/DevTools listening on (ws:\/\/[^\s]+)/);if(found){clearTimeout(timer);resolve(found[1]);}});chrome.on('error',reject);});
+ socket=new WebSocket(endpoint);await new Promise((resolve,reject)=>{socket.addEventListener('open',resolve,{once:true});socket.addEventListener('error',reject,{once:true});});
+ let sequence=0;const pending=new Map();const errors=[];
+ socket.addEventListener('message',event=>{const message=JSON.parse(event.data);const callback=pending.get(message.id);if(callback){pending.delete(message.id);message.error?callback.reject(Error(JSON.stringify(message.error))):callback.resolve(message.result);}if(message.method==='Runtime.exceptionThrown')errors.push(message.params.exceptionDetails);});
+ const call=(method,params={},sessionId)=>new Promise((resolve,reject)=>{const id=++sequence;pending.set(id,{resolve,reject});socket.send(JSON.stringify({id,method,params,...(sessionId?{sessionId}:{})}));});
+ const {targetId}=await call('Target.createTarget',{url:'about:blank'});const {sessionId}=await call('Target.attachToTarget',{targetId,flatten:true});
+ await call('Page.enable',{},sessionId);await call('Runtime.enable',{},sessionId);
+ const load=()=>new Promise(resolve=>{const listener=event=>{const msg=JSON.parse(event.data);if(msg.method==='Page.loadEventFired'&&msg.sessionId===sessionId){socket.removeEventListener('message',listener);resolve();}};socket.addEventListener('message',listener);});
+ let loaded=load();await call('Page.navigate',{url:pathToFileURL(join(root,'..','dist','index.html')).href},sessionId);await loaded;
+ const evaluate=async expression=>{const value=await call('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true},sessionId);if(value.exceptionDetails)throw Error(JSON.stringify(value.exceptionDetails));return value.result.value;};
+ const results=[];
+ async function check(name,expression){const value=await evaluate(expression);results.push({name,value});if(!value)throw Error('Falhou: '+name);}
+ const screenshot=async name=>{await evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))');const picture=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},sessionId);await writeFile(join(output,name+'.png'),Buffer.from(picture.data,'base64'));};
+
+ await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false},sessionId);
+ await evaluate(`(()=>{window.__spoken=[];window.__speechCalls=[];Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{getVoices:()=>[],cancel:()=>__speechCalls.push('cancel'),speak:u=>__spoken.push(u),pause:()=>__speechCalls.push('pause'),resume:()=>__speechCalls.push('resume')}});document.getElementById('a11y-open').click();const toggle=document.getElementById('a11y-listen');toggle.checked=true;toggle.dispatchEvent(new Event('change',{bubbles:true}));document.getElementById('a11y-close').click();})()`);
+ await evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))');
+ await check('Player visível',`!document.getElementById('a11y-player').hidden`);
+ await evaluate(`document.getElementById('a11y-player-play').click()`);
+ await check('Leitura ligada ao título',`__spoken.length===1&&document.querySelector('.tts-reading-block').id==='page-title'&&__spoken[0].text.includes('ciência')`);
+ await evaluate(`window.__spoken[0].onboundary({name:'word',charIndex:__spoken[0].text.indexOf('ciência')})`);
+ await check('Palavra destacada no player e na página',`document.querySelector('#a11y-player-text mark').textContent==='ciência'&&[...CSS.highlights.get('rota-palavra')][0].toString()==='ciência'`);
+ await screenshot('desktop-palavra');
+ await evaluate(`window.__stale=__spoken.at(-1);document.getElementById('a11y-player-next').click();window.__afterNext=document.getElementById('a11y-player-position').value;__stale.onend();__stale.onerror({error:'interrupted'});`);
+ await check('Callbacks antigos ignorados',`document.getElementById('a11y-player-position').value===__afterNext&&document.getElementById('a11y-player-play').textContent.includes('Pausa')`);
+ await evaluate(`document.getElementById('a11y-player-play').click();window.__count=__spoken.length;document.getElementById('a11y-player-next').click();`);
+ await check('Avançar mantém pausa e não fala',`__spoken.length===__count&&document.getElementById('a11y-player-play').textContent.includes('Play')&&document.getElementById('a11y-pause').textContent==='Continuar'`);
+ await evaluate(`document.getElementById('a11y-player-faster').click()`);
+ await check('Mudar velocidade pausado não fala',`__spoken.length===__count&&document.getElementById('a11y-player-rate').value==='1.25'`);
+ await evaluate(`document.getElementById('a11y-player-play').click()`);
+ await check('Continuar usa nova velocidade',`__spoken.at(-1).rate===1.25&&__spoken.length===__count+1`);
+ await evaluate(`(()=>{const u=__spoken.at(-1);const words=u.text.split(' ');const offset=u.text.indexOf(words[Math.min(2,words.length-1)]);window.__expectedSuffix=u.text.slice(offset);u.onboundary({name:'word',charIndex:offset});window.__index=document.getElementById('a11y-player-position').value;document.getElementById('a11y-player-faster').click();})()`);
+ await check('Velocidade ativa conserva posição',`__spoken.at(-1).rate===1.5&&__spoken.at(-1).text===__expectedSuffix&&document.getElementById('a11y-player-position').value===__index`);
+ await evaluate(`(()=>{const pos=document.getElementById('a11y-player-position');pos.value=5;pos.dispatchEvent(new Event('input',{bubbles:true}));})()`);
+ await check('Pular para trecho escolhido',`document.getElementById('a11y-player-position').value==='5'&&document.getElementById('a11y-player-progress').value.startsWith('Trecho 5 de')`);
+ await evaluate(`document.getElementById('a11y-player-play').click();window.__count=__spoken.length;const pos=document.getElementById('a11y-player-position');pos.value=2;pos.dispatchEvent(new Event('input',{bubbles:true}));`);
+ await check('Busca de trecho conserva pausa',`document.getElementById('a11y-player-position').value==='2'&&__spoken.length===__count&&document.getElementById('a11y-pause').textContent==='Continuar'`);
+ await evaluate(`document.getElementById('a11y-player-stop').click();document.getElementById('a11y-player-next').click()`);
+ await check('Navegação funciona após parar',`document.getElementById('a11y-player-position').value==='3'&&__spoken.length===__count&&!document.getElementById('a11y-player-next').disabled`);
+ await evaluate(`document.getElementById('a11y-player').focus()`);
+ await call('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowRight',code:'ArrowRight',windowsVirtualKeyCode:39},sessionId);
+ await check('Seta direita navega no player',`document.getElementById('a11y-player-position').value==='4'`);
+ await call('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowLeft',code:'ArrowLeft',windowsVirtualKeyCode:37},sessionId);
+ await check('Seta esquerda retorna',`document.getElementById('a11y-player-position').value==='3'`);
+ await evaluate(`(()=>{const rate=document.getElementById('a11y-player-rate');rate.value='2';rate.dispatchEvent(new Event('change',{bubbles:true}));})()`);
+ await check('Limite máximo',`document.getElementById('a11y-player-faster').disabled&&document.getElementById('a11y-rate').value==='2'`);
+ await evaluate(`(()=>{const scope=document.getElementById('a11y-player-scope');scope.value='explorar';scope.dispatchEvent(new Event('change',{bubbles:true}));document.getElementById('a11y-player-play').click();const input=document.getElementById('search');input.value='zzzz-inexistente';input.dispatchEvent(new Event('input',{bubbles:true}));})()`);
+ await evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))');
+ await check('Mudança de resultados cancela conteúdo antigo',`document.getElementById('a11y-player-status').textContent.includes('conteúdo mudou')&&document.getElementById('a11y-player-position').disabled&&document.querySelectorAll('.tts-reading-block').length===0`);
+ await evaluate(`document.getElementById('clear-filters').click();document.getElementById('a11y-player-play').click();window.__spoken.at(-1).onend();`);
+ await check('Avanço automático ao fim do trecho',`document.getElementById('a11y-player-position').value==='2'`);
+ await evaluate(`document.getElementById('a11y-player-stop').click();const scope=document.getElementById('a11y-player-scope');scope.value='inicio';scope.dispatchEvent(new Event('change',{bubbles:true}));const follow=document.getElementById('a11y-player-follow');follow.checked=false;follow.dispatchEvent(new Event('change',{bubbles:true}));document.getElementById('a11y-player-play').click();window.__spoken.at(-1).onboundary({name:'word',charIndex:0});`);
+ await check('Controle de acompanhamento',`JSON.parse(localStorage.getItem('rota-delas-acessibilidade-v1')).follow===false`);
+ for(const [width,size] of [[390,100],[320,200]]){
+  await call('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:true},sessionId);
+  await evaluate(`(()=>{const s=document.getElementById('a11y-size');s.value=${size};s.dispatchEvent(new Event('input',{bubbles:true}));})()`);
+  await check(`Player sem rolagem horizontal ${width}px ${size}%`,`document.documentElement.scrollWidth<=innerWidth&&document.getElementById('a11y-player').scrollWidth<=document.getElementById('a11y-player').clientWidth+1`);
+  await screenshot('celular-'+width);
+ }
+ await evaluate(`document.getElementById('a11y-player-close').click()`);
+ await check('Fechar encerra e remove destaque',`document.getElementById('a11y-player').hidden&&document.querySelectorAll('.tts-reading-block').length===0&&document.getElementById('a11y-open')===document.activeElement`);
+ if(errors.length)throw Error('Erros de execução: '+JSON.stringify(errors));
+ await writeFile(join(output,'resultado.json'),JSON.stringify({checks:results,errors,limite:'Eventos de voz simulados para validar estados, sincronização e mapa do texto. Reprodução sonora real depende do navegador.'},null,2));
+ console.log(results.length+' verificações do novo leitor aprovadas, sem exceções JavaScript.');
+ await call('Browser.close');
+}finally{socket?.close();chrome.kill();}
