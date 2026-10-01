@@ -1,0 +1,162 @@
+{
+  "checks": [
+    {
+      "name": "Celular inicia com leitor compacto",
+      "value": true
+    },
+    {
+      "name": "Trecho e palavra continuam visíveis quando recolhido",
+      "value": true
+    },
+    {
+      "name": "Sem rolagem horizontal 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Controles visíveis e tocáveis 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Leitor cabe na tela 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Atalho não sobrepõe leitor 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Libras não sobrepõe leitor 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Sem rolagem horizontal 360px 100%",
+      "value": true
+    },
+    {
+      "name": "Controles visíveis e tocáveis 360px 100%",
+      "value": true
+    },
+    {
+      "name": "Leitor cabe na tela 360px 100%",
+      "value": true
+    },
+    {
+      "name": "Atalho não sobrepõe leitor 360px 100%",
+      "value": true
+    },
+    {
+      "name": "Libras não sobrepõe leitor 360px 100%",
+      "value": true
+    },
+    {
+      "name": "Sem rolagem horizontal 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Controles visíveis e tocáveis 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Leitor cabe na tela 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Atalho não sobrepõe leitor 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Libras não sobrepõe leitor 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Sem rolagem horizontal 430px 100%",
+      "value": true
+    },
+    {
+      "name": "Controles visíveis e tocáveis 430px 100%",
+      "value": true
+    },
+    {
+      "name": "Leitor cabe na tela 430px 100%",
+      "value": true
+    },
+    {
+      "name": "Atalho não sobrepõe leitor 430px 100%",
+      "value": true
+    },
+    {
+      "name": "Libras não sobrepõe leitor 430px 100%",
+      "value": true
+    },
+    {
+      "name": "Sem rolagem horizontal 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Controles visíveis e tocáveis 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Leitor cabe na tela 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Atalho não sobrepõe leitor 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Libras não sobrepõe leitor 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Velocidade abre opções e recebe foco",
+      "value": true
+    },
+    {
+      "name": "Transporte permanece visível com opções abertas",
+      "value": true
+    },
+    {
+      "name": "Opções ampliadas cabem sem rolagem horizontal",
+      "value": true
+    },
+    {
+      "name": "Opções ampliadas têm espaço para rolagem",
+      "value": true
+    },
+    {
+      "name": "Leitor cabe no celular deitado",
+      "value": true
+    },
+    {
+      "name": "Painel de acessibilidade ocupa a largura do celular",
+      "value": true
+    },
+    {
+      "name": "Painel ampliado preserva fechar e restaurar",
+      "value": true
+    },
+    {
+      "name": "Favoritos respondem ao toque",
+      "value": true
+    },
+    {
+      "name": "Filtros respondem ao toque",
+      "value": true
+    },
+    {
+      "name": "Rota responde ao toque",
+      "value": true
+    },
+    {
+      "name": "Busca funciona com entrada mobile",
+      "value": true
+    },
+    {
+      "name": "Limpeza recupera os recursos",
+      "value": true
+    }
+  ],
+  "errors": [],
+  "limite": "Chrome emulado: layout, tamanhos de toque, zoom, orientação e estados do leitor. Eventos de voz simulados; reprodução sonora em aparelho físico não avaliada."
+}

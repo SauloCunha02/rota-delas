@@ -1,0 +1,97 @@
+import {spawn} from 'node:child_process';
+import {mkdtemp,mkdir,writeFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,dirname} from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+const root=dirname(fileURLToPath(import.meta.url));
+const output=join(root,'revisao','mobile');await mkdir(output,{recursive:true});
+const profile=await mkdtemp(join(tmpdir(),'rota-a11y-review-'));
+const chrome=spawn('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',['--headless=new','--disable-gpu','--no-sandbox','--disable-background-networking','--no-first-run','--user-data-dir='+profile,'--remote-debugging-port=0','about:blank'],{windowsHide:true});
+let socket;
+try{
+ const endpoint=await new Promise((resolve,reject)=>{let text='';const timer=setTimeout(()=>reject(Error('Chrome não respondeu')),15000);chrome.stderr.on('data',data=>{text+=data;const found=text.match(/DevTools listening on (ws:\/\/[^\s]+)/);if(found){clearTimeout(timer);resolve(found[1]);}});chrome.on('error',reject);});
+ socket=new WebSocket(endpoint);await new Promise((resolve,reject)=>{socket.addEventListener('open',resolve,{once:true});socket.addEventListener('error',reject,{once:true});});
+ let sequence=0;const pending=new Map();const errors=[];
+ socket.addEventListener('message',event=>{const message=JSON.parse(event.data);const callback=pending.get(message.id);if(callback){pending.delete(message.id);message.error?callback.reject(Error(JSON.stringify(message.error))):callback.resolve(message.result);}if(message.method==='Runtime.exceptionThrown')errors.push(message.params.exceptionDetails);});
+ const call=(method,params={},sessionId)=>new Promise((resolve,reject)=>{const id=++sequence;pending.set(id,{resolve,reject});socket.send(JSON.stringify({id,method,params,...(sessionId?{sessionId}:{})}));});
+ const {targetId}=await call('Target.createTarget',{url:'about:blank'});const {sessionId}=await call('Target.attachToTarget',{targetId,flatten:true});
+ await call('Page.enable',{},sessionId);await call('Runtime.enable',{},sessionId);
+ const load=()=>new Promise(resolve=>{const listener=event=>{const msg=JSON.parse(event.data);if(msg.method==='Page.loadEventFired'&&msg.sessionId===sessionId){socket.removeEventListener('message',listener);resolve();}};socket.addEventListener('message',listener);});
+ let loaded=load();await call('Page.navigate',{url:pathToFileURL(join(root,'..','dist','index.html')).href},sessionId);await loaded;
+ const evaluate=async expression=>{const value=await call('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true},sessionId);if(value.exceptionDetails)throw Error(JSON.stringify(value.exceptionDetails));return value.result.value;};
+ const results=[];
+ async function check(name,expression){const value=await evaluate(expression);results.push({name,value});if(!value)throw Error('Falhou: '+name);}
+ const screenshot=async name=>{await evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))');const picture=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},sessionId);await writeFile(join(output,name+'.png'),Buffer.from(picture.data,'base64'));};
+
+ const setSize=async(width,height,size=100)=>{
+  await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:true},sessionId);
+  await call('Emulation.setTouchEmulationEnabled',{enabled:true,maxTouchPoints:1},sessionId);
+  await evaluate(`(()=>{const s=document.getElementById('a11y-size');s.value=${size};s.dispatchEvent(new Event('input',{bubbles:true}));})()`);
+  await evaluate('document.fonts.ready');
+  await evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))');
+ };
+ await setSize(390,844);
+ await screenshot('inicio-390');
+ await evaluate(`document.querySelector('.resource-card').scrollIntoView({block:'start',behavior:'instant'})`);
+ await screenshot('cartoes-390');
+ await evaluate(`(()=>{window.scrollTo(0,0);window.__spoken=[];Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{getVoices:()=>[],cancel:()=>{},speak:u=>__spoken.push(u),pause:()=>{},resume:()=>{}}});document.getElementById('a11y-open').click();const t=document.getElementById('a11y-listen');t.checked=true;t.dispatchEvent(new Event('change',{bubbles:true}));document.getElementById('a11y-close').click();document.getElementById('a11y-player-play').click();__spoken.at(-1).onboundary({name:'word',charIndex:__spoken.at(-1).text.indexOf('ciência')});})()`);
+ await check('Celular inicia com leitor compacto',`document.getElementById('a11y-player').classList.contains('is-compact')&&document.getElementById('a11y-player-details').hidden`);
+ await check('Trecho e palavra continuam visíveis quando recolhido',`getComputedStyle(document.getElementById('a11y-player-text')).display!=='none'&&document.querySelector('#a11y-player-text mark').textContent==='ciência'`);
+ await screenshot('leitor-compacto-390');
+ for(const [width,height,size] of [[320,568,100],[360,740,100],[390,844,100],[430,932,100],[320,568,200]]){
+  await setSize(width,height,size);
+  await check(`Sem rolagem horizontal ${width}px ${size}%`,`document.documentElement.scrollWidth<=innerWidth&&document.getElementById('a11y-player').scrollWidth<=document.getElementById('a11y-player').clientWidth+1`);
+  await check(`Controles visíveis e tocáveis ${width}px ${size}%`,`[...document.querySelectorAll('.reader-topline button,.a11y-player-buttons button,#a11y-player-position')].every(e=>{const r=e.getBoundingClientRect(),p=document.getElementById('a11y-player').getBoundingClientRect();return r.width>=44&&r.height>=44&&r.top>=p.top&&r.bottom<=p.bottom&&r.left>=p.left&&r.right<=p.right})`);
+  await check(`Leitor cabe na tela ${width}px ${size}%`,`(()=>{const r=document.getElementById('a11y-player').getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&(${size}!==100||r.height<=280)})()`);
+  await check(`Atalho não sobrepõe leitor ${width}px ${size}%`,`document.getElementById('a11y-open').getBoundingClientRect().bottom<document.getElementById('a11y-player').getBoundingClientRect().top`);
+  await check(`Libras não sobrepõe leitor ${width}px ${size}%`,`!window.VLibrasWidget?.initBtn||window.VLibrasWidget.initBtn.getBoundingClientRect().bottom<document.getElementById('a11y-player').getBoundingClientRect().top`);
+  await screenshot(`compacto-${width}-${size}`);
+ }
+ await setSize(390,844);
+ await evaluate(`document.getElementById('a11y-player-rate-badge').click()`);
+ await check('Velocidade abre opções e recebe foco',`!document.getElementById('a11y-player-details').hidden&&document.activeElement.id==='a11y-player-rate'`);
+ await check('Transporte permanece visível com opções abertas',`(()=>{const p=document.getElementById('a11y-player').getBoundingClientRect();return [...document.querySelectorAll('.a11y-player-buttons button')].every(e=>{const r=e.getBoundingClientRect();return r.top>=p.top&&r.bottom<=p.bottom})})()`);
+ await screenshot('leitor-expandido-390');
+ await setSize(320,568,200);
+ await check('Opções ampliadas cabem sem rolagem horizontal',`document.getElementById('a11y-player').scrollWidth<=document.getElementById('a11y-player').clientWidth+1&&document.getElementById('a11y-player-details').scrollWidth<=document.getElementById('a11y-player-details').clientWidth+1`);
+ await check('Opções ampliadas têm espaço para rolagem',`document.getElementById('a11y-player-details').clientHeight>=120`);
+ await screenshot('expandido-320-200');
+ await evaluate(`document.getElementById('a11y-player-collapse').click()`);
+ await setSize(844,390);
+ await check('Leitor cabe no celular deitado',`(()=>{const r=document.getElementById('a11y-player').getBoundingClientRect(),a=document.getElementById('a11y-open').getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&a.right<r.left})()`);
+ await screenshot('leitor-paisagem');
+ await setSize(390,844);
+ await evaluate(`document.getElementById('a11y-open').click()`);
+ await check('Painel de acessibilidade ocupa a largura do celular',`Math.abs(document.getElementById('a11y-panel').getBoundingClientRect().width-innerWidth)<=1&&document.getElementById('a11y-player').hidden`);
+ await screenshot('acessibilidade-390');
+ await setSize(320,568,200);
+ await check('Painel ampliado preserva fechar e restaurar',`(()=>{const close=document.getElementById('a11y-close').getBoundingClientRect(),reset=document.getElementById('a11y-reset').getBoundingClientRect();return close.top>=0&&close.bottom<=innerHeight&&reset.top>=0&&reset.bottom<=innerHeight&&document.documentElement.scrollWidth<=innerWidth})()`);
+ await screenshot('acessibilidade-320-200');
+ await evaluate(`document.getElementById('a11y-close').click();document.getElementById('a11y-player-close').click()`);
+ await setSize(390,844);
+ const tap=async selector=>{
+  const point=await evaluate(`(()=>{const e=document.querySelector(${JSON.stringify(selector)});e.scrollIntoView({block:'center',behavior:'instant'});const r=e.getBoundingClientRect();return{x:r.left+r.width/2,y:r.top+r.height/2}})()`);
+  await call('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{...point,id:1}]},sessionId);
+  await call('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]},sessionId);
+  await evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))');
+ };
+ await tap('#cards .favorite-button');
+ await check('Favoritos respondem ao toque',`document.querySelectorAll('#saved-cards .resource-card').length===1`);
+ await tap('[data-filter="area"][data-value="Tecnologia"]');
+ await check('Filtros respondem ao toque',`document.querySelector('[data-filter="area"][data-value="Tecnologia"]').getAttribute('aria-pressed')==='true'&&document.querySelectorAll('#cards .resource-card').length>0`);
+ await tap('[data-route-area]');
+ await check('Rota responde ao toque',`document.querySelectorAll('.route-result li').length===3`);
+ await screenshot('rota-390');
+ await tap('#search');
+ await call('Input.insertText',{text:'Lua'},sessionId);
+ await check('Busca funciona com entrada mobile',`document.getElementById('search').value==='Lua'&&document.querySelectorAll('#cards .resource-card').length===1`);
+ await tap('#clear-filters');
+ await check('Limpeza recupera os recursos',`document.querySelectorAll('#cards .resource-card').length===13`);
+ await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false},sessionId);
+ await evaluate(`const s=document.getElementById('a11y-size');s.value=100;s.dispatchEvent(new Event('input',{bubbles:true}));window.scrollTo(0,0)`);
+ await screenshot('desktop');
+ if(errors.length)throw Error('Erros de execução: '+JSON.stringify(errors));
+ await writeFile(join(output,'resultado.json'),JSON.stringify({checks:results,errors,limite:'Chrome emulado: layout, tamanhos de toque, zoom, orientação e estados do leitor. Eventos de voz simulados; reprodução sonora em aparelho físico não avaliada.'},null,2));
+ console.log(results.length+' verificações mobile aprovadas.');
+ await call('Browser.close');
+}finally{socket?.close();chrome.kill();}

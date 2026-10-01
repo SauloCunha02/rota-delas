@@ -38,7 +38,12 @@
           const access = window.VLibrasWidget.initBtn.parentElement;
           if (access) {
             access.style.top = 'auto';
-            access.style.bottom = 'calc(86px + env(safe-area-inset-bottom))';
+            // O botão oficial fica em um Shadow DOM. As variáveis herdadas
+            // mantêm sua posição sincronizada com o leitor e a orientação.
+            access.style.bottom = 'var(--libras-bottom, calc(86px + env(safe-area-inset-bottom)))';
+            access.style.right = 'var(--libras-right, 10px)';
+            access.style.left = 'var(--libras-left, auto)';
+            access.style.transition = 'width .25s ease';
           }
           status.textContent = 'VLibras disponível. Abra o tradutor e selecione o texto que deseja traduzir. É necessário acesso à internet.';
           button.removeAttribute('aria-busy');

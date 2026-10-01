@@ -41,7 +41,19 @@ O player permite escolher toda a página, uma seção ou texto selecionado. Toqu
 - **Trechos:** anterior/próximo funcionam com a voz em reprodução, pausada ou parada. No player, use setas esquerda/direita; com a região do player em foco, Espaço alterna Play/Pausa. Se um campo estiver em foco, suas setas mantêm o comportamento nativo.
 - **Destaque:** o trecho aparece destacado na página e no player. A palavra é destacada apenas quando a voz informa eventos `boundary`; o navegador que não oferece esses eventos mantém o destaque por trecho.
 - **Rolagem:** Acompanhar trecho ativa/desativa a rolagem automática. Localizar trecho posiciona a página no trecho selecionado.
-- **Recolher:** esconde os detalhes do player mantendo transporte, posição e velocidade indicada.
+- **Recolher:** esconde as opções mantendo os controles principais, a posição, a velocidade indicada e o trecho atual. No celular, o leitor abre recolhido. Toque na velocidade para abrir suas opções; o botão de seta expande/recolhe o painel.
+
+### Uso no celular
+
+O leitor fica na base da tela. Anterior, Play/Pausar, próximo, Parar, posição e trecho continuam disponíveis com as opções recolhidas. O trecho pode ser rolado e acompanha a palavra sincronizada quando a voz fornece esse evento.
+
+As opções têm rolagem própria para preservar os controles principais, inclusive com letras ampliadas. O botão de velocidade abre as opções e dá foco ao seletor. Com o painel expandido, os atalhos Acessibilidade e Libras ficam dentro das opções. Com o leitor recolhido, os botões flutuantes ficam acima dele. Na orientação horizontal, o leitor fica à direita e os atalhos à esquerda.
+
+## Revisão mobile — 01/10/2026
+
+Foram aprovadas 39 verificações no Chrome emulado, cobrindo 320, 360, 390 e 430 px, letras de 100% e 200%, orientação horizontal, posição dos atalhos, controles tocáveis, opções com rolagem, diálogo de acessibilidade e interações de toque com filtros, favoritos, rota e busca. As 20 verificações de estados e sincronização do leitor foram executadas novamente. Capturas e relatório mobile estão em `identidade-visual/revisao/mobile`.
+
+As capturas foram inspecionadas. A emulação não substitui avaliação em celulares físicos; reprodução sonora real e qualidade da tradução de Libras não foram avaliadas nesta revisão.
 
 Alterar resultados ou remover conteúdo lido cancela a fila anterior e permite iniciar uma leitura com o conteúdo atualizado. Eventos antigos de cancelamento e fim são descartados para evitar saltos ou vozes simultâneas.
 

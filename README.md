@@ -50,6 +50,8 @@ Veja os detalhes de uso e o escopo da revisão em `ACESSIBILIDADE.md`.
 
 O player mostra o trecho atual, sua posição no texto e os controles **Play/Pausa**, **anterior/próximo**, **Parar**, velocidade de **0,5× a 2×** e uma barra para escolher o trecho. É possível navegar com a voz parada ou pausada. No player, as setas esquerda/direita mudam de trecho; Espaço inicia ou pausa quando a região do player está em foco. Os seletores e a barra de posição mantêm seus controles nativos de teclado.
 
+No celular, o leitor abre compacto e mantém o trecho atual visível. Toque na velocidade para abrir o seletor ou na seta para expandir todas as opções. A área de opções rola separadamente dos controles principais. Os atalhos de acessibilidade e Libras ficam acima do leitor recolhido, ou dentro das opções quando expandido. O layout também se adapta ao celular deitado e às letras ampliadas.
+
 A narração destaca o trecho na página e a palavra quando a voz do navegador fornece eventos de sincronização. O botão **Localizar trecho** leva ao trecho selecionado, e **Acompanhar trecho na página** permite ligar/desligar a rolagem automática. A velocidade muda durante a leitura, retomando da última palavra informada pela voz; sem eventos por palavra, o trecho atual é retomado. O botão de recolher reduz o tamanho do player.
 
 ## Dados e atualização

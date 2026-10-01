@@ -53,3 +53,11 @@ A revisão aprovou 113 verificações técnicas, sem exceções JavaScript, e co
 O leitor passou a mapear cada trecho para os elementos reais da página. O player mostra seção, trecho atual, barra de posição, texto narrado, Play/Pausa, anterior/próximo, Parar, velocidade de 0,5× a 2×, Localizar trecho, acompanhamento automático e opção de recolher. A navegação mantém a pausa; alterar velocidade retoma da última palavra informada pela voz, ou do início do trecho quando não há sincronização por palavra. Conteúdo atualizado cancela a fila antiga.
 
 Foram aprovadas 20 verificações específicas do novo leitor com eventos de voz simulados, incluindo palavra ligada ao DOM, callbacks antigos, mudança de velocidade, navegação pausada/parada, posição, teclado, filtros e layout móvel. Capturas foram inspecionadas. Os arquivos de evidência estão em `identidade-visual/revisao/leitor`; áudio real depende da voz instalada no navegador.
+
+## Consolidação mobile — 01/10/2026
+
+Navegação, busca, filtros, cartões e rota receberam ajustes de tamanho de texto, espaçamento e controles de toque. O painel de acessibilidade usa a largura da tela. O leitor abre compacto em telas pequenas, preserva o trecho narrado e permite expandir as opções por uma seta ou pelo botão de velocidade. As opções rolam separadamente, com espaço próprio em 200%. O trecho mantém a palavra sincronizada à vista. A rolagem de acompanhamento é imediata para evitar movimentos concorrentes.
+
+O posicionamento do botão oficial de Libras foi integrado por variáveis CSS herdadas no Shadow DOM do widget. No celular, os atalhos ficam acima do leitor recolhido; no painel expandido, estão disponíveis dentro das opções. Na orientação horizontal, leitor e atalhos ocupam lados diferentes.
+
+Foram aprovadas 39 verificações mobile, sem exceções JavaScript, e novamente as 20 verificações do leitor. Conferidas larguras de 320/360/390/430 px, letras de até 200%, orientação horizontal e interações com eventos de toque para favoritos, filtros, rota e busca. Capturas inspecionadas em `identidade-visual/revisao/mobile`. A validação usou emulação no Chrome e eventos de voz simulados; aparelhos físicos e reprodução sonora real não foram avaliados.

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#101f2b">
   <meta name="description" content="Explore iniciativas e materiais de ciência e tecnologia para meninas no Ceará, com fontes públicas e caminhos de estudo.">
   <title>Rota Delas — ciência e tecnologia ao seu alcance</title>
@@ -10,9 +10,10 @@
   <script src="acessibilidade.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="acessibilidade.css">
-  <script defer src="leitor.js"></script>
+  <link rel="stylesheet" href="mobile.css?v=20261001">
+  <script defer src="leitor.js?v=20261001"></script>
   <script defer src="app.js"></script>
-  <script defer src="libras.js"></script>
+  <script defer src="libras.js?v=20261001"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -33,7 +34,7 @@
     </section>
     <section class="workspace shell" id="explorar" aria-labelledby="explore-title">
       <div class="section-heading"><div><span class="section-index">01 / EXPLORAR</span><h2 id="explore-title">Descubra por onde começar</h2></div><p id="result-count" role="status" aria-live="polite"></p></div>
-      <div class="search-row"><label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Buscar por nome ou palavra-chave</span><input id="search" type="search" placeholder="Busque por projeto, área ou palavra-chave" autocomplete="off"></label><button id="clear-filters" class="clear-button" type="button">Limpar filtros</button></div>
+      <div class="search-row"><label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Buscar por nome ou palavra-chave</span><input id="search" type="search" placeholder="Buscar projetos ou temas" autocomplete="off"></label><button id="clear-filters" class="clear-button" type="button">Limpar filtros</button></div>
       <div class="filter-group" aria-label="Filtrar por área"><span class="filter-label">Área</span><div id="area-filters" class="filter-buttons"></div></div>
       <div class="filter-group" aria-label="Filtrar por tipo"><span class="filter-label">Tipo</span><div id="type-filters" class="filter-buttons"></div></div>
       <div id="cards" class="card-grid"></div>
@@ -52,13 +53,17 @@
   <div id="reading-mask" class="reading-mask" aria-hidden="true" hidden><div class="reading-mask-top"></div><div class="reading-mask-bottom"></div></div>
   <button id="a11y-guide-handle" class="a11y-guide-handle" type="button" aria-label="Mover faixa de leitura. Use as setas para cima e para baixo ou arraste." title="Mover faixa de leitura" hidden>↕</button>
   <div id="a11y-player" class="a11y-player" role="region" tabindex="0" aria-label="Player de leitura. Setas esquerda e direita navegam entre trechos; espaço inicia ou pausa." hidden>
-    <div class="reader-topline"><span id="a11y-player-location">Leitor do Rota Delas</span><span id="a11y-player-rate-badge">1×</span><button id="a11y-player-collapse" type="button" aria-label="Recolher detalhes do player" aria-expanded="true" title="Recolher ou expandir player">⌄</button><button id="a11y-player-close" type="button" aria-label="Fechar controles e parar leitura" title="Fechar leitor">✕</button></div>
-    <div class="reader-settings"><label for="a11y-player-scope">Ler<select id="a11y-player-scope"><option value="conteudo">Toda a página</option><option value="inicio">Apresentação</option><option value="explorar">Resultados da busca</option><option value="rota">Minha rota</option><option value="salvos">Itens salvos</option><option value="metodo">Como funciona</option><option value="selection" disabled>Texto selecionado</option></select></label><label for="a11y-player-rate">Velocidade<select id="a11y-player-rate"><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1" selected>1×</option><option value="1.25">1,25×</option><option value="1.5">1,5×</option><option value="1.75">1,75×</option><option value="2">2×</option></select></label></div>
-    <div class="a11y-player-buttons"><button id="a11y-player-prev" type="button" aria-label="Trecho anterior" title="Trecho anterior (seta esquerda)">◀</button><button id="a11y-player-play" type="button" aria-label="Iniciar leitura">▶ Play</button><button id="a11y-player-next" type="button" aria-label="Próximo trecho" title="Próximo trecho (seta direita)">▶</button><button id="a11y-player-stop" type="button">■ Parar</button><button id="a11y-player-slower" type="button" aria-label="Diminuir velocidade em 0,25" title="Diminuir velocidade">−</button><button id="a11y-player-faster" type="button" aria-label="Aumentar velocidade em 0,25" title="Aumentar velocidade">+</button></div>
+    <div class="reader-topline"><span id="a11y-player-location">Leitor do Rota Delas</span><button id="a11y-player-rate-badge" type="button" aria-label="Alterar velocidade, atual 1 vez" aria-controls="a11y-player-details" title="Alterar velocidade">1×</button><button id="a11y-player-collapse" type="button" aria-label="Recolher opções do leitor" aria-controls="a11y-player-details" aria-expanded="true" title="Recolher ou expandir opções">⌄</button><button id="a11y-player-close" type="button" aria-label="Fechar controles e parar leitura" title="Fechar leitor">✕</button></div>
+    <div class="a11y-player-buttons"><button id="a11y-player-prev" type="button" aria-label="Trecho anterior" title="Trecho anterior (seta esquerda)">◀</button><button id="a11y-player-play" type="button" aria-label="Iniciar leitura">▶ Play</button><button id="a11y-player-next" type="button" aria-label="Próximo trecho" title="Próximo trecho (seta direita)">▶</button><button id="a11y-player-stop" type="button" aria-label="Parar leitura" title="Parar leitura">■<span class="reader-stop-label"> Parar</span></button></div>
     <div class="reader-progress-label"><label for="a11y-player-position">Posição no texto</label><output id="a11y-player-progress" for="a11y-player-position">Nenhum trecho</output></div>
     <input id="a11y-player-position" type="range" min="1" max="1" step="1" value="1" aria-valuetext="Nenhum trecho" disabled>
     <p id="a11y-player-text" class="reader-current-text" aria-live="off">Ative Play ou toque em um parágrafo para escolher de onde começar.</p>
-    <div class="reader-options"><label><input id="a11y-player-follow" type="checkbox" checked>Acompanhar trecho na página</label><button id="a11y-player-locate" type="button">Localizar trecho</button></div>
+    <div id="a11y-player-details" class="reader-details">
+      <div class="reader-settings"><label for="a11y-player-scope">O que ouvir<select id="a11y-player-scope"><option value="conteudo">Toda a página</option><option value="inicio">Apresentação</option><option value="explorar">Resultados da busca</option><option value="rota">Minha rota</option><option value="salvos">Itens salvos</option><option value="metodo">Como funciona</option><option value="selection" disabled>Texto selecionado</option></select></label><label for="a11y-player-rate">Velocidade<select id="a11y-player-rate"><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1" selected>1×</option><option value="1.25">1,25×</option><option value="1.5">1,5×</option><option value="1.75">1,75×</option><option value="2">2×</option></select></label></div>
+      <div class="reader-speed-buttons"><button id="a11y-player-slower" type="button" aria-label="Diminuir velocidade em 0,25" title="Diminuir velocidade">− Mais devagar</button><button id="a11y-player-faster" type="button" aria-label="Aumentar velocidade em 0,25" title="Aumentar velocidade">+ Mais rápido</button></div>
+      <div class="reader-options"><label><input id="a11y-player-follow" type="checkbox" checked>Acompanhar na página</label><button id="a11y-player-locate" type="button">Localizar trecho</button></div>
+      <div class="reader-shortcuts"><button id="a11y-player-accessibility" type="button">Acessibilidade</button><button id="a11y-player-libras" type="button">Libras</button></div>
+    </div>
     <p id="a11y-player-status" role="status" aria-live="polite">Play inicia; as setas do player voltam ou avançam.</p>
   </div>
   <dialog id="a11y-panel" class="a11y-panel" aria-labelledby="a11y-title" aria-describedby="a11y-intro">
