@@ -1,0 +1,419 @@
+[
+  {
+    "id": "lua",
+    "title": "Projeto Lua",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "place": "Ceará · Tianguá",
+    "description": "Iniciativa criada por alunas do IFCE para apoiar meninas e mulheres na tecnologia por meio de conteúdos e ações.",
+    "url": "https://projetolua.ifce.edu.br/",
+    "tags": [
+      "computação",
+      "meninas",
+      "comunidade",
+      "iniciativa"
+    ],
+    "routeRole": "inspirar",
+    "states": [
+      "CE"
+    ],
+    "city": "Tianguá",
+    "scope": "Local",
+    "mode": "Consultar fonte",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Consultar fonte",
+    "institution": "IFCE — Campus Tianguá",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://projetolua.ifce.edu.br/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "divas-aracati",
+    "title": "Projeto DIVAS",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "place": "Ceará · Aracati",
+    "description": "Projeto do IFCE Aracati que aproxima meninas das tecnologias da informação, com cursos e ações de extensão.",
+    "url": "https://portal.ifce.edu.br/campus/aracati/extensao/divas/",
+    "tags": [
+      "programação",
+      "informática",
+      "ifce",
+      "oficinas"
+    ],
+    "routeRole": "participar",
+    "states": [
+      "CE"
+    ],
+    "city": "Aracati",
+    "scope": "Local",
+    "mode": "Consultar fonte",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Consultar fonte",
+    "institution": "IFCE — Campus Aracati",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://portal.ifce.edu.br/campus/aracati/extensao/divas/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "meninas-vale",
+    "title": "Meninas Digitais do Vale",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "place": "Ceará · Russas",
+    "description": "Projeto da UFC em Russas com ações para aproximar meninas da computação e apoiar mulheres na área.",
+    "url": "https://extensaorussas.ufc.br/pt/projetos/2026-4/tecnologia-e-producao/",
+    "tags": [
+      "computação",
+      "ufc",
+      "oficinas",
+      "mentoria"
+    ],
+    "routeRole": "participar",
+    "states": [
+      "CE"
+    ],
+    "city": "Russas",
+    "scope": "Local",
+    "mode": "Consultar fonte",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Consultar fonte",
+    "institution": "UFC — Campus Russas",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://extensaorussas.ufc.br/pt/projetos/2026-4/tecnologia-e-producao/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "mulheres-ct",
+    "title": "Mulheres em C&T",
+    "kind": "Projeto",
+    "area": "Ciência",
+    "place": "Ceará · Fortaleza",
+    "description": "Projeto de extensão da UFC dedicado a aproximar estudantes da ciência e da tecnologia e mostrar trajetórias de pesquisadoras.",
+    "url": "https://deti.ufc.br/pt/resultado-final-selecao-agente-ufc-de-extensao-edital-16-2026-projeto-mulheres-em-ct/",
+    "tags": [
+      "pesquisa",
+      "ufc",
+      "mulheres",
+      "trajetórias"
+    ],
+    "routeRole": "inspirar",
+    "states": [
+      "CE"
+    ],
+    "city": "Fortaleza",
+    "scope": "Local",
+    "mode": "Consultar fonte",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Consultar fonte",
+    "institution": "Universidade Federal do Ceará",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://deti.ufc.br/pt/resultado-final-selecao-agente-ufc-de-extensao-edital-16-2026-projeto-mulheres-em-ct/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "seara",
+    "title": "Seara da Ciência",
+    "kind": "Visita",
+    "area": "Ciência",
+    "place": "Ceará · Fortaleza",
+    "description": "Museu interativo da UFC com visitação gratuita e atividades de divulgação científica. Veja como agendar no site.",
+    "url": "https://seara.ufc.br/pt/agendamento/",
+    "tags": [
+      "museu",
+      "experimentos",
+      "visita",
+      "ufc"
+    ],
+    "routeRole": "participar",
+    "states": [
+      "CE"
+    ],
+    "city": "Fortaleza",
+    "scope": "Local",
+    "mode": "Consultar fonte",
+    "focus": "Para todos",
+    "sourceStatus": "Consultar fonte",
+    "institution": "Universidade Federal do Ceará",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://seara.ufc.br/pt/agendamento/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "divas-tiangua",
+    "title": "DIVAS em Tianguá",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "place": "Ceará · Tianguá",
+    "description": "Ações do IFCE com oficinas de pensamento computacional e criação de aplicativos para estudantes de escolas públicas.",
+    "url": "https://portal.ifce.edu.br/campus/tiangua/not%C3%ADcias/projeto-divas-recebe-premio-de-projeto-destaque-da-regiao-nordeste/",
+    "tags": [
+      "aplicativos",
+      "computação",
+      "ifce",
+      "oficinas"
+    ],
+    "routeRole": "participar",
+    "states": [
+      "CE"
+    ],
+    "city": "Tianguá",
+    "scope": "Local",
+    "mode": "Consultar fonte",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Consultar fonte",
+    "institution": "IFCE — Campus Tianguá",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://portal.ifce.edu.br/campus/tiangua/not%C3%ADcias/projeto-divas-recebe-premio-de-projeto-destaque-da-regiao-nordeste/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "meninas-digitais",
+    "title": "Programa Meninas Digitais",
+    "kind": "Rede",
+    "area": "Tecnologia",
+    "place": "Brasil · online",
+    "description": "Rede da Sociedade Brasileira de Computação que reúne projetos para despertar o interesse de meninas pela área.",
+    "url": "https://meninasdigitais.com.br/sobre-nos/",
+    "tags": [
+      "computação",
+      "comunidade",
+      "oficinas",
+      "rede"
+    ],
+    "routeRole": "inspirar",
+    "states": [],
+    "city": null,
+    "scope": "Nacional",
+    "mode": "Online",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Consultar fonte",
+    "institution": "Sociedade Brasileira de Computação",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://meninasdigitais.com.br/sobre-nos/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "obi",
+    "title": "OBI — Olimpíada Brasileira de Informática",
+    "kind": "Competição",
+    "area": "Tecnologia",
+    "place": "Brasil · escolas",
+    "description": "Competição de informática com modalidades por nível escolar. Consulte o regulamento, a inscrição pela escola e o calendário oficial.",
+    "url": "https://olimpiada.ic.unicamp.br/",
+    "tags": [
+      "programação",
+      "olimpíada",
+      "desafio",
+      "escola"
+    ],
+    "routeRole": "desafiar",
+    "states": [],
+    "city": null,
+    "scope": "Nacional",
+    "mode": "Consultar fonte",
+    "focus": "Para todos",
+    "sourceStatus": "Consultar fonte",
+    "institution": "Unicamp / Organização OBI",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://olimpiada.ic.unicamp.br/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "obi-estude",
+    "title": "Cursos de programação da OBI",
+    "kind": "Estudo",
+    "area": "Tecnologia",
+    "place": "Brasil · online",
+    "description": "Materiais gratuitos para quem quer começar a programar, disponíveis no ambiente de estudos da OBI.",
+    "url": "https://olimpiada.ic.unicamp.br/prepare/estude/",
+    "tags": [
+      "programação",
+      "curso",
+      "gratuito",
+      "iniciantes"
+    ],
+    "routeRole": "aprender",
+    "states": [],
+    "city": null,
+    "scope": "Nacional",
+    "mode": "Online",
+    "focus": "Para todos",
+    "sourceStatus": "Consultar fonte",
+    "institution": "Unicamp / Organização OBI",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://olimpiada.ic.unicamp.br/prepare/estude/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "obmep",
+    "title": "Portal da OBMEP",
+    "kind": "Estudo",
+    "area": "Matemática",
+    "place": "Brasil · online",
+    "description": "Materiais gratuitos de matemática para estudantes do Fundamental e do Ensino Médio.",
+    "url": "https://portaldaobmep.impa.br/",
+    "tags": [
+      "matemática",
+      "curso",
+      "gratuito",
+      "exercícios"
+    ],
+    "routeRole": "aprender",
+    "states": [],
+    "city": null,
+    "scope": "Nacional",
+    "mode": "Online",
+    "focus": "Para todos",
+    "sourceStatus": "Consultar fonte",
+    "institution": "IMPA / OBMEP",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://portaldaobmep.impa.br/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "banco-obmep",
+    "title": "Banco de Questões da OBMEP",
+    "kind": "Estudo",
+    "area": "Matemática",
+    "place": "Brasil · online",
+    "description": "Coleção oficial de problemas de matemática para praticar por tema e consultar soluções.",
+    "url": "https://www.obmep.org.br/banco.htm",
+    "tags": [
+      "matemática",
+      "questões",
+      "exercícios",
+      "gratuito"
+    ],
+    "routeRole": "praticar",
+    "states": [],
+    "city": null,
+    "scope": "Nacional",
+    "mode": "Online",
+    "focus": "Para todos",
+    "sourceStatus": "Consultar fonte",
+    "institution": "IMPA / OBMEP",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://www.obmep.org.br/banco.htm",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "obmep-competicao",
+    "title": "Olimpíada Brasileira de Matemática das Escolas Públicas",
+    "kind": "Competição",
+    "area": "Matemática",
+    "place": "Brasil · escolas",
+    "description": "Competição para estudantes do Fundamental e do Médio. A inscrição é feita pela escola; confira o calendário oficial.",
+    "url": "https://www.obmep.org.br/",
+    "tags": [
+      "matemática",
+      "olimpíada",
+      "desafio",
+      "escola"
+    ],
+    "routeRole": "desafiar",
+    "states": [],
+    "city": null,
+    "scope": "Nacional",
+    "mode": "Consultar fonte",
+    "focus": "Para todos",
+    "sourceStatus": "Consultar fonte",
+    "institution": "IMPA / OBMEP",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://www.obmep.org.br/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "cfc",
+    "title": "Mostra Ceará Faz Ciência",
+    "kind": "Competição",
+    "area": "Ciência",
+    "place": "Ceará · Fortaleza",
+    "description": "Mostra de projetos científicos de escolas públicas dentro da Feira do Conhecimento. Consulte o edital e os prazos no site oficial.",
+    "url": "https://feiradoconhecimento.com.br/",
+    "tags": [
+      "projeto",
+      "pesquisa",
+      "feira",
+      "cfc"
+    ],
+    "routeRole": "desafiar",
+    "states": [
+      "CE"
+    ],
+    "city": "Fortaleza",
+    "scope": "Local",
+    "mode": "Consultar fonte",
+    "focus": "Para todos",
+    "sourceStatus": "Consultar fonte",
+    "institution": "Feira do Conhecimento — Ceará Faz Ciência",
+    "audience": "Consulte requisitos e público na fonte.",
+    "sources": [
+      {
+        "name": "Fonte institucional",
+        "url": "https://feiradoconhecimento.com.br/",
+        "checkedAt": "2026-09-28"
+      }
+    ]
+  }
+]

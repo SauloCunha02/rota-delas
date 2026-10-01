@@ -1,0 +1,1179 @@
+[
+  {
+    "id": "md-include-meninas",
+    "title": "#Include < Meninas.uff >",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal Fluminense (UFF), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/include-meninas/",
+    "institution": "Universidade Federal Fluminense (UFF)",
+    "states": [
+      "RJ"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2016",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal Fluminense (UFF)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/include-meninas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-adas",
+    "title": "Bits de Ada",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA - Campus Caxias), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/adas/",
+    "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA - Campus Caxias)",
+    "states": [
+      "MA"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2017",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA - Campus Caxias)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/adas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-code-gatas",
+    "title": "Code Gatas",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Espirito Santo (UFES), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/code-gatas/",
+    "institution": "Universidade Federal do Espirito Santo (UFES)",
+    "states": [
+      "ES"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2022",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Espirito Santo (UFES)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/code-gatas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-codificadas-usp",
+    "title": "CodificADAS – USP",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade de São Paulo (USP), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/codificadas-usp/",
+    "institution": "Universidade de São Paulo (USP)",
+    "states": [
+      "SP"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2021",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade de São Paulo (USP)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/codificadas-usp/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-delas-para-elas",
+    "title": "Delas para Elas",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Centro Federal de Educação Tecnológica (CEFET-MG - Campus Leopoldina), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/delas-para-elas/",
+    "institution": "Centro Federal de Educação Tecnológica (CEFET-MG - Campus Leopoldina)",
+    "states": [
+      "MG"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2023",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Centro Federal de Educação Tecnológica (CEFET-MG - Campus Leopoldina)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/delas-para-elas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-garotas-tech-dos-sertoes-de-crateus",
+    "title": "Garotas Tech dos Sertões de Crateús",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Ceará (UFC), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/garotas-tech-dos-sertoes-de-crateus/",
+    "institution": "Universidade Federal do Ceará (UFC)",
+    "states": [
+      "CE"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2019",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Ceará (UFC)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/garotas-tech-dos-sertoes-de-crateus/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-girls-of-science",
+    "title": "Girls of Science",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais (IF SUL DE MINAS - Campus Inconfidentes), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/girls-of-science/",
+    "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais (IF SUL DE MINAS - Campus Inconfidentes)",
+    "states": [
+      "MG"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2019",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais (IF SUL DE MINAS - Campus Inconfidentes)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/girls-of-science/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-grace-grupo-de-alunas-das-ciencias-extas",
+    "title": "GRACE – Grupo de Alunas das Ciências Exatas",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade de São Paulo (USP), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/grace-grupo-de-alunas-das-ciencias-extas/",
+    "institution": "Universidade de São Paulo (USP)",
+    "states": [
+      "SP"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2018",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade de São Paulo (USP)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/grace-grupo-de-alunas-das-ciencias-extas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-grupo-cintia",
+    "title": "Grupo Cintia",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal de Pernambuco (UFPE), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/grupo-cintia/",
+    "institution": "Universidade Federal de Pernambuco (UFPE)",
+    "states": [
+      "PE"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2018",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Fedederal de Pernambuco (UFPE)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/grupo-cintia/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-gurias-na-computacao",
+    "title": "Gurias na Computação",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Pampa (Unipampa), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/gurias-na-computacao/",
+    "institution": "Universidade Federal do Pampa (Unipampa)",
+    "states": [
+      "RS"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2015",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Pampa (Unipampa)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/gurias-na-computacao/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-igualdade-stem",
+    "title": "Igualdade STEM",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Rio de Janeiro (UFRJ), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/igualdade-stem/",
+    "institution": "Universidade Federal do Rio de Janeiro (UFRJ)",
+    "states": [
+      "RJ"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2022",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Rio de Janeiro (UFRJ)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/igualdade-stem/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-de-sistemas",
+    "title": "Meninas de Sistemas",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Pará (UFPA), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-de-sistemas/",
+    "institution": "Universidade Federal do Pará (UFPA)",
+    "states": [
+      "PA"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2023",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Pará (UFPA)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-de-sistemas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-digitais-do-acre",
+    "title": "Meninas Digitais do Acre",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Acre, presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-do-acre/",
+    "institution": "Universidade Federal do Acre",
+    "states": [
+      "AC"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2024",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Acre"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-do-acre/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-digitais-do-sudoeste-da-bahia",
+    "title": "Meninas Digitais do Sudoeste da Bahia",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-do-sudoeste-da-bahia/",
+    "institution": "Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA)",
+    "states": [
+      "BA"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Inativo",
+    "since": "2019",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-do-sudoeste-da-bahia/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-digitais-dourados",
+    "title": "Meninas Digitais Dourados",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal da Grande Dourados (UFGD), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-dourados/",
+    "institution": "Universidade Federal da Grande Dourados (UFGD)",
+    "states": [
+      "MS"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2018",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal da Grande Dourados (UFGD)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-dourados/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-digitais-no-cerrado",
+    "title": "Meninas Digitais no Cerrado",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal Goiano – Campus Ceres (Ceres – GO), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-no-cerrado/",
+    "institution": "Instituto Federal Goiano – Campus Ceres (Ceres – GO)",
+    "states": [
+      "GO"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2016",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal Goiano – Campus Ceres (Ceres – GO)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-no-cerrado/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-digitais-utfpr-cp",
+    "title": "Meninas Digitais UTFPR-CP",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Tecnológica Federal do Paraná (UTFPR), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-utfpr-cp/",
+    "institution": "Universidade Tecnológica Federal do Paraná (UTFPR)",
+    "states": [
+      "PR"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2023",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Tecnológica Federal do Paraná (UTFPR)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-utfpr-cp/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-digitais-mato-grosso",
+    "title": "Meninas Digitais: Mato Grosso",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal de Mato Grosso (UFMT), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-mato-grosso/",
+    "institution": "Universidade Federal de Mato Grosso (UFMT)",
+    "states": [
+      "MT"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2015",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal de Mato Grosso (UFMT)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-mato-grosso/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-na-ciencia-ifb",
+    "title": "Meninas na Ciência IFB",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal de Brasília (IFB), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-na-ciencia-ifb/",
+    "institution": "Instituto Federal de Brasília (IFB)",
+    "states": [
+      "DF"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2022",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal de Brasília (IFB)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-na-ciencia-ifb/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-na-robotica",
+    "title": "Meninas na Robótica",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Centro Federal de Educação Tecnológica (CEFET-RJ), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-na-robotica/",
+    "institution": "Centro Federal de Educação Tecnológica (CEFET-RJ)",
+    "states": [
+      "RJ"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2016",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Centro Federal de Educação Tecnológica (CEFET-RJ)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-na-robotica/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas-programadoras",
+    "title": "Meninas Programadoras",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade de São Paulo (USP), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-programadoras/",
+    "institution": "Universidade de São Paulo (USP)",
+    "states": [
+      "SP"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2021",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade de São Paulo (USP)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-programadoras/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-meninas",
+    "title": "Meninas++",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal de Viçosa (UFV), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas/",
+    "institution": "Universidade Federal de Viçosa (UFV)",
+    "states": [
+      "MG"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2012",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal de Viçosa (UFV)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-mermas-digitais",
+    "title": "Mermãs Digitais",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA- Campus Imperatriz), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/mermas-digitais/",
+    "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA- Campus Imperatriz)",
+    "states": [
+      "MA"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2020",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA- Campus Imperatriz)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/mermas-digitais/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-metabotix",
+    "title": "Metabotix",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia de Goiás (IFG), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/metabotix/",
+    "institution": "Instituto Federal de Educação, Ciência e Tecnologia de Goiás (IFG)",
+    "states": [
+      "GO"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2013",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal de Educação, Ciência e Tecnologia de Goiás (IFG)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/metabotix/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-minascoders",
+    "title": "MinasCoders",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal de Viçosa (UFV - Campus Florestal), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/minascoders/",
+    "institution": "Universidade Federal de Viçosa (UFV - Campus Florestal)",
+    "states": [
+      "MG"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2017",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal de Viçosa (UFV - Campus Florestal)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/minascoders/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-mulheres-na-computacao-ufersa",
+    "title": "Mulheres na Computação – UFERSA",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal Rural do Semi-Árido (UFERSA) e Universidade Federal da Paraíba (UFPB), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/mulheres-na-computacao-ufersa/",
+    "institution": "Universidade Federal Rural do Semi-Árido (UFERSA) e Universidade Federal da Paraíba (UFPB)",
+    "states": [
+      "RN",
+      "PB"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Inativo",
+    "since": "2019",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal Rural do Semi-Árido (UFERSA) e Universidade Federal da Paraíba (UFPB)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/mulheres-na-computacao-ufersa/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-perolas-digitais",
+    "title": "Pérolas Digitais",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Oeste do Pará (UFOPA), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/perolas-digitais/",
+    "institution": "Universidade Federal do Oeste do Pará (UFOPA)",
+    "states": [
+      "PA"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2023",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Oeste do Pará (UFOPA)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/perolas-digitais/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-projeto-adas",
+    "title": "Projeto Adas",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal de Goiás (UFG), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/projeto-adas/",
+    "institution": "Universidade Federal de Goiás (UFG)",
+    "states": [
+      "GO"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2017",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal de Goiás (UFG)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/projeto-adas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "lua",
+    "title": "Projeto Lua",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/projeto-lua/",
+    "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE)",
+    "states": [
+      "CE"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2019",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/projeto-lua/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-supygirls-empoderamento-feminino-atraves-das-tecnologias",
+    "title": "SupyGirls – Empoderamento Feminino Através das Tecnologias",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Rio de Janeiro (UFRJ), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/supygirls-empoderamento-feminino-atraves-das-tecnologias/",
+    "institution": "Universidade Federal do Rio de Janeiro (UFRJ)",
+    "states": [
+      "RJ"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2015",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Rio de Janeiro (UFRJ)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/supygirls-empoderamento-feminino-atraves-das-tecnologias/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-valerinas",
+    "title": "Valerinas",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade do Estado de Santa Catarina (UDESC - Alto Vale), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/valerinas/",
+    "institution": "Universidade do Estado de Santa Catarina (UDESC - Alto Vale)",
+    "states": [
+      "SC"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2023",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade do Estado de Santa Catarina (UDESC - Alto Vale)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/valerinas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-alpha-technology",
+    "title": "Alpha Technology",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Firjan SENAI SESI Jacarepaguá, presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/alpha-technology/",
+    "institution": "Firjan SENAI SESI Jacarepaguá",
+    "states": [
+      "RJ"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2019",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Firjan SENAI SESI Jacarepaguá"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/alpha-technology/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-conectadas",
+    "title": "Conectadas",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Estadual de Maringá (UEM), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/conectadas/",
+    "institution": "Universidade Estadual de Maringá (UEM)",
+    "states": [
+      "PR"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2017",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Estadual de Maringá (UEM)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/conectadas/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-cunhanta-digital",
+    "title": "Cunhantã Digital",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Amazonas (UFAM), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/cunhanta-digital/",
+    "institution": "Universidade Federal do Amazonas (UFAM)",
+    "states": [
+      "AM"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2015",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Amazonas (UFAM)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/cunhanta-digital/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-ei-mana-meninas-na-computacao",
+    "title": "Ei Mana: Meninas na Computação",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal do Amazonas (UFAM), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/ei-mana-meninas-na-computacao/",
+    "institution": "Universidade Federal do Amazonas (UFAM)",
+    "states": [
+      "AM"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2018",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal do Amazonas (UFAM)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/ei-mana-meninas-na-computacao/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-elas-digitais",
+    "title": "Elas Digitais",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Instituto Federal de Santa Catarina (IFSC), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/elas-digitais/",
+    "institution": "Instituto Federal de Santa Catarina (IFSC)",
+    "states": [
+      "SC"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2019",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Instituto Federal de Santa Catarina (IFSC)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/elas-digitais/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-jornada-minatech",
+    "title": "Jornada Minatech",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Corali, presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/jornada-minatech/",
+    "institution": "Corali",
+    "states": [],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2021",
+    "audience": "Público e formas de participação: consultar fonte.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Corali"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/jornada-minatech/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "md-projeto-kate",
+    "title": "Projeto Kat;e",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "description": "Iniciativa vinculada a Universidade Federal de Alagoas (UFAL), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
+    "url": "https://meninasdigitais.com.br/projetos-parceiros/projeto-kate/",
+    "institution": "Universidade Federal de Alagoas (UFAL)",
+    "states": [
+      "AL"
+    ],
+    "mode": "Consultar fonte",
+    "scope": "Local",
+    "focus": "Meninas em foco",
+    "sourceStatus": "Ativo",
+    "since": "2019",
+    "audience": "Inclui educação básica; consulte as condições locais.",
+    "tags": [
+      "meninas",
+      "computação",
+      "Universidade Federal de Alagoas (UFAL)"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Diretório Meninas Digitais",
+        "url": "https://meninasdigitais.com.br/projetos-parceiros/projeto-kate/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  }
+]

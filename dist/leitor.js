@@ -4,7 +4,7 @@
   const $ = id => document.getElementById('a11y-' + id);
   const normalize = text => text.replace(/\s+/g,' ').trim();
   const ignored = 'button,input,select,textarea,svg,[hidden],[aria-hidden="true"],.sr-only,.filter-group,.route-options,.route-actions,.search-row';
-  const blocks = 'h1,h2,h3,p,.card-kind,.card-bottom>span,.route-result li';
+  const blocks = 'h1,h2,h3,p,.card-kind,.card-bottom>span,.route-result li,.resource-meta dt,.resource-meta dd,.participate-guide li,.catalog-stats div';
 
   function visible(element) {
     return element?.isConnected && !element.closest(ignored) && element.getClientRects().length > 0 && getComputedStyle(element).visibility !== 'hidden';

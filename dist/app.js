@@ -1,241 +1,34 @@
-const resources = [
-  {
-    id: 'lua', title: 'Projeto Lua', kind: 'Projeto', area: 'Tecnologia', place: 'Ceará · Tianguá',
-    description: 'Iniciativa criada por alunas do IFCE para apoiar meninas e mulheres na tecnologia por meio de conteúdos e ações.',
-    url: 'https://projetolua.ifce.edu.br/', tags: ['computação', 'meninas', 'comunidade', 'iniciativa'],
-    routeRole: 'inspirar'
-  },
-  {
-    id: 'divas-aracati', title: 'Projeto DIVAS', kind: 'Projeto', area: 'Tecnologia', place: 'Ceará · Aracati',
-    description: 'Projeto do IFCE Aracati que aproxima meninas das tecnologias da informação, com cursos e ações de extensão.',
-    url: 'https://portal.ifce.edu.br/campus/aracati/extensao/divas/', tags: ['programação', 'informática', 'ifce', 'oficinas'],
-    routeRole: 'participar'
-  },
-  {
-    id: 'meninas-vale', title: 'Meninas Digitais do Vale', kind: 'Projeto', area: 'Tecnologia', place: 'Ceará · Russas',
-    description: 'Projeto da UFC em Russas com ações para aproximar meninas da computação e apoiar mulheres na área.',
-    url: 'https://extensaorussas.ufc.br/pt/projetos/2026-4/tecnologia-e-producao/', tags: ['computação', 'ufc', 'oficinas', 'mentoria'],
-    routeRole: 'participar'
-  },
-  {
-    id: 'mulheres-ct', title: 'Mulheres em C&T', kind: 'Projeto', area: 'Ciência', place: 'Ceará · Fortaleza',
-    description: 'Projeto de extensão da UFC dedicado a aproximar estudantes da ciência e da tecnologia e mostrar trajetórias de pesquisadoras.',
-    url: 'https://deti.ufc.br/pt/resultado-final-selecao-agente-ufc-de-extensao-edital-16-2026-projeto-mulheres-em-ct/', tags: ['pesquisa', 'ufc', 'mulheres', 'trajetórias'],
-    routeRole: 'inspirar'
-  },
-  {
-    id: 'seara', title: 'Seara da Ciência', kind: 'Visita', area: 'Ciência', place: 'Ceará · Fortaleza',
-    description: 'Museu interativo da UFC com visitação gratuita e atividades de divulgação científica. Veja como agendar no site.',
-    url: 'https://seara.ufc.br/pt/agendamento/', tags: ['museu', 'experimentos', 'visita', 'ufc'],
-    routeRole: 'participar'
-  },
-  {
-    id: 'divas-tiangua', title: 'DIVAS em Tianguá', kind: 'Projeto', area: 'Tecnologia', place: 'Ceará · Tianguá',
-    description: 'Ações do IFCE com oficinas de pensamento computacional e criação de aplicativos para estudantes de escolas públicas.',
-    url: 'https://portal.ifce.edu.br/campus/tiangua/not%C3%ADcias/projeto-divas-recebe-premio-de-projeto-destaque-da-regiao-nordeste/', tags: ['aplicativos', 'computação', 'ifce', 'oficinas'],
-    routeRole: 'participar'
-  },
-  {
-    id: 'meninas-digitais', title: 'Programa Meninas Digitais', kind: 'Rede', area: 'Tecnologia', place: 'Brasil · online',
-    description: 'Rede da Sociedade Brasileira de Computação que reúne projetos para despertar o interesse de meninas pela área.',
-    url: 'https://meninasdigitais.com.br/sobre-nos/', tags: ['computação', 'comunidade', 'oficinas', 'rede'],
-    routeRole: 'inspirar'
-  },
-  {
-    id: 'obi', title: 'OBI e Competição Feminina', kind: 'Competição', area: 'Tecnologia', place: 'Brasil · escolas',
-    description: 'Olimpíada de informática com modalidade de programação e competição feminina. Confira no site as regras e o calendário.',
-    url: 'https://olimpiada.ic.unicamp.br/', tags: ['programação', 'olimpíada', 'desafio', 'escola'],
-    routeRole: 'desafiar'
-  },
-  {
-    id: 'obi-estude', title: 'Cursos de programação da OBI', kind: 'Estudo', area: 'Tecnologia', place: 'Brasil · online',
-    description: 'Materiais gratuitos para quem quer começar a programar, disponíveis no ambiente de estudos da OBI.',
-    url: 'https://olimpiada.ic.unicamp.br/prepare/estude/', tags: ['programação', 'curso', 'gratuito', 'iniciantes'],
-    routeRole: 'aprender'
-  },
-  {
-    id: 'obmep', title: 'Portal da OBMEP', kind: 'Estudo', area: 'Matemática', place: 'Brasil · online',
-    description: 'Materiais gratuitos de matemática para estudantes do Fundamental e do Ensino Médio.',
-    url: 'https://portaldaobmep.impa.br/', tags: ['matemática', 'curso', 'gratuito', 'exercícios'],
-    routeRole: 'aprender'
-  },
-  {
-    id: 'banco-obmep', title: 'Banco de Questões da OBMEP', kind: 'Estudo', area: 'Matemática', place: 'Brasil · online',
-    description: 'Coleção oficial de problemas de matemática para praticar por tema e consultar soluções.',
-    url: 'https://www.obmep.org.br/banco.htm', tags: ['matemática', 'questões', 'exercícios', 'gratuito'],
-    routeRole: 'praticar'
-  },
-  {
-    id: 'obmep-competicao', title: 'Olimpíada Brasileira de Matemática das Escolas Públicas', kind: 'Competição', area: 'Matemática', place: 'Brasil · escolas',
-    description: 'Competição para estudantes do Fundamental e do Médio. A inscrição é feita pela escola; confira o calendário oficial.',
-    url: 'https://www.obmep.org.br/', tags: ['matemática', 'olimpíada', 'desafio', 'escola'],
-    routeRole: 'desafiar'
-  },
-  {
-    id: 'cfc', title: 'Mostra Ceará Faz Ciência', kind: 'Competição', area: 'Ciência', place: 'Ceará · Fortaleza',
-    description: 'Mostra de projetos científicos de escolas públicas dentro da Feira do Conhecimento. Consulte o edital e os prazos no site oficial.',
-    url: 'https://feiradoconhecimento.com.br/', tags: ['projeto', 'pesquisa', 'feira', 'cfc'],
-    routeRole: 'desafiar'
-  }
-];
-
-const areas = ['Todas', 'Tecnologia', 'Ciência', 'Matemática'];
-const types = ['Todos', 'Projeto', 'Estudo', 'Competição', 'Visita', 'Rede'];
-const routeAreas = ['Tecnologia', 'Ciência', 'Matemática'];
-const state = { search: '', area: 'Todas', type: 'Todos', routeArea: null, favorites: loadFavorites() };
-const byId = new Map(resources.map(item => [item.id, item]));
-
-function loadFavorites() {
-  try {
-    const value = JSON.parse(localStorage.getItem('rota-delas-favoritos') || '[]');
-    return new Set(Array.isArray(value) ? value.filter(id => typeof id === 'string') : []);
-  } catch { return new Set(); }
-}
-
-function saveFavorites() {
-  try { localStorage.setItem('rota-delas-favoritos', JSON.stringify([...state.favorites])); }
-  catch { /* A aplicação continua funcional quando o armazenamento estiver bloqueado. */ }
-}
-
-function normalize(value) {
-  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
-}
-
-function cardMarkup(item) {
-  const saved = state.favorites.has(item.id);
-  return `<article class="resource-card">
-    <div class="card-top"><span class="card-kind">${item.kind}</span><button class="favorite-button" type="button" data-favorite="${item.id}" aria-label="${saved ? 'Remover' : 'Salvar'} ${item.title} ${saved ? 'dos' : 'nos'} favoritos" aria-pressed="${saved}" title="${saved ? 'Remover dos favoritos' : 'Salvar nos favoritos'}">${saved ? '♥' : '♡'}</button></div>
-    <h3>${item.title}</h3><p>${item.description}</p>
-    <div class="card-bottom"><span>${item.place}</span><a href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir fonte oficial de ${item.title} em nova aba">Fonte oficial ↗</a></div>
-  </article>`;
-}
-
-function renderFilters(containerId, options, key) {
-  const container = document.getElementById(containerId);
-  if (container.children.length === options.length) {
-    container.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(state[key] === button.dataset.value)));
-    return;
-  }
-  container.innerHTML = options.map(option =>
-    `<button type="button" data-filter="${key}" data-value="${option}" aria-pressed="${state[key] === option}">${option}</button>`
-  ).join('');
-}
-
-function renderCards() {
-  const focusId = favoriteFocus('cards');
-  const query = normalize(state.search.trim());
-  const visible = resources.filter(item => {
-    const matchesText = !query || normalize([item.title, item.description, item.place, ...item.tags].join(' ')).includes(query);
-    return matchesText && (state.area === 'Todas' || item.area === state.area) && (state.type === 'Todos' || item.kind === state.type);
-  });
-  document.getElementById('cards').innerHTML = visible.map(cardMarkup).join('');
-  document.getElementById('cards').hidden = visible.length === 0;
-  document.getElementById('empty-state').hidden = visible.length !== 0;
-  document.getElementById('clear-filters').hidden = !state.search.trim() && state.area === 'Todas' && state.type === 'Todos';
-  document.getElementById('result-count').textContent = `${visible.length} ${visible.length === 1 ? 'caminho encontrado' : 'caminhos encontrados'}`;
-  renderFilters('area-filters', areas, 'area');
-  renderFilters('type-filters', types, 'type');
-  restoreFavoriteFocus('cards', focusId);
-}
-
-function renderSaved() {
-  const focusId = favoriteFocus('saved-cards');
-  const saved = [...state.favorites].map(id => byId.get(id)).filter(Boolean);
-  document.getElementById('saved-count').textContent = `${saved.length} ${saved.length === 1 ? 'item' : 'itens'}`;
-  document.getElementById('saved-cards').innerHTML = saved.length
-    ? saved.map(cardMarkup).join('')
-    : '<div class="empty-saved">Toque no coração de um item para guardá-lo aqui.</div>';
-  restoreFavoriteFocus('saved-cards', focusId);
-}
-
-function favoriteFocus(containerId) {
-  const active = document.activeElement;
-  return document.getElementById(containerId).contains(active) ? active.dataset.favorite : null;
-}
-
-function restoreFavoriteFocus(containerId, id) {
-  if (!id) return;
-  const button = [...document.getElementById(containerId).querySelectorAll('[data-favorite]')].find(node => node.dataset.favorite === id);
-  if (button) button.focus({ preventScroll: true });
-  else {
-    const heading = document.getElementById('saved-title');
-    heading.setAttribute('tabindex', '-1');
-    heading.focus({ preventScroll: true });
-  }
-}
-
-function announceApp(message) {
-  document.getElementById('app-status').textContent = message;
-}
-
-function renderRouteOptions() {
-  const container = document.getElementById('route-options');
-  if (container.children.length === routeAreas.length) {
-    container.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(state.routeArea === button.dataset.routeArea)));
-    return;
-  }
-  document.getElementById('route-options').innerHTML = routeAreas.map(area =>
-    `<button type="button" data-route-area="${area}" aria-pressed="${state.routeArea === area}">${area}</button>`
-  ).join('');
-}
-
-function chooseRoute(area) {
-  const routeIds = {
-    Tecnologia: ['lua', 'obi-estude', 'obi'],
-    Ciência: ['mulheres-ct', 'seara', 'cfc'],
-    Matemática: ['obmep', 'banco-obmep', 'obmep-competicao']
-  };
-  return (routeIds[area] || []).map(id => byId.get(id)).filter(Boolean);
-}
-
-function renderRoute() {
-  const area = state.routeArea;
-  const picks = chooseRoute(area);
-  const labels = { inspirar: 'Conheça pessoas e iniciativas da área', aprender: 'Aprenda uma habilidade', desafiar: 'Coloque em prática', participar: 'Viva a ciência de perto', praticar: 'Treine com problemas' };
-  document.getElementById('route-output').innerHTML = `<div class="route-result"><span class="section-index">ROTA SUGERIDA · ${area.toUpperCase()}</span><h3>Três passos possíveis</h3><ol>${picks.map(item =>
-    `<li><a href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${item.title} em nova aba">${item.title} ↗</a><span>${labels[item.routeRole]} · ${item.place}</span></li>`
-  ).join('')}</ol><div class="route-actions"><button type="button" id="copy-route">Copiar rota</button><button type="button" id="print-route">Imprimir</button></div></div>`;
-}
-
-function clearFilters() {
-  state.search = '';
-  state.area = 'Todas';
-  state.type = 'Todos';
-  document.getElementById('search').value = '';
-  renderCards();
-  document.getElementById('search').focus();
-}
-
-document.getElementById('search').addEventListener('input', event => { state.search = event.target.value; renderCards(); });
-document.getElementById('clear-filters').addEventListener('click', clearFilters);
-document.getElementById('empty-reset').addEventListener('click', clearFilters);
-document.addEventListener('click', async event => {
-  const filter = event.target.closest('[data-filter]');
-  if (filter) { state[filter.dataset.filter] = filter.dataset.value; renderCards(); return; }
-  const favorite = event.target.closest('[data-favorite]');
-  if (favorite) {
-    const id = favorite.dataset.favorite;
-    state.favorites.has(id) ? state.favorites.delete(id) : state.favorites.add(id);
-    saveFavorites(); renderCards(); renderSaved();
-    announceApp(`${byId.get(id).title} ${state.favorites.has(id) ? 'salvo nos' : 'removido dos'} favoritos.`);
-    return;
-  }
-  const routeArea = event.target.closest('[data-route-area]');
-  if (routeArea) {
-    state.routeArea = routeArea.dataset.routeArea; renderRouteOptions(); renderRoute();
-    announceApp(`Rota de ${state.routeArea} criada com três passos. O resultado está depois das opções de área.`);
-    return;
-  }
-  if (event.target.id === 'print-route') { window.print(); return; }
-  if (event.target.id === 'copy-route') {
-    const picks = chooseRoute(state.routeArea);
-    const content = `Minha rota em ${state.routeArea}\n${picks.map((item, index) => `${index + 1}. ${item.title}: ${item.url}`).join('\n')}`;
-    try { await navigator.clipboard.writeText(content); event.target.textContent = 'Rota copiada!'; announceApp('Rota copiada.'); }
-    catch { event.target.textContent = 'Não foi possível copiar'; announceApp('Não foi possível copiar a rota.'); }
-    setTimeout(() => { const button = document.getElementById('copy-route'); if (button) button.textContent = 'Copiar rota'; }, 2200);
-  }
-});
-
-renderCards();
-renderSaved();
-renderRouteOptions();
+const catalog=window.RotaCatalog, resources=catalog.resources, pageSize=12;
+const areas=['Todas','Tecnologia','Ciência','Matemática'],types=['Todos','Projeto','Estudo','Competição','Visita','Rede'];
+const state={search:'',area:'Todas',type:'Todos',region:'',uf:'',mode:'',focus:'',inactive:false,includeNational:true,page:1,routeArea:null,routeUf:'',favorites:loadFavorites()};
+const byId=new Map(resources.map(r=>[r.id,r])), $=id=>document.getElementById(id);
+const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function normalize(value){return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('pt-BR');}
+const searchIndex=new Map(resources.map(r=>[r.id,normalize([r.title,r.description,r.institution,r.place,r.audience,...r.tags,...r.states,...r.regions].join(' '))]));
+function loadFavorites(){try{const v=JSON.parse(localStorage.getItem('rota-delas-favoritos')||'[]');return new Set(Array.isArray(v)?v.filter(id=>typeof id==='string'):[]);}catch{return new Set();}}
+function saveFavorites(){try{localStorage.setItem('rota-delas-favoritos',JSON.stringify([...state.favorites]));}catch{announceApp('Este navegador não permite guardar favoritos entre visitas.');}}
+function announceApp(message){$('app-status').textContent=message;}
+function cardMarkup(r){const saved=state.favorites.has(r.id),e=escapeHTML;return `<article class="resource-card" data-resource="${e(r.id)}"><div class="card-top"><span class="card-kind">${e(r.kind)}</span><button class="favorite-button" type="button" data-favorite="${e(r.id)}" aria-label="${saved?'Remover':'Salvar'} ${e(r.title)} ${saved?'dos':'nos'} favoritos" aria-pressed="${saved}">${saved?'♥':'♡'}</button></div><h3>${e(r.title)}</h3><div class="resource-tags"><span>${e(r.focus)}</span><span>${e(r.area)}</span></div><p>${e(r.description)}</p><dl class="resource-meta"><div><dt>Instituição</dt><dd>${e(r.institution)}</dd></div><div><dt>Público</dt><dd>${e(r.audience)}</dd></div><div><dt>Formato</dt><dd>${e(r.mode)}</dd></div></dl><details class="source-details"><summary>Fonte e consulta${r.sourceStatus==='Inativo'?' · inativo na fonte':''}</summary><p>${r.sourceStatus==='Ativo'?'O diretório indica atividade; isso não confirma vagas abertas.':r.sourceStatus==='Inativo'?'O diretório marca este projeto como inativo. Registro mantido para consulta histórica.':'Datas, vagas, custos e critérios devem ser confirmados na fonte.'}</p><ul>${r.sources.map(s=>`<li><a href="${e(s.url)}" target="_blank" rel="noopener noreferrer">${e(s.name)} ↗</a> · consultada em ${e(s.checkedAt.split('-').reverse().join('/'))}</li>`).join('')}</ul></details><div class="card-bottom"><span>${e(r.place)}</span><a href="${e(r.url)}" target="_blank" rel="noopener noreferrer" aria-label="Abrir fonte oficial de ${e(r.title)} em nova aba">Fonte oficial ↗</a></div></article>`;}
+function renderFilters(id,options,key){const c=$(id);if(!c.children.length)c.innerHTML=options.map(o=>`<button type="button" data-filter="${key}" data-value="${o}" aria-pressed="false">${o}</button>`).join('');c.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(state[key]===b.dataset.value)));}
+function visibleResources(){const words=normalize(state.search.trim()).split(/\s+/).filter(Boolean);return resources.filter(r=>{const national=r.scope==='Nacional';return words.every(w=>searchIndex.get(r.id).includes(w))&&(state.area==='Todas'||r.area===state.area)&&(state.type==='Todos'||r.kind===state.type)&&(!state.region||r.regions.includes(state.region)||(national&&state.includeNational))&&(!state.uf||r.states.includes(state.uf)||(national&&state.includeNational))&&(!state.mode||r.mode===state.mode)&&(!state.focus||r.focus===state.focus)&&(state.inactive||r.sourceStatus!=='Inativo');});}
+function favoriteFocus(id){const a=document.activeElement;return $(id).contains(a)?a.dataset.favorite:null;}
+function restoreFavoriteFocus(id,resource){if(!resource)return;const b=[...$(id).querySelectorAll('[data-favorite]')].find(b=>b.dataset.favorite===resource);if(b)b.focus({preventScroll:true});else{$('saved-title').tabIndex=-1;$('saved-title').focus({preventScroll:true});}}
+function renderCards(){const focused=favoriteFocus('cards'),all=visibleResources(),pages=Math.max(1,Math.ceil(all.length/pageSize));state.page=Math.min(state.page,pages);const start=(state.page-1)*pageSize,visible=all.slice(start,start+pageSize);$('cards').innerHTML=visible.map(cardMarkup).join('');$('cards').hidden=!all.length;$('empty-state').hidden=!!all.length;$('result-count').textContent=`${all.length} ${all.length===1?'caminho encontrado':'caminhos encontrados'}${all.length?` · exibindo ${start+1}–${start+visible.length}`:''}`;$('pagination').hidden=pages===1;$('page-status').textContent=`Página ${state.page} de ${pages}`;$('page-prev').disabled=state.page===1;$('page-next').disabled=state.page===pages;$('clear-filters').hidden=!state.search&&!state.uf&&!state.region&&!state.mode&&!state.focus&&!state.inactive&&state.includeNational&&state.area==='Todas'&&state.type==='Todos';renderFilters('area-filters',areas,'area');renderFilters('type-filters',types,'type');restoreFavoriteFocus('cards',focused);}
+function renderSaved(){const focused=favoriteFocus('saved-cards'),saved=[...state.favorites].map(id=>byId.get(id)).filter(Boolean);$('saved-count').textContent=`${saved.length} ${saved.length===1?'item':'itens'}`;$('saved-cards').innerHTML=saved.length?saved.map(cardMarkup).join(''):'<div class="empty-saved">Toque no coração de um item para guardá-lo aqui.</div>';restoreFavoriteFocus('saved-cards',focused);}
+function fillStates(id,includeAll=true){const s=$(id),value=s.value;const options=Object.entries(catalog.states).sort((a,b)=>a[1][0].localeCompare(b[1][0],'pt-BR')).filter(([uf,v])=>id!=='uf-filter'||!state.region||v[1]===state.region);s.innerHTML=(includeAll?'<option value="">'+(id==='route-uf'?'Brasil · recursos nacionais':'Todos os estados')+'</option>':'<option value="">Selecione o estado</option>')+options.map(([uf,v])=>`<option value="${uf}">${v[0]} (${uf})</option>`).join('');s.value=value;}
+function renderRouteOptions(){if(!$('route-options').children.length)$('route-options').innerHTML=areas.slice(1).map(a=>`<button type="button" data-route-area="${a}" aria-pressed="false">${a}</button>`).join('');$('route-options').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(state.routeArea===b.dataset.routeArea)));}
+function chooseRoute(area){if(!area)return[];const candidates=resources.filter(r=>r.area===area&&r.sourceStatus!=='Inativo'&&(r.scope==='Nacional'||(state.routeUf&&r.states.includes(state.routeUf))));const picks=[],used=new Set();const pick=predicate=>{const r=candidates.filter(predicate).sort((a,b)=>Number(b.states.includes(state.routeUf))-Number(a.states.includes(state.routeUf))||Number(b.focus==='Meninas em foco')-Number(a.focus==='Meninas em foco'))[0];if(r){used.add(r.id);picks.push(r);}};pick(r=>['Projeto','Rede'].includes(r.kind)||r.routeRole==='inspirar');pick(r=>!used.has(r.id)&&r.kind==='Estudo');pick(r=>!used.has(r.id)&&r.kind==='Competição');if(picks.length<3)pick(r=>!used.has(r.id)&&r.kind==='Estudo');return picks;}
+function renderRoute(){if(!state.routeArea)return;const picks=chooseRoute(state.routeArea),e=escapeHTML,labels={inspirar:'Conheça a iniciativa',aprender:'Aprenda uma habilidade',desafiar:'Confira o desafio e as regras',participar:'Conheça as atividades',praticar:'Pratique com problemas'};$('route-output').innerHTML=`<div class="route-result"><span class="section-index">ROTA SUGERIDA · ${e(state.routeArea)} · ${state.routeUf||'BRASIL'}</span><h3>Três passos possíveis</h3><ol>${picks.map(r=>`<li><a href="${e(r.url)}" target="_blank" rel="noopener noreferrer">${e(r.title)} ↗</a><span>${labels[r.routeRole]} · ${e(r.place)}</span></li>`).join('')}</ol><p>A sugestão considera o estado escolhido e recursos nacionais. Não confirma vagas ou elegibilidade.</p><div class="route-actions"><button type="button" id="copy-route">Copiar rota</button><button type="button" id="print-route">Imprimir</button></div></div>`;}
+function clearFilters(){Object.assign(state,{search:'',area:'Todas',type:'Todos',region:'',uf:'',mode:'',focus:'',inactive:false,includeNational:true,page:1});$('search').value='';for(const id of ['region-filter','mode-filter','focus-filter'])$(id).value='';fillStates('uf-filter');$('uf-filter').value='';$('include-national').checked=true;$('include-inactive').checked=false;renderCards();$('search').focus();}
+function changed(){state.page=1;renderCards();}
+fillStates('uf-filter');fillStates('route-uf');fillStates('initiative-state',false);
+const stats=catalog.stats;$('catalog-stats').innerHTML=`<div><strong>${stats.total}</strong><span>recursos documentados</span></div><div><strong>${stats.states}</strong><span>UFs com iniciativas locais</span></div><div><strong>${stats.regions}</strong><span>regiões representadas</span></div><div><strong>${stats.national}</strong><span>recursos de alcance nacional</span></div>`;
+$('catalog-coverage').textContent=`O catálogo reúne ${stats.femaleFocus} iniciativas e recursos com foco em meninas. ${stats.total-stats.active} registros inativos ficam ocultos por padrão. É um levantamento inicial, sem cobertura completa dos estados ou medição de impacto.`;
+$('search').addEventListener('input',e=>{state.search=e.target.value;changed();});
+for(const [id,key] of [['region-filter','region'],['uf-filter','uf'],['mode-filter','mode'],['focus-filter','focus']])$(id).addEventListener('change',e=>{state[key]=e.target.value;if(key==='region'){state.uf='';fillStates('uf-filter');$('uf-filter').value='';}changed();});
+$('include-national').addEventListener('change',e=>{state.includeNational=e.target.checked;changed();});$('include-inactive').addEventListener('change',e=>{state.inactive=e.target.checked;changed();});
+$('clear-filters').addEventListener('click',clearFilters);$('empty-reset').addEventListener('click',clearFilters);
+for(const [id,delta] of [['page-prev',-1],['page-next',1]])$(id).addEventListener('click',()=>{state.page+=delta;renderCards();$('explore-title').tabIndex=-1;$('explore-title').focus({preventScroll:true});$('explore-title').scrollIntoView({block:'start',behavior:'instant'});});
+$('route-uf').addEventListener('change',e=>{state.routeUf=e.target.value;renderRoute();});
+document.addEventListener('click',async event=>{const filter=event.target.closest('[data-filter]');if(filter){state[filter.dataset.filter]=filter.dataset.value;changed();return;}const favorite=event.target.closest('[data-favorite]');if(favorite){const id=favorite.dataset.favorite;state.favorites.has(id)?state.favorites.delete(id):state.favorites.add(id);saveFavorites();renderCards();renderSaved();announceApp(`${byId.get(id).title} ${state.favorites.has(id)?'salvo nos':'removido dos'} favoritos.`);return;}const route=event.target.closest('[data-route-area]');if(route){state.routeArea=route.dataset.routeArea;renderRouteOptions();renderRoute();announceApp(`Rota de ${state.routeArea} criada. O resultado está depois das opções.`);return;}if(event.target.id==='print-route'){window.print();return;}if(event.target.id==='copy-route'){const text=`Minha rota em ${state.routeArea}\n${chooseRoute(state.routeArea).map((r,i)=>`${i+1}. ${r.title}: ${r.url}`).join('\n')}`;try{await navigator.clipboard.writeText(text);event.target.textContent='Rota copiada!';announceApp('Rota copiada.');}catch{event.target.textContent='Não foi possível copiar';announceApp('Não foi possível copiar a rota.');}setTimeout(()=>{if($('copy-route'))$('copy-route').textContent='Copiar rota';},2200);}});
+renderCards();renderSaved();renderRouteOptions();

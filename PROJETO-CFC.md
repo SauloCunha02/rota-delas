@@ -12,7 +12,7 @@ Esta justificativa descreve a existência e a dispersão das fontes consultadas.
 
 ## Objetivo geral
 
-Desenvolver e avaliar tecnicamente uma aplicação web que organize caminhos públicos de ciência e tecnologia para estudantes do Ensino Médio, com ênfase na participação de meninas no Ceará.
+Desenvolver e avaliar tecnicamente uma aplicação web que organize caminhos públicos de ciência e tecnologia para estudantes do Ensino Médio, com ênfase na participação de meninas no Brasil e no Ceará.
 
 ## Objetivos específicos
 
@@ -29,7 +29,7 @@ O [Programa Meninas Digitais da Sociedade Brasileira de Computação](https://me
 
 1. **Levantamento documental:** consultar páginas oficiais de universidades, institutos, olimpíadas e programas. Registrar título, URL, tipo, área, local, descrição e data da verificação.
 2. **Curadoria:** incluir recursos pertinentes ao Ensino Médio ou úteis como preparação. Evitar anunciar vagas ou prazos sem confirmação na fonte.
-3. **Desenvolvimento:** implementar a interface em HTML/CSS/JavaScript. A busca normaliza acentos; os filtros combinam área e tipo; as rotas têm três passos definidos por área; os favoritos ficam no navegador.
+3. **Desenvolvimento:** implementar a interface em HTML/CSS/JavaScript. A busca normaliza acentos; os filtros combinam área, tipo, região, UF, formato e público; a paginação limita os cartões renderizados; as rotas têm três passos por área e estado; os favoritos ficam no navegador.
 4. **Avaliação técnica:** testar busca, combinação de filtros, ausência de resultados, rotas, favoritos após recarga, cópia, navegação por teclado e disposição em computador e celular. Conferir os links por resposta HTTP e inspeção das páginas de origem.
 5. **Registro:** guardar versões, decisões, problemas e correções no caderno de campo da equipe.
 
@@ -49,3 +49,11 @@ A página é gratuita, não exige conta, funciona em celular e apresenta links p
 ## Limitações e próximos passos
 
 O catálogo exige revisão periódica, porque páginas e regras podem mudar. A equipe pode ampliar a cobertura de municípios e áreas científicas após verificar novas fontes. Uma avaliação de uso com estudantes dependerá de planejamento próprio e da orientação ética aplicável.
+
+## Ampliação nacional — 01/10/2026
+
+O levantamento passou a reunir 63 recursos, incluindo 38 fichas do diretório Meninas Digitais (uma fundida com o Projeto Lua), com fontes e datas registradas. Há iniciativas locais em 21 UFs e cinco regiões; 18 recursos têm alcance nacional. Dois registros inativos ficam ocultos por padrão. A base não é um censo e não permite inferir ausência de iniciativas onde não há registros.
+
+O envio externo de iniciativas usa um formulário de proposta com prévia e encaminhamento para uma issue pública no GitHub, sujeita à revisão humana. Isso não é inscrição em competição nem prova de impacto. O cadastro não deve pedir dados pessoais de estudantes. O uso dessas submissões como dados de pesquisa com pessoas exigirá planejamento com o orientador e os procedimentos previstos no edital.
+
+Dados e critérios de revisão estão descritos em CURADORIA.md.

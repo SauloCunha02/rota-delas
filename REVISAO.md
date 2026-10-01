@@ -1,5 +1,19 @@
 # Revisões da aplicação
 
+## Expansão nacional — 01/10/2026
+
+A tag e a release `rotadelasv1` preservam a versão anterior à expansão nacional. Os relatos abaixo dessa seção descrevem suas respectivas versões históricas, inclusive os resultados com 13 itens.
+
+A base atual tem 63 recursos, 61 exibidos por padrão, 21 UFs com iniciativas locais, cinco regiões, 18 recursos nacionais e 49 com foco em meninas. O gerador valida campos, fontes, classificações, UFs e duplicatas, fundindo o Projeto Lua com sua ficha no diretório. Os dados foram separados do código da interface, com saída JSON e JavaScript para uso também em arquivo local.
+
+A busca usa índice normalizado e paginação de 12 cartões. Região, UF, formato e público combinam-se com área e tipo. O usuário pode incluir recursos nacionais nos filtros territoriais e consultar registros inativos. As rotas consideram a área e a UF escolhidas, sem afirmar vagas abertas.
+
+O formulário externo valida os campos e a URL HTTPS, apresenta uma prévia segura e prepara uma issue no GitHub. O envio final exige conta e confirmação do remetente. Nenhuma solicitação de teste foi enviada. Textos extensos têm alternativa de cópia; o catálogo só recebe inclusões revisadas pela equipe, conforme `CURADORIA.md`.
+
+Revisão: 38 verificações específicas da expansão nacional, 39 verificações mobile e 20 do leitor passaram no Chrome emulado, sem exceções JavaScript. Foram conferidos filtros, paginação, unicidade de dados, rotas, favoritos, prévia, rejeição de URL indevida, texto externo tratado como texto e adaptação do formulário a 390 px e 320 px com letras de 200%. O contraste dos indicadores foi corrigido após inspeção. Scripts e relatórios estão em `identidade-visual/revisar-brasil.mjs` e `identidade-visual/revisao/brasil`.
+
+Limites: não houve auditoria formal com leitores de tela nem testes em aparelhos físicos; a voz foi simulada nas verificações funcionais. As páginas institucionais foram consultadas para o levantamento, sem prometer disponibilidade atual. O envio real depende do GitHub e da confirmação do usuário, e a fila depende de revisão humana. Não há medição de impacto social ou comprovação de atendimento integral ao edital nesta revisão.
+
 Escala interna de 0 a 10: funcionamento (3), confiabilidade das fontes (2), clareza e acessibilidade (2), adequação ao CFC (2) e privacidade (1). A nota é uma autoavaliação da entrega, não uma previsão da banca.
 
 ## Revisão 1 — 8,4/10

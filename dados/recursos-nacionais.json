@@ -1,0 +1,381 @@
+[
+  {
+    "id": "technovation",
+    "title": "Technovation Girls Brasil",
+    "kind": "Competição",
+    "area": "Tecnologia",
+    "url": "https://www.technovationbrasil.org/alunas",
+    "institution": "Technovation Brasil",
+    "description": "Meninas criam soluções tecnológicas em equipe para problemas da comunidade. A proposta inclui desenvolvimento de aplicativos e apresentação do projeto.",
+    "audience": "Meninas; confira faixa etária e regras da temporada.",
+    "mode": "Consultar fonte",
+    "focus": "Meninas em foco",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Tecnologia",
+      "Meninas em foco",
+      "Competição",
+      "Technovation Brasil"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "Technovation Brasil",
+        "url": "https://www.technovationbrasil.org/alunas",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "tm2",
+    "title": "Torneio Meninas na Matemática — TM²",
+    "kind": "Competição",
+    "area": "Matemática",
+    "url": "https://www.tm2.org.br/",
+    "institution": "Organização TM²",
+    "description": "Torneio voltado a meninas na matemática. A participação tem critérios de convocação; consulte o regulamento antes de planejar a inscrição.",
+    "audience": "Estudantes elegíveis conforme convocação e regulamento.",
+    "mode": "Consultar fonte",
+    "focus": "Meninas em foco",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Matemática",
+      "Meninas em foco",
+      "Competição",
+      "Organização TM²"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "Organização TM²",
+        "url": "https://www.tm2.org.br/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "quimeninas",
+    "title": "Olimpíada Quimeninas",
+    "kind": "Competição",
+    "area": "Ciência",
+    "url": "https://obquimica.org/olimpiada/olimpiada-quimeninas",
+    "institution": "Programa Nacional Olimpíadas de Química",
+    "description": "Olimpíada feminina de química com provas online. A fonte apresenta os níveis escolares atendidos e as regras de cada edição.",
+    "audience": "Meninas do 9º ano, ensino médio, técnico e EJA, conforme regulamento.",
+    "mode": "Online",
+    "focus": "Meninas em foco",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Ciência",
+      "Meninas em foco",
+      "Competição",
+      "Programa Nacional Olimpíadas de Química"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "Programa Nacional Olimpíadas de Química",
+        "url": "https://obquimica.org/olimpiada/olimpiada-quimeninas",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "mfp",
+    "title": "Maratona Feminina de Programação",
+    "kind": "Competição",
+    "area": "Tecnologia",
+    "url": "https://mfp.ic.unicamp.br/",
+    "institution": "SBC / Unicamp",
+    "description": "Competição de programação com etapa online e final presencial. Estudantes do ensino médio e técnico podem participar como treineiras conforme as regras.",
+    "audience": "Competidoras e treineiras; categorias definidas pelo regulamento.",
+    "mode": "Híbrido",
+    "focus": "Meninas em foco",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Tecnologia",
+      "Meninas em foco",
+      "Competição",
+      "SBC / Unicamp"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "SBC / Unicamp",
+        "url": "https://mfp.ic.unicamp.br/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "tfm",
+    "title": "Torneio de Física para Meninas",
+    "kind": "Competição",
+    "area": "Ciência",
+    "url": "https://tfcbr.inf.ufsm.br/olimpiadas/fisica",
+    "institution": "Organização TFM / UFSM",
+    "description": "Torneio de física para alunas do ensino médio de escolas brasileiras. Consulte as condições da fase online e da fase presencial.",
+    "audience": "Alunas do ensino médio de escolas públicas e privadas.",
+    "mode": "Híbrido",
+    "focus": "Meninas em foco",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Ciência",
+      "Meninas em foco",
+      "Competição",
+      "Organização TFM / UFSM"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "Organização TFM / UFSM",
+        "url": "https://tfcbr.inf.ufsm.br/olimpiadas/fisica",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "obr",
+    "title": "Olimpíada Brasileira de Robótica",
+    "kind": "Competição",
+    "area": "Tecnologia",
+    "url": "https://obr.robocup.org.br/",
+    "institution": "Organização OBR / RoboCup Brasil",
+    "description": "Competição de robótica com modalidades teórica e prática, para aproximar estudantes da construção e programação de robôs.",
+    "audience": "Ensino fundamental, médio e técnico; categorias conforme regulamento.",
+    "mode": "Consultar fonte",
+    "focus": "Para todos",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Tecnologia",
+      "Para todos",
+      "Competição",
+      "Organização OBR / RoboCup Brasil"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "Organização OBR / RoboCup Brasil",
+        "url": "https://obr.robocup.org.br/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "febrace",
+    "title": "FEBRACE — Feira Brasileira de Ciências e Engenharia",
+    "kind": "Competição",
+    "area": "Ciência",
+    "url": "https://febrace.org.br/",
+    "institution": "FEBRACE / LSI-TEC",
+    "description": "Feira de projetos de ciências e engenharia desenvolvidos na educação básica. Confira regras de submissão, documentação e seleção na fonte.",
+    "audience": "Estudantes dos níveis escolares previstos no regulamento.",
+    "mode": "Consultar fonte",
+    "focus": "Para todos",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Ciência",
+      "Para todos",
+      "Competição",
+      "FEBRACE / LSI-TEC"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "FEBRACE / LSI-TEC",
+        "url": "https://febrace.org.br/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "apice",
+    "title": "APICE — Formação para projetos científicos",
+    "kind": "Estudo",
+    "area": "Ciência",
+    "url": "https://apice.febrace.org.br/",
+    "institution": "FEBRACE / LSI-TEC",
+    "description": "Cursos online gratuitos sobre metodologia científica, estatística e desenvolvimento de projetos. Uma opção para organizar sua pesquisa com o orientador.",
+    "audience": "Estudantes do ensino fundamental, médio e técnico, professores e gestores.",
+    "mode": "Online",
+    "focus": "Para todos",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Ciência",
+      "Para todos",
+      "Estudo",
+      "FEBRACE / LSI-TEC"
+    ],
+    "routeRole": "aprender",
+    "sources": [
+      {
+        "name": "FEBRACE / LSI-TEC",
+        "url": "https://apice.febrace.org.br/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "codeiot",
+    "title": "Code IoT — Programação, apps e eletrônica",
+    "kind": "Estudo",
+    "area": "Tecnologia",
+    "url": "https://codeiot.org.br/",
+    "institution": "Code IoT / LSI-TEC",
+    "description": "Cursos gratuitos pela internet sobre programação, circuitos, Arduino e aplicativos. O catálogo apresenta percursos para criar objetos conectados.",
+    "audience": "Pessoas interessadas em aprender; conferir requisitos de cada curso.",
+    "mode": "Online",
+    "focus": "Para todos",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Tecnologia",
+      "Para todos",
+      "Estudo",
+      "Code IoT / LSI-TEC"
+    ],
+    "routeRole": "aprender",
+    "sources": [
+      {
+        "name": "Code IoT / LSI-TEC",
+        "url": "https://codeiot.org.br/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "obb",
+    "title": "Olimpíada Brasileira de Biologia",
+    "kind": "Competição",
+    "area": "Ciência",
+    "url": "https://olimpiadasdebiologia.butantan.gov.br/",
+    "institution": "Instituto Butantan",
+    "description": "Olimpíada de biologia para estudantes do ensino médio. A página oficial reúne regulamento, cronograma e materiais de preparação.",
+    "audience": "Estudantes do ensino médio, conforme regulamento.",
+    "mode": "Consultar fonte",
+    "focus": "Para todos",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Ciência",
+      "Para todos",
+      "Competição",
+      "Instituto Butantan"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "Instituto Butantan",
+        "url": "https://olimpiadasdebiologia.butantan.gov.br/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "obb-conteudo",
+    "title": "Conteúdos de preparação da OBB",
+    "kind": "Estudo",
+    "area": "Ciência",
+    "url": "https://olimpiadasdebiologia.butantan.gov.br/conteudo-abordado/conteudo-geral",
+    "institution": "Instituto Butantan",
+    "description": "Referência oficial de temas de biologia para orientar um plano de estudo. Use junto aos materiais e às provas publicados pela organização.",
+    "audience": "Estudantes interessados em biologia.",
+    "mode": "Online",
+    "focus": "Para todos",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Ciência",
+      "Para todos",
+      "Estudo",
+      "Instituto Butantan"
+    ],
+    "routeRole": "aprender",
+    "sources": [
+      {
+        "name": "Instituto Butantan",
+        "url": "https://olimpiadasdebiologia.butantan.gov.br/conteudo-abordado/conteudo-geral",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "obq",
+    "title": "Olimpíada Brasileira de Química",
+    "kind": "Competição",
+    "area": "Ciência",
+    "url": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica",
+    "institution": "Programa Nacional Olimpíadas de Química",
+    "description": "Competição nacional de química com critérios de seleção e modalidades. Consulte o percurso de participação e o regulamento oficial.",
+    "audience": "Estudantes elegíveis segundo as modalidades e seleção.",
+    "mode": "Consultar fonte",
+    "focus": "Para todos",
+    "scope": "Nacional",
+    "states": [],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Ciência",
+      "Para todos",
+      "Competição",
+      "Programa Nacional Olimpíadas de Química"
+    ],
+    "routeRole": "desafiar",
+    "sources": [
+      {
+        "name": "Programa Nacional Olimpíadas de Química",
+        "url": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "id": "bitgirls",
+    "title": "BitGirls",
+    "kind": "Projeto",
+    "area": "Tecnologia",
+    "url": "https://www.bitgirls.dcc.ufmg.br/",
+    "institution": "Departamento de Ciência da Computação / UFMG",
+    "description": "Projeto da UFMG para aproximar meninas da computação. Conheça as atividades e os materiais divulgados pela equipe.",
+    "audience": "Meninas e comunidade escolar; participação conforme ações locais.",
+    "mode": "Consultar fonte",
+    "focus": "Meninas em foco",
+    "scope": "Local",
+    "states": [
+      "MG"
+    ],
+    "sourceStatus": "Consultar fonte",
+    "tags": [
+      "Tecnologia",
+      "Meninas em foco",
+      "Projeto",
+      "Departamento de Ciência da Computação / UFMG"
+    ],
+    "routeRole": "inspirar",
+    "sources": [
+      {
+        "name": "Departamento de Ciência da Computação / UFMG",
+        "url": "https://www.bitgirls.dcc.ufmg.br/",
+        "checkedAt": "2026-10-01"
+      }
+    ]
+  }
+]

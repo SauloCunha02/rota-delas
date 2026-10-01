@@ -1,6 +1,6 @@
 # Rota Delas
 
-Aplicação web de consulta a iniciativas, competições, visitas e materiais de estudo em ciência e tecnologia, com foco em estudantes do Ensino Médio no Ceará. Feita em HTML, CSS e JavaScript, sem cadastro ou servidor de dados.
+Aplicação web de consulta a iniciativas, competições, visitas e materiais de estudo em ciência e tecnologia, com foco em meninas do Ensino Médio em todo o Brasil e no Ceará. Feita em HTML, CSS e JavaScript, com catálogo documental e envio público de sugestões pelo GitHub.
 
 **Site:** https://saulocunha02.github.io/rota-delas/  
 **Código:** https://github.com/SauloCunha02/rota-delas
@@ -26,9 +26,9 @@ O workflow `.github/workflows/pages.yml` publica a pasta `dist` no GitHub Pages 
 ## Funcionalidades
 
 - Busca por nome, descrição, local e palavras-chave, inclusive sem acentos.
-- Filtros combináveis de área e tipo.
-- Treze recursos com acesso à fonte institucional.
-- Três rotas de estudo/ação com três passos cada.
+- Filtros combináveis de área, tipo, região, UF, formato e público; paginação com 12 cartões.
+- 63 recursos com fontes e datas de consulta; 61 visíveis inicialmente e 2 inativos consultáveis.
+- Rotas de três passos por área, considerando o estado escolhido e recursos nacionais.
 - Favoritos salvos apenas no navegador do aparelho.
 - Cópia da rota para a área de transferência e versão para impressão.
 - Layout responsivo e controles utilizáveis por teclado.
@@ -56,12 +56,21 @@ A narração destaca o trecho na página e a palavra quando a voz do navegador f
 
 ## Dados e atualização
 
-Os registros são editados no vetor `resources` em `dist/app.js`. Cada item tem título, tipo, área, local, descrição, URL, palavras-chave e função na rota. Antes de acrescentar um item, confira na fonte oficial se a iniciativa existe e se o texto descreve corretamente o público e a disponibilidade. A aplicação não apresenta inscrições como abertas sem confirmação no site de origem.
+Os registros são editados em `dados/*.json`. Execute `node scripts/gerar-catalogo.mjs` para validar e produzir `dist/catalogo.js` e `dist/dados/catalogo.json`. O workflow também gera o catálogo. Cada item tem ID estável, título, tipo, área, instituição, localização, alcance, formato, público, descrição, URL, palavras-chave, fontes com datas e função na rota. Veja `CURADORIA.md`. Antes de acrescentar um item, confira na fonte oficial se a iniciativa existe e se o texto descreve corretamente o público e a disponibilidade. A aplicação não apresenta inscrições como abertas sem confirmação no site de origem.
 
-Fontes consultadas em 28/09/2026: IFCE, UFC, Programa Meninas Digitais, OBI/Unicamp, OBMEP/IMPA e Feira do Conhecimento. Os endereços específicos estão nos cartões. A disponibilidade de cursos, projetos, visitas e competições pode mudar; cada estudante deve conferir a página oficial antes de participar.
+Os recursos originais preservam a consulta de 28/09/2026. Novos registros consultados em 01/10/2026 incluem fichas do Programa Meninas Digitais, Technovation Brasil, TM², Quimeninas, Maratona Feminina de Programação, TFM, OBR, FEBRACE, APICE, Code IoT, Instituto Butantan, OBQ e BitGirls/UFMG. Os endereços específicos estão nos cartões. A disponibilidade de cursos, projetos, visitas e competições pode mudar; cada estudante deve conferir a página oficial antes de participar.
 
 ## Privacidade e limites
 
-A busca, os filtros e a rota são calculados no navegador. Os favoritos e as preferências de acessibilidade usam `localStorage` e não são enviados pela aplicação. Não há formulários de pesquisa, contas, análise de uso ou coleta de respostas de pessoas. O carregamento da fonte tipográfica usa Google Fonts, e a abertura dos links externos passa a seguir as práticas de cada site de origem. A leitura em voz alta usa o serviço de voz do navegador; o processamento local ou pela internet depende da voz disponível. O VLibras carrega o widget oficial de `vlibras.gov.br` e usa os serviços externos da ferramenta para tradução.
+A busca, os filtros e a rota são calculados no navegador. Os favoritos e as preferências de acessibilidade usam `localStorage` e não são enviados pela aplicação. Não há contas próprias, análise de uso ou questionários de avaliação. O formulário de iniciativas prepara uma issue pública no GitHub: exige conta nesse serviço e confirmação final do remetente. Os dados da iniciativa e a conta que publicar ficarão públicos; não inclua informações pessoais de estudantes. Nenhuma sugestão entra automaticamente no catálogo. O carregamento da fonte tipográfica usa Google Fonts, e a abertura dos links externos passa a seguir as práticas de cada site de origem. A leitura em voz alta usa o serviço de voz do navegador; o processamento local ou pela internet depende da voz disponível. O VLibras carrega o widget oficial de `vlibras.gov.br` e usa os serviços externos da ferramenta para tradução.
 
 A aplicação demonstra uma solução técnica; ainda não há evidência de que ela aumente a participação de meninas na ciência. Qualquer estudo posterior com participantes deve ser planejado com o professor orientador e conforme as exigências éticas aplicáveis.
+
+
+## Sugestões externas
+
+A seção `#participar` valida dados institucionais, mostra uma prévia e abre um rascunho no GitHub. A equipe recebe as issues com etiqueta `cadastro` e revisa a fonte antes de publicar. Para textos extensos há cópia do conteúdo e download JSON. Os procedimentos de revisão estão em `CURADORIA.md`.
+
+## Versão preservada
+
+A versão anterior à expansão nacional está na tag/release [rotadelasv1](https://github.com/SauloCunha02/rota-delas/releases/tag/rotadelasv1), no commit `2ea3a9db9ec2c523cd5d0c2bf038fb30ad00895c`.

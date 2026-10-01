@@ -86,7 +86,7 @@ try{
  await call('Input.insertText',{text:'Lua'},sessionId);
  await check('Busca funciona com entrada mobile',`document.getElementById('search').value==='Lua'&&document.querySelectorAll('#cards .resource-card').length===1`);
  await tap('#clear-filters');
- await check('Limpeza recupera os recursos',`document.querySelectorAll('#cards .resource-card').length===13`);
+ await check('Limpeza recupera a primeira página do catálogo',`document.querySelectorAll('#cards .resource-card').length===12&&document.getElementById('result-count').textContent.includes('61 caminhos')`);
  await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false},sessionId);
  await evaluate(`const s=document.getElementById('a11y-size');s.value=100;s.dispatchEvent(new Event('input',{bubbles:true}));window.scrollTo(0,0)`);
  await screenshot('desktop');

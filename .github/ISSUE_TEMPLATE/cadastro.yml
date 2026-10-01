@@ -1,0 +1,62 @@
+name: Cadastrar iniciativa no Rota Delas
+description: Sugira um projeto, competição, curso, rede ou visita para análise da equipe.
+title: "[Cadastro] "
+labels: [cadastro, em-revisao]
+body:
+  - type: markdown
+    attributes:
+      value: "Envio público. Use apenas informações institucionais publicáveis, sem documentos ou dados pessoais de estudantes. A inclusão depende da revisão da equipe. Também é possível preparar a solicitação no site: https://saulocunha02.github.io/rota-delas/#participar"
+  - type: input
+    id: iniciativa
+    attributes:
+      label: Nome da iniciativa
+    validations:
+      required: true
+  - type: input
+    id: instituicao
+    attributes:
+      label: Instituição ou organização responsável
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Página oficial pública HTTPS
+      placeholder: https://instituicao.br/projeto
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options: [Projeto, Competição, Estudo, Rede, Visita]
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área principal
+      options: [Tecnologia, Ciência, Matemática]
+    validations:
+      required: true
+  - type: input
+    id: local
+    attributes:
+      label: Estado, cidade e alcance
+      description: Informe a base da instituição e se a iniciativa tem alcance local ou nacional.
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Atividades, público, formato e condições
+      description: Explique a relação com meninas na ciência, quem pode participar, formato online/presencial/híbrido e requisitos ou custos.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmacao
+    attributes:
+      label: Publicação e revisão
+      options:
+        - label: Confirmo que as informações são institucionais e públicas, sem dados pessoais de estudantes, e que a inclusão depende da revisão da equipe.
+          required: true

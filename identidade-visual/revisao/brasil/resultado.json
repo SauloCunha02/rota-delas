@@ -1,0 +1,158 @@
+{
+  "checks": [
+    {
+      "name": "63 IDs e URLs únicos",
+      "value": true
+    },
+    {
+      "name": "Fontes, datas e cobertura territorial",
+      "value": true
+    },
+    {
+      "name": "Página inicial limitada a 12 cartões",
+      "value": true
+    },
+    {
+      "name": "Paginação avança e mantém foco no título",
+      "value": true
+    },
+    {
+      "name": "Ceará filtra somente iniciativas locais",
+      "value": true
+    },
+    {
+      "name": "Ceará mais recursos nacionais",
+      "value": true
+    },
+    {
+      "name": "Trocar região limpa UF incompatível",
+      "value": true
+    },
+    {
+      "name": "Inclusão de inativos mostra 63",
+      "value": true
+    },
+    {
+      "name": "Formato online corresponde aos dados",
+      "value": true
+    },
+    {
+      "name": "Filtros combinados sem resultados têm recuperação",
+      "value": true
+    },
+    {
+      "name": "Busca sem acento e sem caixa",
+      "value": true
+    },
+    {
+      "name": "Favorito nacional preservado no armazenamento",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos Brasil Tecnologia",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos Brasil Ciência",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos Brasil Matemática",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos CE Tecnologia",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos CE Ciência",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos CE Matemática",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos AM Tecnologia",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos AM Ciência",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos AM Matemática",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos SP Tecnologia",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos SP Ciência",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos SP Matemática",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos RR Tecnologia",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos RR Ciência",
+      "value": true
+    },
+    {
+      "name": "Rota de três passos RR Matemática",
+      "value": true
+    },
+    {
+      "name": "Formulário incompleto bloqueado",
+      "value": true
+    },
+    {
+      "name": "Prévia modal sem enviar requisição",
+      "value": true
+    },
+    {
+      "name": "Rascunho aponta ao repositório correto com dados codificados",
+      "value": true
+    },
+    {
+      "name": "Prévia exibe texto externo sem executar HTML",
+      "value": true
+    },
+    {
+      "name": "URL não HTTPS rejeitada",
+      "value": true
+    },
+    {
+      "name": "Texto volumoso usa cópia sem URL extensa",
+      "value": true
+    },
+    {
+      "name": "Contraste da cobertura no tema da marca",
+      "value": true
+    },
+    {
+      "name": "Formulário cabe 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Prévia cabe 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Formulário cabe 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Prévia cabe 320px 200%",
+      "value": true
+    }
+  ],
+  "errors": [],
+  "limite": "Chrome emulado e arquivo local; nenhuma solicitação fictícia foi enviada ao GitHub. Submissão final exige ação e conta do remetente."
+}
