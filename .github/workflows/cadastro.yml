@@ -1,0 +1,25 @@
+name: Organizar sugestões de iniciativas
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  organizar:
+    if: startsWith(github.event.issue.title, '[Cadastro]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Marcar solicitação para revisão
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          curl --fail --silent --show-error --request POST \
+            --header "Authorization: Bearer ${GH_TOKEN}" \
+            --header 'Accept: application/vnd.github+json' \
+            --header 'Content-Type: application/json' \
+            --data '{"labels":["cadastro","em-revisao"]}' \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/labels"

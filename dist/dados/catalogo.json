@@ -1,6 +1,28 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-10-01",
+  "schemaVersion": 2,
+  "updatedAt": "2026-10-02",
+  "areas": [
+    "Tecnologia e Computação",
+    "Ciências Naturais",
+    "Matemática",
+    "Ciência e Pesquisa"
+  ],
+  "topics": [
+    "Computação",
+    "Programação",
+    "Aplicativos",
+    "Robótica",
+    "Eletrônica",
+    "Internet das Coisas",
+    "Biologia",
+    "Química",
+    "Física",
+    "Matemática",
+    "Estatística",
+    "Pesquisa científica",
+    "Engenharia",
+    "Divulgação científica"
+  ],
   "states": {
     "AC": [
       "Acre",
@@ -116,7 +138,7 @@
       "id": "lua",
       "title": "Projeto Lua",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "place": "Ceará · Tianguá",
       "description": "Iniciativa criada por alunas do IFCE para apoiar meninas e mulheres na tecnologia por meio de conteúdos e ações.",
       "url": "https://projetolua.ifce.edu.br/",
@@ -149,6 +171,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "since": "2019",
       "regions": [
         "Nordeste"
@@ -158,7 +183,7 @@
       "id": "divas-aracati",
       "title": "Projeto DIVAS",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "place": "Ceará · Aracati",
       "description": "Projeto do IFCE Aracati que aproxima meninas das tecnologias da informação, com cursos e ações de extensão.",
       "url": "https://portal.ifce.edu.br/campus/aracati/extensao/divas/",
@@ -186,6 +211,9 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Programação"
+      ],
       "regions": [
         "Nordeste"
       ]
@@ -194,7 +222,7 @@
       "id": "meninas-vale",
       "title": "Meninas Digitais do Vale",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "place": "Ceará · Russas",
       "description": "Projeto da UFC em Russas com ações para aproximar meninas da computação e apoiar mulheres na área.",
       "url": "https://extensaorussas.ufc.br/pt/projetos/2026-4/tecnologia-e-producao/",
@@ -222,6 +250,9 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Nordeste"
       ]
@@ -230,7 +261,7 @@
       "id": "mulheres-ct",
       "title": "Mulheres em C&T",
       "kind": "Projeto",
-      "area": "Ciência",
+      "area": "Ciência e Pesquisa",
       "place": "Ceará · Fortaleza",
       "description": "Projeto de extensão da UFC dedicado a aproximar estudantes da ciência e da tecnologia e mostrar trajetórias de pesquisadoras.",
       "url": "https://deti.ufc.br/pt/resultado-final-selecao-agente-ufc-de-extensao-edital-16-2026-projeto-mulheres-em-ct/",
@@ -258,6 +289,9 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Pesquisa científica"
+      ],
       "regions": [
         "Nordeste"
       ]
@@ -266,7 +300,7 @@
       "id": "seara",
       "title": "Seara da Ciência",
       "kind": "Visita",
-      "area": "Ciência",
+      "area": "Ciência e Pesquisa",
       "place": "Ceará · Fortaleza",
       "description": "Museu interativo da UFC com visitação gratuita e atividades de divulgação científica. Veja como agendar no site.",
       "url": "https://seara.ufc.br/pt/agendamento/",
@@ -294,6 +328,9 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Divulgação científica"
+      ],
       "regions": [
         "Nordeste"
       ]
@@ -302,7 +339,7 @@
       "id": "divas-tiangua",
       "title": "DIVAS em Tianguá",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "place": "Ceará · Tianguá",
       "description": "Ações do IFCE com oficinas de pensamento computacional e criação de aplicativos para estudantes de escolas públicas.",
       "url": "https://portal.ifce.edu.br/campus/tiangua/not%C3%ADcias/projeto-divas-recebe-premio-de-projeto-destaque-da-regiao-nordeste/",
@@ -330,6 +367,10 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Programação",
+        "Aplicativos"
+      ],
       "regions": [
         "Nordeste"
       ]
@@ -338,7 +379,7 @@
       "id": "meninas-digitais",
       "title": "Programa Meninas Digitais",
       "kind": "Rede",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "place": "Brasil · alcance nacional",
       "description": "Rede da Sociedade Brasileira de Computação que reúne projetos para despertar o interesse de meninas pela área.",
       "url": "https://meninasdigitais.com.br/sobre-nos/",
@@ -364,13 +405,16 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": []
     },
     {
       "id": "obi",
       "title": "OBI — Olimpíada Brasileira de Informática",
       "kind": "Competição",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "place": "Brasil · alcance nacional",
       "description": "Competição de informática com modalidades por nível escolar. Consulte o regulamento, a inscrição pela escola e o calendário oficial.",
       "url": "https://olimpiada.ic.unicamp.br/",
@@ -396,13 +440,16 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Programação"
+      ],
       "regions": []
     },
     {
       "id": "obi-estude",
       "title": "Cursos de programação da OBI",
       "kind": "Estudo",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "place": "Brasil · alcance nacional",
       "description": "Materiais gratuitos para quem quer começar a programar, disponíveis no ambiente de estudos da OBI.",
       "url": "https://olimpiada.ic.unicamp.br/prepare/estude/",
@@ -427,6 +474,9 @@
           "url": "https://olimpiada.ic.unicamp.br/prepare/estude/",
           "checkedAt": "2026-09-28"
         }
+      ],
+      "topics": [
+        "Programação"
       ],
       "regions": []
     },
@@ -460,6 +510,9 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Matemática"
+      ],
       "regions": []
     },
     {
@@ -491,6 +544,9 @@
           "url": "https://www.obmep.org.br/banco.htm",
           "checkedAt": "2026-09-28"
         }
+      ],
+      "topics": [
+        "Matemática"
       ],
       "regions": []
     },
@@ -524,13 +580,16 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Matemática"
+      ],
       "regions": []
     },
     {
       "id": "cfc",
       "title": "Mostra Ceará Faz Ciência",
       "kind": "Competição",
-      "area": "Ciência",
+      "area": "Ciência e Pesquisa",
       "place": "Ceará · Fortaleza",
       "description": "Mostra de projetos científicos de escolas públicas dentro da Feira do Conhecimento. Consulte o edital e os prazos no site oficial.",
       "url": "https://feiradoconhecimento.com.br/",
@@ -558,6 +617,9 @@
           "checkedAt": "2026-09-28"
         }
       ],
+      "topics": [
+        "Pesquisa científica"
+      ],
       "regions": [
         "Nordeste"
       ]
@@ -566,7 +628,7 @@
       "id": "md-include-meninas",
       "title": "#Include < Meninas.uff >",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal Fluminense (UFF), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/include-meninas/",
       "institution": "Universidade Federal Fluminense (UFF)",
@@ -592,6 +654,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -601,7 +666,7 @@
       "id": "md-adas",
       "title": "Bits de Ada",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA - Campus Caxias), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/adas/",
       "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA - Campus Caxias)",
@@ -627,6 +692,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Nordeste"
       ],
@@ -636,7 +704,7 @@
       "id": "md-code-gatas",
       "title": "Code Gatas",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Espirito Santo (UFES), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/code-gatas/",
       "institution": "Universidade Federal do Espirito Santo (UFES)",
@@ -662,6 +730,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -671,7 +742,7 @@
       "id": "md-codificadas-usp",
       "title": "CodificADAS – USP",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade de São Paulo (USP), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/codificadas-usp/",
       "institution": "Universidade de São Paulo (USP)",
@@ -697,6 +768,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -706,7 +780,7 @@
       "id": "md-delas-para-elas",
       "title": "Delas para Elas",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Centro Federal de Educação Tecnológica (CEFET-MG - Campus Leopoldina), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/delas-para-elas/",
       "institution": "Centro Federal de Educação Tecnológica (CEFET-MG - Campus Leopoldina)",
@@ -732,6 +806,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -741,7 +818,7 @@
       "id": "md-garotas-tech-dos-sertoes-de-crateus",
       "title": "Garotas Tech dos Sertões de Crateús",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Ceará (UFC), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/garotas-tech-dos-sertoes-de-crateus/",
       "institution": "Universidade Federal do Ceará (UFC)",
@@ -767,6 +844,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Nordeste"
       ],
@@ -776,7 +856,7 @@
       "id": "md-girls-of-science",
       "title": "Girls of Science",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais (IF SUL DE MINAS - Campus Inconfidentes), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/girls-of-science/",
       "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais (IF SUL DE MINAS - Campus Inconfidentes)",
@@ -802,6 +882,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -811,7 +894,7 @@
       "id": "md-grace-grupo-de-alunas-das-ciencias-extas",
       "title": "GRACE – Grupo de Alunas das Ciências Exatas",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade de São Paulo (USP), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/grace-grupo-de-alunas-das-ciencias-extas/",
       "institution": "Universidade de São Paulo (USP)",
@@ -837,6 +920,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -846,7 +932,7 @@
       "id": "md-grupo-cintia",
       "title": "Grupo Cintia",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal de Pernambuco (UFPE), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/grupo-cintia/",
       "institution": "Universidade Federal de Pernambuco (UFPE)",
@@ -862,7 +948,7 @@
       "tags": [
         "meninas",
         "computação",
-        "Universidade Fedederal de Pernambuco (UFPE)"
+        "Universidade Federal de Pernambuco (UFPE)"
       ],
       "routeRole": "inspirar",
       "sources": [
@@ -871,6 +957,9 @@
           "url": "https://meninasdigitais.com.br/projetos-parceiros/grupo-cintia/",
           "checkedAt": "2026-10-01"
         }
+      ],
+      "topics": [
+        "Computação"
       ],
       "regions": [
         "Nordeste"
@@ -881,7 +970,7 @@
       "id": "md-gurias-na-computacao",
       "title": "Gurias na Computação",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Pampa (Unipampa), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/gurias-na-computacao/",
       "institution": "Universidade Federal do Pampa (Unipampa)",
@@ -907,6 +996,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sul"
       ],
@@ -916,7 +1008,7 @@
       "id": "md-igualdade-stem",
       "title": "Igualdade STEM",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Rio de Janeiro (UFRJ), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/igualdade-stem/",
       "institution": "Universidade Federal do Rio de Janeiro (UFRJ)",
@@ -942,6 +1034,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -951,7 +1046,7 @@
       "id": "md-meninas-de-sistemas",
       "title": "Meninas de Sistemas",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Pará (UFPA), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-de-sistemas/",
       "institution": "Universidade Federal do Pará (UFPA)",
@@ -977,6 +1072,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Norte"
       ],
@@ -986,7 +1084,7 @@
       "id": "md-meninas-digitais-do-acre",
       "title": "Meninas Digitais do Acre",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Acre, presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-do-acre/",
       "institution": "Universidade Federal do Acre",
@@ -1012,6 +1110,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Norte"
       ],
@@ -1021,7 +1122,7 @@
       "id": "md-meninas-digitais-do-sudoeste-da-bahia",
       "title": "Meninas Digitais do Sudoeste da Bahia",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-do-sudoeste-da-bahia/",
       "institution": "Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA)",
@@ -1047,6 +1148,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Nordeste"
       ],
@@ -1056,7 +1160,7 @@
       "id": "md-meninas-digitais-dourados",
       "title": "Meninas Digitais Dourados",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal da Grande Dourados (UFGD), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-dourados/",
       "institution": "Universidade Federal da Grande Dourados (UFGD)",
@@ -1082,6 +1186,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Centro-Oeste"
       ],
@@ -1091,7 +1198,7 @@
       "id": "md-meninas-digitais-no-cerrado",
       "title": "Meninas Digitais no Cerrado",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Instituto Federal Goiano – Campus Ceres (Ceres – GO), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-no-cerrado/",
       "institution": "Instituto Federal Goiano – Campus Ceres (Ceres – GO)",
@@ -1117,6 +1224,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Centro-Oeste"
       ],
@@ -1126,7 +1236,7 @@
       "id": "md-meninas-digitais-utfpr-cp",
       "title": "Meninas Digitais UTFPR-CP",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Tecnológica Federal do Paraná (UTFPR), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-utfpr-cp/",
       "institution": "Universidade Tecnológica Federal do Paraná (UTFPR)",
@@ -1152,6 +1262,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sul"
       ],
@@ -1161,7 +1274,7 @@
       "id": "md-meninas-digitais-mato-grosso",
       "title": "Meninas Digitais: Mato Grosso",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal de Mato Grosso (UFMT), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-digitais-mato-grosso/",
       "institution": "Universidade Federal de Mato Grosso (UFMT)",
@@ -1187,6 +1300,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Centro-Oeste"
       ],
@@ -1196,7 +1312,7 @@
       "id": "md-meninas-na-ciencia-ifb",
       "title": "Meninas na Ciência IFB",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Instituto Federal de Brasília (IFB), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-na-ciencia-ifb/",
       "institution": "Instituto Federal de Brasília (IFB)",
@@ -1222,6 +1338,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Centro-Oeste"
       ],
@@ -1231,7 +1350,7 @@
       "id": "md-meninas-na-robotica",
       "title": "Meninas na Robótica",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Centro Federal de Educação Tecnológica (CEFET-RJ), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-na-robotica/",
       "institution": "Centro Federal de Educação Tecnológica (CEFET-RJ)",
@@ -1257,6 +1376,10 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação",
+        "Robótica"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -1266,7 +1389,7 @@
       "id": "md-meninas-programadoras",
       "title": "Meninas Programadoras",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade de São Paulo (USP), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas-programadoras/",
       "institution": "Universidade de São Paulo (USP)",
@@ -1292,6 +1415,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -1301,7 +1427,7 @@
       "id": "md-meninas",
       "title": "Meninas++",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal de Viçosa (UFV), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/meninas/",
       "institution": "Universidade Federal de Viçosa (UFV)",
@@ -1327,6 +1453,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -1336,7 +1465,7 @@
       "id": "md-mermas-digitais",
       "title": "Mermãs Digitais",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA- Campus Imperatriz), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/mermas-digitais/",
       "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA- Campus Imperatriz)",
@@ -1362,6 +1491,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Nordeste"
       ],
@@ -1371,7 +1503,7 @@
       "id": "md-metabotix",
       "title": "Metabotix",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Instituto Federal de Educação, Ciência e Tecnologia de Goiás (IFG), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/metabotix/",
       "institution": "Instituto Federal de Educação, Ciência e Tecnologia de Goiás (IFG)",
@@ -1397,6 +1529,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Centro-Oeste"
       ],
@@ -1406,7 +1541,7 @@
       "id": "md-minascoders",
       "title": "MinasCoders",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal de Viçosa (UFV - Campus Florestal), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/minascoders/",
       "institution": "Universidade Federal de Viçosa (UFV - Campus Florestal)",
@@ -1432,6 +1567,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -1441,7 +1579,7 @@
       "id": "md-mulheres-na-computacao-ufersa",
       "title": "Mulheres na Computação – UFERSA",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal Rural do Semi-Árido (UFERSA) e Universidade Federal da Paraíba (UFPB), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/mulheres-na-computacao-ufersa/",
       "institution": "Universidade Federal Rural do Semi-Árido (UFERSA) e Universidade Federal da Paraíba (UFPB)",
@@ -1468,6 +1606,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Nordeste"
       ],
@@ -1477,7 +1618,7 @@
       "id": "md-perolas-digitais",
       "title": "Pérolas Digitais",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Oeste do Pará (UFOPA), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/perolas-digitais/",
       "institution": "Universidade Federal do Oeste do Pará (UFOPA)",
@@ -1503,6 +1644,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Norte"
       ],
@@ -1512,7 +1656,7 @@
       "id": "md-projeto-adas",
       "title": "Projeto Adas",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal de Goiás (UFG), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/projeto-adas/",
       "institution": "Universidade Federal de Goiás (UFG)",
@@ -1538,6 +1682,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Centro-Oeste"
       ],
@@ -1547,7 +1694,7 @@
       "id": "md-supygirls-empoderamento-feminino-atraves-das-tecnologias",
       "title": "SupyGirls – Empoderamento Feminino Através das Tecnologias",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Rio de Janeiro (UFRJ), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/supygirls-empoderamento-feminino-atraves-das-tecnologias/",
       "institution": "Universidade Federal do Rio de Janeiro (UFRJ)",
@@ -1573,6 +1720,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -1582,7 +1732,7 @@
       "id": "md-valerinas",
       "title": "Valerinas",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade do Estado de Santa Catarina (UDESC - Alto Vale), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/valerinas/",
       "institution": "Universidade do Estado de Santa Catarina (UDESC - Alto Vale)",
@@ -1608,6 +1758,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sul"
       ],
@@ -1617,7 +1770,7 @@
       "id": "md-alpha-technology",
       "title": "Alpha Technology",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Firjan SENAI SESI Jacarepaguá, presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/alpha-technology/",
       "institution": "Firjan SENAI SESI Jacarepaguá",
@@ -1643,6 +1796,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sudeste"
       ],
@@ -1652,7 +1808,7 @@
       "id": "md-conectadas",
       "title": "Conectadas",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Estadual de Maringá (UEM), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/conectadas/",
       "institution": "Universidade Estadual de Maringá (UEM)",
@@ -1678,6 +1834,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sul"
       ],
@@ -1687,7 +1846,7 @@
       "id": "md-cunhanta-digital",
       "title": "Cunhantã Digital",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Amazonas (UFAM), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/cunhanta-digital/",
       "institution": "Universidade Federal do Amazonas (UFAM)",
@@ -1713,6 +1872,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Norte"
       ],
@@ -1722,7 +1884,7 @@
       "id": "md-ei-mana-meninas-na-computacao",
       "title": "Ei Mana: Meninas na Computação",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal do Amazonas (UFAM), presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/ei-mana-meninas-na-computacao/",
       "institution": "Universidade Federal do Amazonas (UFAM)",
@@ -1748,6 +1910,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Norte"
       ],
@@ -1757,7 +1922,7 @@
       "id": "md-elas-digitais",
       "title": "Elas Digitais",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Instituto Federal de Santa Catarina (IFSC), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/elas-digitais/",
       "institution": "Instituto Federal de Santa Catarina (IFSC)",
@@ -1783,6 +1948,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Sul"
       ],
@@ -1792,7 +1960,7 @@
       "id": "md-jornada-minatech",
       "title": "Jornada Minatech",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Corali, presente no diretório do Programa Meninas Digitais. Consulte a ficha para conhecer o público e as ações.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/jornada-minatech/",
       "institution": "Corali",
@@ -1816,6 +1984,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [],
       "place": "Localização não informada"
     },
@@ -1823,7 +1994,7 @@
       "id": "md-projeto-kate",
       "title": "Projeto Kat;e",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "description": "Iniciativa vinculada a Universidade Federal de Alagoas (UFAL), presente no diretório do Programa Meninas Digitais. A ficha informa atuação com a educação básica.",
       "url": "https://meninasdigitais.com.br/projetos-parceiros/projeto-kate/",
       "institution": "Universidade Federal de Alagoas (UFAL)",
@@ -1849,6 +2020,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Computação"
+      ],
       "regions": [
         "Nordeste"
       ],
@@ -1858,7 +2032,7 @@
       "id": "technovation",
       "title": "Technovation Girls Brasil",
       "kind": "Competição",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "url": "https://www.technovationbrasil.org/alunas",
       "institution": "Technovation Brasil",
       "description": "Meninas criam soluções tecnológicas em equipe para problemas da comunidade. A proposta inclui desenvolvimento de aplicativos e apresentação do projeto.",
@@ -1881,6 +2055,10 @@
           "url": "https://www.technovationbrasil.org/alunas",
           "checkedAt": "2026-10-01"
         }
+      ],
+      "topics": [
+        "Programação",
+        "Aplicativos"
       ],
       "regions": [],
       "place": "Brasil · alcance nacional"
@@ -1913,6 +2091,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Matemática"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -1920,7 +2101,7 @@
       "id": "quimeninas",
       "title": "Olimpíada Quimeninas",
       "kind": "Competição",
-      "area": "Ciência",
+      "area": "Ciências Naturais",
       "url": "https://obquimica.org/olimpiada/olimpiada-quimeninas",
       "institution": "Programa Nacional Olimpíadas de Química",
       "description": "Olimpíada feminina de química com provas online. A fonte apresenta os níveis escolares atendidos e as regras de cada edição.",
@@ -1944,6 +2125,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Química"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -1951,7 +2135,7 @@
       "id": "mfp",
       "title": "Maratona Feminina de Programação",
       "kind": "Competição",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "url": "https://mfp.ic.unicamp.br/",
       "institution": "SBC / Unicamp",
       "description": "Competição de programação com etapa online e final presencial. Estudantes do ensino médio e técnico podem participar como treineiras conforme as regras.",
@@ -1975,6 +2159,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Programação"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -1982,7 +2169,7 @@
       "id": "tfm",
       "title": "Torneio de Física para Meninas",
       "kind": "Competição",
-      "area": "Ciência",
+      "area": "Ciências Naturais",
       "url": "https://tfcbr.inf.ufsm.br/olimpiadas/fisica",
       "institution": "Organização TFM / UFSM",
       "description": "Torneio de física para alunas do ensino médio de escolas brasileiras. Consulte as condições da fase online e da fase presencial.",
@@ -2006,6 +2193,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Física"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -2013,7 +2203,7 @@
       "id": "obr",
       "title": "Olimpíada Brasileira de Robótica",
       "kind": "Competição",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "url": "https://obr.robocup.org.br/",
       "institution": "Organização OBR / RoboCup Brasil",
       "description": "Competição de robótica com modalidades teórica e prática, para aproximar estudantes da construção e programação de robôs.",
@@ -2037,6 +2227,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Robótica"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -2044,7 +2237,7 @@
       "id": "febrace",
       "title": "FEBRACE — Feira Brasileira de Ciências e Engenharia",
       "kind": "Competição",
-      "area": "Ciência",
+      "area": "Ciência e Pesquisa",
       "url": "https://febrace.org.br/",
       "institution": "FEBRACE / LSI-TEC",
       "description": "Feira de projetos de ciências e engenharia desenvolvidos na educação básica. Confira regras de submissão, documentação e seleção na fonte.",
@@ -2068,6 +2261,10 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Pesquisa científica",
+        "Engenharia"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -2075,7 +2272,7 @@
       "id": "apice",
       "title": "APICE — Formação para projetos científicos",
       "kind": "Estudo",
-      "area": "Ciência",
+      "area": "Ciência e Pesquisa",
       "url": "https://apice.febrace.org.br/",
       "institution": "FEBRACE / LSI-TEC",
       "description": "Cursos online gratuitos sobre metodologia científica, estatística e desenvolvimento de projetos. Uma opção para organizar sua pesquisa com o orientador.",
@@ -2099,6 +2296,10 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Pesquisa científica",
+        "Estatística"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -2106,7 +2307,7 @@
       "id": "codeiot",
       "title": "Code IoT — Programação, apps e eletrônica",
       "kind": "Estudo",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "url": "https://codeiot.org.br/",
       "institution": "Code IoT / LSI-TEC",
       "description": "Cursos gratuitos pela internet sobre programação, circuitos, Arduino e aplicativos. O catálogo apresenta percursos para criar objetos conectados.",
@@ -2130,6 +2331,12 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Programação",
+        "Eletrônica",
+        "Aplicativos",
+        "Internet das Coisas"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -2137,7 +2344,7 @@
       "id": "obb",
       "title": "Olimpíada Brasileira de Biologia",
       "kind": "Competição",
-      "area": "Ciência",
+      "area": "Ciências Naturais",
       "url": "https://olimpiadasdebiologia.butantan.gov.br/",
       "institution": "Instituto Butantan",
       "description": "Olimpíada de biologia para estudantes do ensino médio. A página oficial reúne regulamento, cronograma e materiais de preparação.",
@@ -2161,6 +2368,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Biologia"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -2168,7 +2378,7 @@
       "id": "obb-conteudo",
       "title": "Conteúdos de preparação da OBB",
       "kind": "Estudo",
-      "area": "Ciência",
+      "area": "Ciências Naturais",
       "url": "https://olimpiadasdebiologia.butantan.gov.br/conteudo-abordado/conteudo-geral",
       "institution": "Instituto Butantan",
       "description": "Referência oficial de temas de biologia para orientar um plano de estudo. Use junto aos materiais e às provas publicados pela organização.",
@@ -2192,6 +2402,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Biologia"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -2199,7 +2412,7 @@
       "id": "obq",
       "title": "Olimpíada Brasileira de Química",
       "kind": "Competição",
-      "area": "Ciência",
+      "area": "Ciências Naturais",
       "url": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica",
       "institution": "Programa Nacional Olimpíadas de Química",
       "description": "Competição nacional de química com critérios de seleção e modalidades. Consulte o percurso de participação e o regulamento oficial.",
@@ -2223,6 +2436,9 @@
           "checkedAt": "2026-10-01"
         }
       ],
+      "topics": [
+        "Química"
+      ],
       "regions": [],
       "place": "Brasil · alcance nacional"
     },
@@ -2230,7 +2446,7 @@
       "id": "bitgirls",
       "title": "BitGirls",
       "kind": "Projeto",
-      "area": "Tecnologia",
+      "area": "Tecnologia e Computação",
       "url": "https://www.bitgirls.dcc.ufmg.br/",
       "institution": "Departamento de Ciência da Computação / UFMG",
       "description": "Projeto da UFMG para aproximar meninas da computação. Conheça as atividades e os materiais divulgados pela equipe.",
@@ -2255,6 +2471,9 @@
           "url": "https://www.bitgirls.dcc.ufmg.br/",
           "checkedAt": "2026-10-01"
         }
+      ],
+      "topics": [
+        "Computação"
       ],
       "regions": [
         "Sudeste"

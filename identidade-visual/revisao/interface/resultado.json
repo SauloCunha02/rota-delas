@@ -1,0 +1,166 @@
+{
+  "checks": [
+    {
+      "name": "Ceará e nacionais são a seleção inicial",
+      "value": true
+    },
+    {
+      "name": "Iniciativas cearenses vêm primeiro",
+      "value": true
+    },
+    {
+      "name": "Formulário saiu da página principal",
+      "value": true
+    },
+    {
+      "name": "Áreas e temas documentados",
+      "value": true
+    },
+    {
+      "name": "Tema Química retorna os dois registros pertinentes",
+      "value": true
+    },
+    {
+      "name": "Ciências Naturais filtra sem misturar pesquisa geral",
+      "value": true
+    },
+    {
+      "name": "Cabeçalho e barra cabem 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Acessibilidade está visível no cabeçalho 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Barra inferior tem quatro alvos tocáveis 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Cabeçalho e barra cabem 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Acessibilidade está visível no cabeçalho 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Barra inferior tem quatro alvos tocáveis 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Cabeçalho e barra cabem 430px 100%",
+      "value": true
+    },
+    {
+      "name": "Acessibilidade está visível no cabeçalho 430px 100%",
+      "value": true
+    },
+    {
+      "name": "Barra inferior tem quatro alvos tocáveis 430px 100%",
+      "value": true
+    },
+    {
+      "name": "Cabeçalho e barra cabem 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Acessibilidade está visível no cabeçalho 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Barra inferior tem quatro alvos tocáveis 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Navegar sem ativar voz mantém leitor fechado",
+      "value": true
+    },
+    {
+      "name": "Menu Mais é modal e recebe foco",
+      "value": true
+    },
+    {
+      "name": "Esc fecha Mais e devolve foco",
+      "value": true
+    },
+    {
+      "name": "Mais abre acessibilidade sem dois diálogos",
+      "value": true
+    },
+    {
+      "name": "Leitor preserva menu e cabeçalho 320px 100%",
+      "value": true
+    },
+    {
+      "name": "Leitor preserva menu e cabeçalho 390px 100%",
+      "value": true
+    },
+    {
+      "name": "Leitor preserva menu e cabeçalho 320px 200%",
+      "value": true
+    },
+    {
+      "name": "Leitor preserva menu e cabeçalho 844px 100%",
+      "value": true
+    },
+    {
+      "name": "Player expandido conserva transporte e área rolável",
+      "value": true
+    },
+    {
+      "name": "Opções do leitor cabem no celular deitado 100%",
+      "value": true
+    },
+    {
+      "name": "Opções do leitor cabem no celular deitado 200%",
+      "value": true
+    },
+    {
+      "name": "Navegação muda seção e interrompe leitura anterior",
+      "value": true
+    },
+    {
+      "name": "Cadastro tem formulário e acessibilidade independentes",
+      "value": true
+    },
+    {
+      "name": "Leitor do cadastro tem apenas seções existentes",
+      "value": true
+    },
+    {
+      "name": "Leitor narra rótulos e não valores digitados",
+      "value": true
+    },
+    {
+      "name": "Mais marca cadastro ativo",
+      "value": true
+    },
+    {
+      "name": "Campos e barra seguem tema normal",
+      "value": true
+    },
+    {
+      "name": "Campos e barra seguem tema light",
+      "value": true
+    },
+    {
+      "name": "Campos e barra seguem tema dark",
+      "value": true
+    },
+    {
+      "name": "Campos e barra seguem tema blue",
+      "value": true
+    },
+    {
+      "name": "Campos e barra seguem tema mono",
+      "value": true
+    },
+    {
+      "name": "Link antigo de cadastro redireciona",
+      "value": true
+    }
+  ],
+  "errors": [],
+  "limite": "Chrome emulado; voz simulada, sem submissão real de dados e sem auditoria formal com leitor de tela."
+}

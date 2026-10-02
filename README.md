@@ -1,6 +1,6 @@
 # Rota Delas
 
-Aplicação web de consulta a iniciativas, competições, visitas e materiais de estudo em ciência e tecnologia, com foco em meninas do Ensino Médio em todo o Brasil e no Ceará. Feita em HTML, CSS e JavaScript, com catálogo documental e envio público de sugestões pelo GitHub.
+Aplicação web de consulta a iniciativas, competições, visitas e materiais de estudo em ciência e tecnologia, com foco em meninas do Ensino Médio no Ceará, apoiado por recursos locais e nacionais. Feita em HTML, CSS e JavaScript, com catálogo documental e envio público de sugestões pelo GitHub.
 
 **Site:** https://saulocunha02.github.io/rota-delas/  
 **Código:** https://github.com/SauloCunha02/rota-delas
@@ -26,7 +26,7 @@ O workflow `.github/workflows/pages.yml` publica a pasta `dist` no GitHub Pages 
 ## Funcionalidades
 
 - Busca por nome, descrição, local e palavras-chave, inclusive sem acentos.
-- Filtros combináveis de área, tipo, região, UF, formato e público; paginação com 12 cartões.
+- Filtros combináveis de área, tema, tipo, região, UF, formato e público; paginação com 12 cartões.
 - 63 recursos com fontes e datas de consulta; 61 visíveis inicialmente e 2 inativos consultáveis.
 - Rotas de três passos por área, considerando o estado escolhido e recursos nacionais.
 - Favoritos salvos apenas no navegador do aparelho.
@@ -36,7 +36,7 @@ O workflow `.github/workflows/pages.yml` publica a pasta `dist` no GitHub Pages 
 
 ## Acessibilidade
 
-Use o botão circular com o **símbolo de acessibilidade**, no canto inferior direito, ou **Alt + A**. O painel lateral segue a organização de [Cartografias do Abandono](https://saulocunha02.github.io/cartografias-do-abandono/), com quatro perfis rápidos: leitura assistida, baixa visão, menos movimento e foco na linha.
+Use o botão com o **símbolo de acessibilidade**, visível no cabeçalho, ou **Alt + A**. O painel lateral segue a organização de [Cartografias do Abandono](https://saulocunha02.github.io/cartografias-do-abandono/), com quatro perfis rápidos: leitura assistida, baixa visão, menos movimento e foco na linha.
 
 Os ajustes incluem letras de 100% a 200%, fonte Atkinson Hyperlegible incluída localmente, maior espaçamento, destaque de links, guia e máscara de leitura, redução de movimento, cursor ampliado, foco reforçado e alto contraste claro/escuro. As paletas alternativas oferecem azul/amarelo, azul/laranja, vinho/turquesa e cinza; o alto contraste tem prioridade. A máscara e o guia podem ser movidos pelo ponteiro, pelo toque ou pelas setas no botão ↕.
 
@@ -50,7 +50,7 @@ Veja os detalhes de uso e o escopo da revisão em `ACESSIBILIDADE.md`.
 
 O player mostra o trecho atual, sua posição no texto e os controles **Play/Pausa**, **anterior/próximo**, **Parar**, velocidade de **0,5× a 2×** e uma barra para escolher o trecho. É possível navegar com a voz parada ou pausada. No player, as setas esquerda/direita mudam de trecho; Espaço inicia ou pausa quando a região do player está em foco. Os seletores e a barra de posição mantêm seus controles nativos de teclado.
 
-No celular, o leitor abre compacto e mantém o trecho atual visível. Toque na velocidade para abrir o seletor ou na seta para expandir todas as opções. A área de opções rola separadamente dos controles principais. Os atalhos de acessibilidade e Libras ficam acima do leitor recolhido, ou dentro das opções quando expandido. O layout também se adapta ao celular deitado e às letras ampliadas.
+No celular, o leitor abre compacto e mantém o trecho atual visível. Toque na velocidade para abrir o seletor ou na seta para expandir todas as opções. A área de opções rola separadamente dos controles principais. A acessibilidade fica no cabeçalho e no menu Mais; o leitor permanece acima da barra inferior. Ao expandir, o controle de posição fica na área rolável de opções. No celular deitado, o trecho também entra nessa área enquanto as opções estão abertas. O layout também se adapta ao celular deitado e às letras ampliadas.
 
 A narração destaca o trecho na página e a palavra quando a voz do navegador fornece eventos de sincronização. O botão **Localizar trecho** leva ao trecho selecionado, e **Acompanhar trecho na página** permite ligar/desligar a rolagem automática. A velocidade muda durante a leitura, retomando da última palavra informada pela voz; sem eventos por palavra, o trecho atual é retomado. O botão de recolher reduz o tamanho do player.
 
@@ -69,8 +69,18 @@ A aplicação demonstra uma solução técnica; ainda não há evidência de que
 
 ## Sugestões externas
 
-A seção `#participar` valida dados institucionais, mostra uma prévia e abre um rascunho no GitHub. A equipe recebe as issues com etiqueta `cadastro` e revisa a fonte antes de publicar. Para textos extensos há cópia do conteúdo e download JSON. Os procedimentos de revisão estão em `CURADORIA.md`.
+A página `cadastro.html` valida dados institucionais, mostra uma prévia e abre um rascunho no GitHub. A equipe recebe as issues com etiqueta `cadastro` e revisa a fonte antes de publicar. Para textos extensos há cópia do conteúdo e download JSON. Os procedimentos de revisão estão em `CURADORIA.md`.
 
 ## Versão preservada
 
 A versão anterior à expansão nacional está na tag/release [rotadelasv1](https://github.com/SauloCunha02/rota-delas/releases/tag/rotadelasv1), no commit `2ea3a9db9ec2c523cd5d0c2bf038fb30ad00895c`.
+
+## Navegação e foco local — 02/10/2026
+
+A consulta inicia em Ceará + nacionais (26 recursos disponíveis nesse recorte), com opção de explorar todo o Brasil. Área e temas específicos são classificações diferentes; iniciativas de pesquisa ampla não são classificadas automaticamente como Ciências Naturais. O catálogo mantém 63 registros e suas datas reais de consulta. A nova organização não é uma nova conferência de disponibilidade das fontes.
+
+No celular, a barra inferior oferece Buscar, Rota, Salvos e Mais. O menu Mais reúne cadastro, metodologia e atalhos de acessibilidade e Libras. A navegação funciona também no celular deitado. O leitor reserva espaço acima da barra; menus e prévias são modais e restauram o foco ao fechar. Navegar não ativa a voz automaticamente.
+
+O formulário completo está em cadastro.html. As sugestões continuam públicas e dependem de conta no GitHub e confirmação do remetente. O endereço não pede permissões de atribuição de etiquetas; o workflow cadastro.yml aplica cadastro e em-revisao após a abertura de uma issue com o prefixo [Cadastro]. A aprovação e a inclusão no catálogo continuam manuais.
+
+A versão anterior à reorganização foi preservada em https://github.com/SauloCunha02/rota-delas/releases/tag/rotadelasv2.

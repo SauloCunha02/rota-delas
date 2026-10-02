@@ -3,7 +3,7 @@
     "id": "technovation",
     "title": "Technovation Girls Brasil",
     "kind": "Competição",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "url": "https://www.technovationbrasil.org/alunas",
     "institution": "Technovation Brasil",
     "description": "Meninas criam soluções tecnológicas em equipe para problemas da comunidade. A proposta inclui desenvolvimento de aplicativos e apresentação do projeto.",
@@ -26,6 +26,10 @@
         "url": "https://www.technovationbrasil.org/alunas",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Programação",
+      "Aplicativos"
     ]
   },
   {
@@ -55,13 +59,16 @@
         "url": "https://www.tm2.org.br/",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Matemática"
     ]
   },
   {
     "id": "quimeninas",
     "title": "Olimpíada Quimeninas",
     "kind": "Competição",
-    "area": "Ciência",
+    "area": "Ciências Naturais",
     "url": "https://obquimica.org/olimpiada/olimpiada-quimeninas",
     "institution": "Programa Nacional Olimpíadas de Química",
     "description": "Olimpíada feminina de química com provas online. A fonte apresenta os níveis escolares atendidos e as regras de cada edição.",
@@ -84,13 +91,16 @@
         "url": "https://obquimica.org/olimpiada/olimpiada-quimeninas",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Química"
     ]
   },
   {
     "id": "mfp",
     "title": "Maratona Feminina de Programação",
     "kind": "Competição",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "url": "https://mfp.ic.unicamp.br/",
     "institution": "SBC / Unicamp",
     "description": "Competição de programação com etapa online e final presencial. Estudantes do ensino médio e técnico podem participar como treineiras conforme as regras.",
@@ -113,13 +123,16 @@
         "url": "https://mfp.ic.unicamp.br/",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Programação"
     ]
   },
   {
     "id": "tfm",
     "title": "Torneio de Física para Meninas",
     "kind": "Competição",
-    "area": "Ciência",
+    "area": "Ciências Naturais",
     "url": "https://tfcbr.inf.ufsm.br/olimpiadas/fisica",
     "institution": "Organização TFM / UFSM",
     "description": "Torneio de física para alunas do ensino médio de escolas brasileiras. Consulte as condições da fase online e da fase presencial.",
@@ -142,13 +155,16 @@
         "url": "https://tfcbr.inf.ufsm.br/olimpiadas/fisica",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Física"
     ]
   },
   {
     "id": "obr",
     "title": "Olimpíada Brasileira de Robótica",
     "kind": "Competição",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "url": "https://obr.robocup.org.br/",
     "institution": "Organização OBR / RoboCup Brasil",
     "description": "Competição de robótica com modalidades teórica e prática, para aproximar estudantes da construção e programação de robôs.",
@@ -171,13 +187,16 @@
         "url": "https://obr.robocup.org.br/",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Robótica"
     ]
   },
   {
     "id": "febrace",
     "title": "FEBRACE — Feira Brasileira de Ciências e Engenharia",
     "kind": "Competição",
-    "area": "Ciência",
+    "area": "Ciência e Pesquisa",
     "url": "https://febrace.org.br/",
     "institution": "FEBRACE / LSI-TEC",
     "description": "Feira de projetos de ciências e engenharia desenvolvidos na educação básica. Confira regras de submissão, documentação e seleção na fonte.",
@@ -200,13 +219,17 @@
         "url": "https://febrace.org.br/",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Pesquisa científica",
+      "Engenharia"
     ]
   },
   {
     "id": "apice",
     "title": "APICE — Formação para projetos científicos",
     "kind": "Estudo",
-    "area": "Ciência",
+    "area": "Ciência e Pesquisa",
     "url": "https://apice.febrace.org.br/",
     "institution": "FEBRACE / LSI-TEC",
     "description": "Cursos online gratuitos sobre metodologia científica, estatística e desenvolvimento de projetos. Uma opção para organizar sua pesquisa com o orientador.",
@@ -229,13 +252,17 @@
         "url": "https://apice.febrace.org.br/",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Pesquisa científica",
+      "Estatística"
     ]
   },
   {
     "id": "codeiot",
     "title": "Code IoT — Programação, apps e eletrônica",
     "kind": "Estudo",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "url": "https://codeiot.org.br/",
     "institution": "Code IoT / LSI-TEC",
     "description": "Cursos gratuitos pela internet sobre programação, circuitos, Arduino e aplicativos. O catálogo apresenta percursos para criar objetos conectados.",
@@ -258,13 +285,19 @@
         "url": "https://codeiot.org.br/",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Programação",
+      "Eletrônica",
+      "Aplicativos",
+      "Internet das Coisas"
     ]
   },
   {
     "id": "obb",
     "title": "Olimpíada Brasileira de Biologia",
     "kind": "Competição",
-    "area": "Ciência",
+    "area": "Ciências Naturais",
     "url": "https://olimpiadasdebiologia.butantan.gov.br/",
     "institution": "Instituto Butantan",
     "description": "Olimpíada de biologia para estudantes do ensino médio. A página oficial reúne regulamento, cronograma e materiais de preparação.",
@@ -287,13 +320,16 @@
         "url": "https://olimpiadasdebiologia.butantan.gov.br/",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Biologia"
     ]
   },
   {
     "id": "obb-conteudo",
     "title": "Conteúdos de preparação da OBB",
     "kind": "Estudo",
-    "area": "Ciência",
+    "area": "Ciências Naturais",
     "url": "https://olimpiadasdebiologia.butantan.gov.br/conteudo-abordado/conteudo-geral",
     "institution": "Instituto Butantan",
     "description": "Referência oficial de temas de biologia para orientar um plano de estudo. Use junto aos materiais e às provas publicados pela organização.",
@@ -316,13 +352,16 @@
         "url": "https://olimpiadasdebiologia.butantan.gov.br/conteudo-abordado/conteudo-geral",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Biologia"
     ]
   },
   {
     "id": "obq",
     "title": "Olimpíada Brasileira de Química",
     "kind": "Competição",
-    "area": "Ciência",
+    "area": "Ciências Naturais",
     "url": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica",
     "institution": "Programa Nacional Olimpíadas de Química",
     "description": "Competição nacional de química com critérios de seleção e modalidades. Consulte o percurso de participação e o regulamento oficial.",
@@ -345,13 +384,16 @@
         "url": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Química"
     ]
   },
   {
     "id": "bitgirls",
     "title": "BitGirls",
     "kind": "Projeto",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "url": "https://www.bitgirls.dcc.ufmg.br/",
     "institution": "Departamento de Ciência da Computação / UFMG",
     "description": "Projeto da UFMG para aproximar meninas da computação. Conheça as atividades e os materiais divulgados pela equipe.",
@@ -376,6 +418,9 @@
         "url": "https://www.bitgirls.dcc.ufmg.br/",
         "checkedAt": "2026-10-01"
       }
+    ],
+    "topics": [
+      "Computação"
     ]
   }
 ]

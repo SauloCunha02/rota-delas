@@ -1,8 +1,16 @@
 # Acessibilidade do Rota Delas
 
+## Navegação atual — 02/10/2026
+
+O botão com símbolo de acessibilidade fica no cabeçalho, em ambas as páginas. No celular, Buscar, Rota, Salvos e Mais ficam na barra inferior; Mais também oferece atalhos de acessibilidade e Libras. O cabeçalho e a barra reservam espaço na rolagem. O player aparece acima da barra, sem ativar a voz por navegar entre seções. Seu estado acompanha a seção quando a leitura está habilitada.
+
+O controle de posição entra nas opções roláveis ao expandir o leitor. No celular deitado, o trecho atual também entra nessa área quando expandido, liberando espaço para manter o transporte visível. Ao recolher, posição e trecho voltam à parte fixa do leitor. Diálogos ocultam o player temporariamente e mantêm foco de teclado; Esc fecha o diálogo antes de interromper a voz.
+
+A página de cadastro mantém preferências locais e leitura das instruções, rótulos e temas. O leitor não inclui valores digitados nos campos. A integração oficial de VLibras permanece e precisa de internet. Não foi feita certificação WCAG nem avaliação com leitores de tela ou aparelhos físicos nesta alteração.
+
 ## Como usar
 
-Abra o botão circular com o **símbolo de acessibilidade**, no canto inferior direito. O botão mantém o nome acessível para leitores de tela. O painel tem estes recursos:
+Abra o botão com o **símbolo de acessibilidade**, no cabeçalho. O botão mantém o nome acessível para leitores de tela. O painel tem estes recursos:
 
 - **Letras:** aumente em passos de 25%, até 200%, pelo controle ou pelos botões A− e A+.
 - **Perfis rápidos:** leitura assistida, baixa visão, menos movimento e foco na linha aplicam conjuntos de preferências personalizáveis. O painel lateral, a organização dos recursos e os perfis foram inspirados em [Cartografias do Abandono](https://saulocunha02.github.io/cartografias-do-abandono/).
@@ -47,7 +55,7 @@ O player permite escolher toda a página, uma seção ou texto selecionado. Toqu
 
 O leitor fica na base da tela. Anterior, Play/Pausar, próximo, Parar, posição e trecho continuam disponíveis com as opções recolhidas. O trecho pode ser rolado e acompanha a palavra sincronizada quando a voz fornece esse evento.
 
-As opções têm rolagem própria para preservar os controles principais, inclusive com letras ampliadas. O botão de velocidade abre as opções e dá foco ao seletor. Com o painel expandido, os atalhos Acessibilidade e Libras ficam dentro das opções. Com o leitor recolhido, os botões flutuantes ficam acima dele. Na orientação horizontal, o leitor fica à direita e os atalhos à esquerda.
+As opções têm rolagem própria para preservar os controles principais, inclusive com letras ampliadas. O botão de velocidade abre as opções e dá foco ao seletor. Com o painel expandido, os atalhos Acessibilidade e Libras ficam dentro das opções. A acessibilidade permanece no cabeçalho e o leitor reserva espaço acima da barra inferior. Na orientação horizontal, o leitor fica à direita; a integração oficial de Libras mantém espaço livre à esquerda.
 
 ## Revisão mobile — 01/10/2026
 

@@ -58,7 +58,7 @@ try{
  await screenshot('expandido-320-200');
  await evaluate(`document.getElementById('a11y-player-collapse').click()`);
  await setSize(844,390);
- await check('Leitor cabe no celular deitado',`(()=>{const r=document.getElementById('a11y-player').getBoundingClientRect(),a=document.getElementById('a11y-open').getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&a.right<r.left})()`);
+ await check('Leitor e acesso no cabeçalho cabem no celular deitado',`(()=>{const r=document.getElementById('a11y-player').getBoundingClientRect(),a=document.getElementById('a11y-open').getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&a.bottom<r.top})()`);
  await screenshot('leitor-paisagem');
  await setSize(390,844);
  await evaluate(`document.getElementById('a11y-open').click()`);
@@ -77,8 +77,8 @@ try{
  };
  await tap('#cards .favorite-button');
  await check('Favoritos respondem ao toque',`document.querySelectorAll('#saved-cards .resource-card').length===1`);
- await tap('[data-filter="area"][data-value="Tecnologia"]');
- await check('Filtros respondem ao toque',`document.querySelector('[data-filter="area"][data-value="Tecnologia"]').getAttribute('aria-pressed')==='true'&&document.querySelectorAll('#cards .resource-card').length>0`);
+ await tap('[data-filter="area"][data-value="Tecnologia e Computação"]');
+ await check('Filtros respondem ao toque',`document.querySelector('[data-filter="area"][data-value="Tecnologia e Computação"]').getAttribute('aria-pressed')==='true'&&document.querySelectorAll('#cards .resource-card').length>0`);
  await tap('[data-route-area]');
  await check('Rota responde ao toque',`document.querySelectorAll('.route-result li').length===3`);
  await screenshot('rota-390');

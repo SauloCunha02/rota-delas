@@ -57,3 +57,11 @@ O levantamento passou a reunir 63 recursos, incluindo 38 fichas do diretório Me
 O envio externo de iniciativas usa um formulário de proposta com prévia e encaminhamento para uma issue pública no GitHub, sujeita à revisão humana. Isso não é inscrição em competição nem prova de impacto. O cadastro não deve pedir dados pessoais de estudantes. O uso dessas submissões como dados de pesquisa com pessoas exigirá planejamento com o orientador e os procedimentos previstos no edital.
 
 Dados e critérios de revisão estão descritos em CURADORIA.md.
+
+## Foco local e organização — 02/10/2026
+
+O público prioritário permanece sendo meninas do Ensino Médio de escolas públicas do Ceará. Recursos nacionais complementam as iniciativas locais, podendo oferecer caminhos de estudo e participação; isso não significa que todas as atividades sejam online ou estejam com inscrições abertas. A ampliação nacional permite reaplicar a solução em outros contextos sem perder o problema local da proposta.
+
+A página inicial mostra Ceará + nacionais e permite mudar o alcance. A classificação separa área, tema, tipo, público e formato. Há quatro áreas e temas específicos, atribuídos com base no conteúdo documental. A navegação móvel inclui barra inferior, acesso à acessibilidade no cabeçalho e leitor com espaço reservado. O cadastro de iniciativas ocupa uma página própria, com curadoria antes de publicar.
+
+O problema demonstrado por este levantamento é a dispersão das informações entre fontes institucionais. Não foi investigado se as estudantes desconhecem as iniciativas nem comprovado aumento da participação feminina. Os resultados da entrega são técnicos e documentais. A interface acessível apoia o objetivo de inclusão; não é, por si, resultado de sustentabilidade ambiental. A equipe deve descrever apenas práticas ou resultados ambientais que efetivamente consiga demonstrar.

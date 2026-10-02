@@ -34,7 +34,7 @@
 body.reader-visible {padding-bottom:calc(var(--reader-height,260px) + 100px)}
 
 /* Tela pequena: navegação legível e conteúdo em uma coluna. */
-@media (max-width:680px) {
+@media (max-width:680px), (max-height:500px) and (pointer:coarse) {
   .shell {width:calc(100% - 32px)}
   .header-inner {display:grid;grid-template-columns:minmax(0,1fr);height:auto;gap:10px;padding-block:14px 8px}
   .site-header .brand-logo {width:170px}

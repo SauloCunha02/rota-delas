@@ -131,7 +131,7 @@
       if(event.altKey&&!event.ctrlKey&&!event.metaKey&&!event.repeat){
         if(event.key.toLowerCase()==='a'){event.preventDefault();dialog.open?dialog.close():openPanel();}
         if(event.key.toLowerCase()==='l'){event.preventDefault();reader.startScope();}
-      }else if(event.key==='Escape'&&!dialog.open&&reader.reading){event.preventDefault();reader.stop();}
+      }else if(event.key==='Escape'&&!document.querySelector('dialog[open]')&&reader.reading){event.preventDefault();reader.stop();}
     });
     $('reset').addEventListener('click', () => {reader.reset();settings = {...defaults};positionGuide(innerHeight*.45);save('Preferências restauradas. As preferências de movimento do seu sistema continuam respeitadas.');$('transcript').hidden = true;});
     if (!supported) {

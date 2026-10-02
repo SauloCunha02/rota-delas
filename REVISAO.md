@@ -1,5 +1,19 @@
 # Revisões da aplicação
 
+## Organização, navegação e participação — 02/10/2026
+
+A versão anterior foi preservada pela tag e release `rotadelasv2`, no commit `f3bf7209c6d1430255723c386d02f1bc0c7ba50e`. A versão atual mantém os 63 registros e prioriza o Ceará junto com recursos nacionais, sem restringir a consulta ao Brasil. Foram definidas quatro áreas e 14 temas, com campos validados no gerador; a data desta organização não substitui as datas de consulta das fontes.
+
+O formulário completo fica em `cadastro.html`, acessível por uma chamada curta na página inicial. O remetente confere a prévia antes de abrir o GitHub e confirma o envio na plataforma. O link de cadastro não solicita etiquetas que exigiriam permissão de colaborador. O workflow do repositório aplica `cadastro` e `em-revisao` depois da abertura de uma issue com o prefixo esperado; a inclusão no catálogo continua dependendo da curadoria humana.
+
+O botão de acessibilidade fica no cabeçalho. No celular, a barra inferior oferece Buscar, Rota, Salvos e Mais. O leitor ocupa o espaço acima da barra, mantém os controles principais disponíveis e permite rolar as opções com letras ampliadas, inclusive em orientação horizontal. A navegação comum não inicia a leitura; durante a leitura, a mudança de seção atualiza seu escopo. Os rótulos do formulário podem ser narrados, sem incluir os valores digitados.
+
+Passaram 137 verificações: 40 da nova interface, 39 mobile, 20 do leitor e 38 do catálogo nacional e cadastro. Foram verificadas larguras de 320, 360, 390, 430 e 844 px, letras de até 200%, cinco paletas, filtros combinados, rotas, favoritos, modais, teclado, prévia do cadastro e compatibilidade com links antigos. As capturas finais foram inspecionadas. Relatórios e scripts estão em `identidade-visual/revisao` e `identidade-visual/revisar-*.mjs`.
+
+Limites: a validação usa Chrome com emulação móvel e eventos de voz simulados. Não substitui testes em aparelhos físicos, reprodução sonora real, revisão linguística de Libras ou auditoria formal com leitores de tela. Nenhuma issue fictícia foi enviada, portanto a classificação de uma solicitação real pelo novo workflow não foi exercitada de ponta a ponta. Não foram medidos efeitos sociais nem prometidas vagas nas iniciativas.
+
+Autoavaliação interna: funcionamento 3/3, organização e fontes 1,9/2, clareza e acessibilidade 1,9/2, adequação documental ao CFC 1,8/2 e privacidade 0,9/1, totalizando **9,5/10**. A nota é uma avaliação da entrega técnica; não representa nota da banca nem certificação de acessibilidade. O envio pelo GitHub é público e essa condição aparece antes do envio.
+
 ## Expansão nacional — 01/10/2026
 
 A tag e a release `rotadelasv1` preservam a versão anterior à expansão nacional. Os relatos abaixo dessa seção descrevem suas respectivas versões históricas, inclusive os resultados com 13 itens.

@@ -3,7 +3,7 @@
     "id": "lua",
     "title": "Projeto Lua",
     "kind": "Projeto",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "place": "Ceará · Tianguá",
     "description": "Iniciativa criada por alunas do IFCE para apoiar meninas e mulheres na tecnologia por meio de conteúdos e ações.",
     "url": "https://projetolua.ifce.edu.br/",
@@ -30,13 +30,16 @@
         "url": "https://projetolua.ifce.edu.br/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Computação"
     ]
   },
   {
     "id": "divas-aracati",
     "title": "Projeto DIVAS",
     "kind": "Projeto",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "place": "Ceará · Aracati",
     "description": "Projeto do IFCE Aracati que aproxima meninas das tecnologias da informação, com cursos e ações de extensão.",
     "url": "https://portal.ifce.edu.br/campus/aracati/extensao/divas/",
@@ -63,13 +66,16 @@
         "url": "https://portal.ifce.edu.br/campus/aracati/extensao/divas/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Programação"
     ]
   },
   {
     "id": "meninas-vale",
     "title": "Meninas Digitais do Vale",
     "kind": "Projeto",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "place": "Ceará · Russas",
     "description": "Projeto da UFC em Russas com ações para aproximar meninas da computação e apoiar mulheres na área.",
     "url": "https://extensaorussas.ufc.br/pt/projetos/2026-4/tecnologia-e-producao/",
@@ -96,13 +102,16 @@
         "url": "https://extensaorussas.ufc.br/pt/projetos/2026-4/tecnologia-e-producao/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Computação"
     ]
   },
   {
     "id": "mulheres-ct",
     "title": "Mulheres em C&T",
     "kind": "Projeto",
-    "area": "Ciência",
+    "area": "Ciência e Pesquisa",
     "place": "Ceará · Fortaleza",
     "description": "Projeto de extensão da UFC dedicado a aproximar estudantes da ciência e da tecnologia e mostrar trajetórias de pesquisadoras.",
     "url": "https://deti.ufc.br/pt/resultado-final-selecao-agente-ufc-de-extensao-edital-16-2026-projeto-mulheres-em-ct/",
@@ -129,13 +138,16 @@
         "url": "https://deti.ufc.br/pt/resultado-final-selecao-agente-ufc-de-extensao-edital-16-2026-projeto-mulheres-em-ct/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Pesquisa científica"
     ]
   },
   {
     "id": "seara",
     "title": "Seara da Ciência",
     "kind": "Visita",
-    "area": "Ciência",
+    "area": "Ciência e Pesquisa",
     "place": "Ceará · Fortaleza",
     "description": "Museu interativo da UFC com visitação gratuita e atividades de divulgação científica. Veja como agendar no site.",
     "url": "https://seara.ufc.br/pt/agendamento/",
@@ -162,13 +174,16 @@
         "url": "https://seara.ufc.br/pt/agendamento/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Divulgação científica"
     ]
   },
   {
     "id": "divas-tiangua",
     "title": "DIVAS em Tianguá",
     "kind": "Projeto",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "place": "Ceará · Tianguá",
     "description": "Ações do IFCE com oficinas de pensamento computacional e criação de aplicativos para estudantes de escolas públicas.",
     "url": "https://portal.ifce.edu.br/campus/tiangua/not%C3%ADcias/projeto-divas-recebe-premio-de-projeto-destaque-da-regiao-nordeste/",
@@ -195,13 +210,17 @@
         "url": "https://portal.ifce.edu.br/campus/tiangua/not%C3%ADcias/projeto-divas-recebe-premio-de-projeto-destaque-da-regiao-nordeste/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Programação",
+      "Aplicativos"
     ]
   },
   {
     "id": "meninas-digitais",
     "title": "Programa Meninas Digitais",
     "kind": "Rede",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "place": "Brasil · online",
     "description": "Rede da Sociedade Brasileira de Computação que reúne projetos para despertar o interesse de meninas pela área.",
     "url": "https://meninasdigitais.com.br/sobre-nos/",
@@ -226,13 +245,16 @@
         "url": "https://meninasdigitais.com.br/sobre-nos/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Computação"
     ]
   },
   {
     "id": "obi",
     "title": "OBI — Olimpíada Brasileira de Informática",
     "kind": "Competição",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "place": "Brasil · escolas",
     "description": "Competição de informática com modalidades por nível escolar. Consulte o regulamento, a inscrição pela escola e o calendário oficial.",
     "url": "https://olimpiada.ic.unicamp.br/",
@@ -257,13 +279,16 @@
         "url": "https://olimpiada.ic.unicamp.br/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Programação"
     ]
   },
   {
     "id": "obi-estude",
     "title": "Cursos de programação da OBI",
     "kind": "Estudo",
-    "area": "Tecnologia",
+    "area": "Tecnologia e Computação",
     "place": "Brasil · online",
     "description": "Materiais gratuitos para quem quer começar a programar, disponíveis no ambiente de estudos da OBI.",
     "url": "https://olimpiada.ic.unicamp.br/prepare/estude/",
@@ -288,6 +313,9 @@
         "url": "https://olimpiada.ic.unicamp.br/prepare/estude/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Programação"
     ]
   },
   {
@@ -319,6 +347,9 @@
         "url": "https://portaldaobmep.impa.br/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Matemática"
     ]
   },
   {
@@ -350,6 +381,9 @@
         "url": "https://www.obmep.org.br/banco.htm",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Matemática"
     ]
   },
   {
@@ -381,13 +415,16 @@
         "url": "https://www.obmep.org.br/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Matemática"
     ]
   },
   {
     "id": "cfc",
     "title": "Mostra Ceará Faz Ciência",
     "kind": "Competição",
-    "area": "Ciência",
+    "area": "Ciência e Pesquisa",
     "place": "Ceará · Fortaleza",
     "description": "Mostra de projetos científicos de escolas públicas dentro da Feira do Conhecimento. Consulte o edital e os prazos no site oficial.",
     "url": "https://feiradoconhecimento.com.br/",
@@ -414,6 +451,9 @@
         "url": "https://feiradoconhecimento.com.br/",
         "checkedAt": "2026-09-28"
       }
+    ],
+    "topics": [
+      "Pesquisa científica"
     ]
   }
 ]

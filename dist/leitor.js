@@ -4,7 +4,7 @@
   const $ = id => document.getElementById('a11y-' + id);
   const normalize = text => text.replace(/\s+/g,' ').trim();
   const ignored = 'button,input,select,textarea,svg,[hidden],[aria-hidden="true"],.sr-only,.filter-group,.route-options,.route-actions,.search-row';
-  const blocks = 'h1,h2,h3,p,.card-kind,.card-bottom>span,.route-result li,.resource-meta dt,.resource-meta dd,.participate-guide li,.catalog-stats div';
+  const blocks = 'h1,h2,h3,p,.card-kind,.card-bottom>span,.route-result li,.resource-meta dt,.resource-meta dd,.resource-tags,.participate-guide li,.catalog-stats div,.form-grid>label,.consent-check,.form-topics legend,.topic-choices label';
 
   function visible(element) {
     return element?.isConnected && !element.closest(ignored) && element.getClientRects().length > 0 && getComputedStyle(element).visibility !== 'hidden';
@@ -67,6 +67,8 @@
       this.selectedText='';this.selectedRange=null;
       this.smallViewport=matchMedia('(max-width:680px), (max-height:500px) and (pointer:coarse)');
       this.compact=this.smallViewport.matches;this.layoutChosen=false;
+      this.positionControls=document.createElement('div');this.positionControls.className='reader-position-controls';
+      $('player').insertBefore(this.positionControls,$('player-text'));this.positionControls.append(document.querySelector('.reader-progress-label'),$('player-position'));
       this.bind();this.render();
       this.observer=new MutationObserver(()=>{
         if(this.parts.some(part=>part.element&&(!part.element.isConnected||part.map.some(point=>point&&!point.node.isConnected)))){
@@ -76,6 +78,7 @@
       this.observer.observe(document.querySelector('main'),{childList:true,subtree:true,characterData:true});
       if(window.ResizeObserver){this.resize=new ResizeObserver(()=>this.measure());this.resize.observe($('player'));}
       this.smallViewport.addEventListener('change',()=>{if(!this.layoutChosen)this.compact=this.smallViewport.matches;this.render();});
+      window.addEventListener('resize',()=>this.render());
     }
     setSelection(text,range) {
       this.selectedText=text;this.selectedRange=range;
@@ -137,15 +140,16 @@
       const part=this.parts[this.index];if(!part?.element?.isConnected||$('panel').open||(!force&&!this.options.getFollow()))return;
       const word=wordAt(part.text,this.offset);const range=word&&textRange(part,word.start,word.end);
       const rect=range?.getBoundingClientRect()||part.element.getBoundingClientRect();
+      const headerBottom=document.querySelector('.site-header')?.getBoundingClientRect().bottom||0;
       const bottom=$('player').hidden?innerHeight-32:$('player').getBoundingClientRect().top-24;
-      if(force||rect.top<24||rect.bottom>bottom){const target=Math.max(32,bottom*.4);window.scrollBy({top:rect.top-target,behavior:'instant'});}
+      if(force||rect.top<headerBottom+16||rect.bottom>bottom){const target=Math.max(headerBottom+24,bottom*.4);window.scrollBy({top:rect.top-target,behavior:'instant'});}
       if(this.options.positionGuide&&this.options.getGuide())this.options.positionGuide(Math.max(48,Math.min(innerHeight-48,(range?.getBoundingClientRect()||part.element.getBoundingClientRect()).top+16)));
     }
     status(message) {$('speech-status').textContent=message;$('player-status').textContent=message;}
     render() {
       $('pause').disabled=!this.reading;$('stop').disabled=!this.reading;
       $('pause').textContent=this.paused?'Continuar':'Pausar';$('read').textContent=this.reading?'Reiniciar seção':'Ouvir texto';
-      $('player').hidden=(!this.options.getListen()&&!this.reading&&!this.parts.length)||$('panel').open;
+      $('player').hidden=(!this.options.getListen()&&!this.reading&&!this.parts.length)||!!document.querySelector('dialog[open]');
       $('player-play').textContent=this.reading&&!this.paused?'Pausar':'Play';
       $('player-play').setAttribute('aria-label',this.reading&&!this.paused?'Pausar leitura':this.paused?'Continuar leitura':'Iniciar leitura');
       $('player-play').disabled=!this.supported;
@@ -156,6 +160,11 @@
       $('player-rate-badge').textContent=String(this.options.getRate()).replace('.',',')+'×';
       $('player-rate-badge').setAttribute('aria-label','Alterar velocidade, atual '+String(this.options.getRate()).replace('.',',')+' vezes');
       $('player').classList.toggle('is-compact',this.compact);$('player-details').hidden=this.compact;
+      const landscape=matchMedia('(max-height:500px) and (pointer:coarse)').matches;
+      if((this.compact||!landscape)&&$('player-text').parentElement!==$('player'))$('player').insertBefore($('player-text'),$('player-details'));
+      if(this.compact&&this.positionControls.parentElement!==$('player'))$('player').insertBefore(this.positionControls,$('player-text'));
+      else if(!this.compact&&this.positionControls.parentElement!==$('player-details'))$('player-details').prepend(this.positionControls);
+      if(!this.compact&&landscape&&$('player-text').parentElement!==$('player-details'))$('player-details').prepend($('player-text'));
       $('player-collapse').setAttribute('aria-expanded',String(!this.compact));$('player-collapse').setAttribute('aria-label',this.compact?'Expandir opções do leitor':'Recolher opções do leitor');$('player-collapse').textContent=this.compact?'⌃':'⌄';
       $('player-slower').disabled=this.options.getRate()<=.5;$('player-faster').disabled=this.options.getRate()>=2;
       $('player-follow').checked=this.options.getFollow();$('player-scope').value=this.scope();
@@ -231,6 +240,8 @@
     }
     reset() {this.stop();this.parts=[];this.index=0;this.completed=false;this.render();$('player-text').textContent='Ative Play ou toque em um parágrafo para escolher de onde começar.';}
     bind() {
+      window.addEventListener('rota-dialog-change',()=>this.render());
+      window.addEventListener('rota-section-change',event=>{const id=event.detail?.id;if(!document.getElementById(id))return;const choice=$('scope').querySelector(`[value="${id}"]`);if(!choice)return;if(this.options.getListen()||this.reading||this.parts.length)this.changeScope(id);else{$('scope').value=id;$('player-scope').value=id;}});
       $('read').addEventListener('click',()=>this.startScope());$('pause').addEventListener('click',()=>this.playPause());$('stop').addEventListener('click',()=>this.stop());
       $('player-play').addEventListener('click',()=>this.playPause());$('player-stop').addEventListener('click',()=>this.stop());
       $('player-prev').addEventListener('click',()=>this.navigate(this.index-1));$('player-next').addEventListener('click',()=>this.navigate(this.index+1));

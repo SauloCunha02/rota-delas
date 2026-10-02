@@ -5,7 +5,8 @@ const root=join(dirname(fileURLToPath(import.meta.url)),'..');
 const names=['recursos-base','projetos-meninas-digitais','recursos-nacionais','sugestoes-aprovadas'];
 const states={AC:['Acre','Norte'],AL:['Alagoas','Nordeste'],AP:['Amapá','Norte'],AM:['Amazonas','Norte'],BA:['Bahia','Nordeste'],CE:['Ceará','Nordeste'],DF:['Distrito Federal','Centro-Oeste'],ES:['Espírito Santo','Sudeste'],GO:['Goiás','Centro-Oeste'],MA:['Maranhão','Nordeste'],MT:['Mato Grosso','Centro-Oeste'],MS:['Mato Grosso do Sul','Centro-Oeste'],MG:['Minas Gerais','Sudeste'],PA:['Pará','Norte'],PB:['Paraíba','Nordeste'],PR:['Paraná','Sul'],PE:['Pernambuco','Nordeste'],PI:['Piauí','Nordeste'],RJ:['Rio de Janeiro','Sudeste'],RN:['Rio Grande do Norte','Nordeste'],RS:['Rio Grande do Sul','Sul'],RO:['Rondônia','Norte'],RR:['Roraima','Norte'],SC:['Santa Catarina','Sul'],SP:['São Paulo','Sudeste'],SE:['Sergipe','Nordeste'],TO:['Tocantins','Norte']};
 const kinds=['Projeto','Estudo','Competição','Visita','Rede'];
-const areas=['Tecnologia','Ciência','Matemática'];
+const areas=['Tecnologia e Computação','Ciências Naturais','Matemática','Ciência e Pesquisa'];
+const topicVocabulary=['Computação','Programação','Aplicativos','Robótica','Eletrônica','Internet das Coisas','Biologia','Química','Física','Matemática','Estatística','Pesquisa científica','Engenharia','Divulgação científica'];
 const catalog=new Map();
 function validURL(value){const u=new URL(value);if(u.protocol!=='https:'||u.username||u.password)throw Error('URL pública HTTPS exigida: '+value);}
 for(const name of names){
@@ -17,6 +18,7 @@ for(const name of names){
   fileIds.add(record.id);
   for(const field of ['title','description','institution','audience'])if(typeof record[field]!=='string'||!record[field].trim())throw Error(record.id+': falta '+field);
   if(!kinds.includes(record.kind)||!areas.includes(record.area))throw Error(record.id+': tipo/área inválidos');
+  if(!Array.isArray(record.topics)||!record.topics.length||record.topics.some(t=>!topicVocabulary.includes(t))||new Set(record.topics).size!==record.topics.length)throw Error(record.id+': temas ausentes ou inválidos');
   if(!['Nacional','Local'].includes(record.scope)||!['Online','Presencial','Híbrido','Consultar fonte'].includes(record.mode)||!['Meninas em foco','Para todos'].includes(record.focus)||!['Ativo','Inativo','Consultar fonte'].includes(record.sourceStatus))throw Error(record.id+': classificação inválida');
   if(!Array.isArray(record.states)||record.states.some(uf=>!states[uf]))throw Error(record.id+': UF inválida');
   validURL(record.url);
@@ -37,7 +39,7 @@ const resources=[...catalog.values()].map(record=>{
  return {...record,regions,place};
 });
 const coverage=new Set(resources.flatMap(r=>r.states));
-const result={schemaVersion:1,updatedAt:'2026-10-01',states,resources,stats:{total:resources.length,active:resources.filter(r=>r.sourceStatus!=='Inativo').length,states:coverage.size,regions:new Set(resources.flatMap(r=>r.regions)).size,national:resources.filter(r=>r.scope==='Nacional').length,femaleFocus:resources.filter(r=>r.focus==='Meninas em foco').length}};
+const result={schemaVersion:2,updatedAt:'2026-10-02',areas,topics:topicVocabulary.filter(t=>resources.some(r=>r.topics.includes(t))),states,resources,stats:{total:resources.length,active:resources.filter(r=>r.sourceStatus!=='Inativo').length,states:coverage.size,regions:new Set(resources.flatMap(r=>r.regions)).size,national:resources.filter(r=>r.scope==='Nacional').length,femaleFocus:resources.filter(r=>r.focus==='Meninas em foco').length}};
 await mkdir(join(root,'dist','dados'),{recursive:true});
 await writeFile(join(root,'dist','dados','catalogo.json'),JSON.stringify(result,null,2)+'\n');
 await writeFile(join(root,'dist','catalogo.js'),'/* Gerado por scripts/gerar-catalogo.mjs. Edite dados/*.json. */\nwindow.RotaCatalog = '+JSON.stringify(result).replaceAll('<','\\u003c')+';\n');

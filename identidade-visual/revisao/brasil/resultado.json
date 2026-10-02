@@ -49,7 +49,7 @@
       "value": true
     },
     {
-      "name": "Rota de três passos Brasil Tecnologia",
+      "name": "Rota de três passos Brasil Tecnologia e Computação",
       "value": true
     },
     {
@@ -61,7 +61,7 @@
       "value": true
     },
     {
-      "name": "Rota de três passos CE Tecnologia",
+      "name": "Rota de três passos CE Tecnologia e Computação",
       "value": true
     },
     {
@@ -73,7 +73,7 @@
       "value": true
     },
     {
-      "name": "Rota de três passos AM Tecnologia",
+      "name": "Rota de três passos AM Tecnologia e Computação",
       "value": true
     },
     {
@@ -85,7 +85,7 @@
       "value": true
     },
     {
-      "name": "Rota de três passos SP Tecnologia",
+      "name": "Rota de três passos SP Tecnologia e Computação",
       "value": true
     },
     {
@@ -97,7 +97,7 @@
       "value": true
     },
     {
-      "name": "Rota de três passos RR Tecnologia",
+      "name": "Rota de três passos RR Tecnologia e Computação",
       "value": true
     },
     {
@@ -109,6 +109,10 @@
       "value": true
     },
     {
+      "name": "Contraste da cobertura no tema da marca",
+      "value": true
+    },
+    {
       "name": "Formulário incompleto bloqueado",
       "value": true
     },
@@ -117,7 +121,7 @@
       "value": true
     },
     {
-      "name": "Rascunho aponta ao repositório correto com dados codificados",
+      "name": "Rascunho público não exige permissão para atribuir etiquetas",
       "value": true
     },
     {
@@ -130,10 +134,6 @@
     },
     {
       "name": "Texto volumoso usa cópia sem URL extensa",
-      "value": true
-    },
-    {
-      "name": "Contraste da cobertura no tema da marca",
       "value": true
     },
     {

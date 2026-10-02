@@ -1,5 +1,15 @@
 # Catálogo nacional e sugestões externas
 
+## Organização vigente — 02/10/2026
+
+O esquema 2 usa quatro áreas: Tecnologia e Computação, Ciências Naturais, Matemática e Ciência e Pesquisa. Esta última acomoda divulgação, feiras e formação científica multidisciplinar, evitando tratar toda pesquisa como ciência natural. As rotas de Ciência podem usar recursos das duas áreas científicas.
+
+Cada registro possui `topics`, com um ou mais temas documentados, além de palavras-chave de busca em `tags`. O vocabulário inclui Computação, Programação, Aplicativos, Robótica, Eletrônica, Internet das Coisas, Biologia, Química, Física, Matemática, Estatística, Pesquisa científica, Engenharia e Divulgação científica. O gerador exige temas do vocabulário e não aceita duplicatas. Não atribua temas pelo nome criativo do projeto quando não houver informação suficiente na fonte.
+
+O Ceará e recursos nacionais são o recorte inicial. A consulta pode ser ampliada ao Brasil e filtrada por outros estados. A base local é apresentada primeiro quando uma UF é selecionada. A mudança de classificação não altera as datas anteriores de consulta às instituições.
+
+O formulário está em `dist/cadastro.html`, com temas opcionais para a sugestão. Na curadoria, confirme pelo menos um tema antes de incorporar o registro. O workflow `.github/workflows/cadastro.yml` apenas aplica etiquetas a novas issues cujo título começa com `[Cadastro]`; não verifica, aprova ou publica propostas. Não inclua etiquetas no endereço de rascunho, pois participantes externos podem não ter permissão para atribuí-las. A equipe deve conferir a fila também pelo prefixo do título se o workflow falhar.
+
 ## Estrutura dos dados
 
 - `dados/recursos-base.json`: os 13 recursos anteriores, com IDs mantidos para preservar favoritos.
@@ -16,7 +26,7 @@ As datas indicam consulta ao conteúdo da fonte, não certificação de que insc
 
 ## Como o recebimento funciona
 
-O formulário de `#participar` prepara um rascunho de issue no repositório público. A pessoa precisa entrar no GitHub e confirmar a criação. Abrir uma aba não equivale a enviar a solicitação. O site não tem servidor de formulários, conta de usuário própria ou banco para cadastro pessoal. O formulário serve ao cadastro de iniciativas, não à inscrição de estudantes em eventos.
+O formulário de `cadastro.html` prepara um rascunho de issue no repositório público. A pessoa precisa entrar no GitHub e confirmar a criação. Abrir uma aba não equivale a enviar a solicitação. O site não tem servidor de formulários, conta de usuário própria ou banco para cadastro pessoal. O formulário serve ao cadastro de iniciativas, não à inscrição de estudantes em eventos.
 
 O GitHub guarda a solicitação publicada e a identidade da conta do remetente. Campos devem conter somente informações institucionais publicáveis, sem CPF, telefone pessoal, dados de alunos ou documentos. O preenchimento não é guardado automaticamente no site. Uma cópia JSON pode ser baixada pelo remetente. Solicitações também podem ser abertas pelo template nativo de GitHub Issues.
 

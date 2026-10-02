@@ -5,7 +5,7 @@ labels: [cadastro, em-revisao]
 body:
   - type: markdown
     attributes:
-      value: "Envio público. Use apenas informações institucionais publicáveis, sem documentos ou dados pessoais de estudantes. A inclusão depende da revisão da equipe. Também é possível preparar a solicitação no site: https://saulocunha02.github.io/rota-delas/#participar"
+      value: "Envio público. Use apenas informações institucionais publicáveis, sem documentos ou dados pessoais de estudantes. A inclusão depende da revisão da equipe. Também é possível preparar a solicitação no site: https://saulocunha02.github.io/rota-delas/cadastro.html"
   - type: input
     id: iniciativa
     attributes:
@@ -36,7 +36,7 @@ body:
     id: area
     attributes:
       label: Área principal
-      options: [Tecnologia, Ciência, Matemática]
+      options: [Tecnologia e Computação, Ciências Naturais, Matemática, Ciência e Pesquisa]
     validations:
       required: true
   - type: input
