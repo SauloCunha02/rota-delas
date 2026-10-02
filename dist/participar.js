@@ -24,7 +24,8 @@
   document.getElementById('submission-long-notice').hidden=!long;
   document.getElementById('submission-link').href=target.href;dialog.showModal();document.getElementById('preview-close').focus();
  });
- const close=()=>{dialog.close();form.querySelector('[type=submit]').focus();};
+ const close=()=>dialog.close();
+ dialog.addEventListener('close',()=>{if(!dialog.open&&!document.querySelector('dialog[open]'))form.querySelector('[type=submit]').focus({preventScroll:true});});
  document.getElementById('preview-close').addEventListener('click',close);document.getElementById('preview-edit').addEventListener('click',close);
  document.getElementById('submission-link').addEventListener('click',()=>{document.getElementById('initiative-status').textContent='Rascunho aberto no GitHub. O envio só estará concluído depois que você confirmar a criação da solicitação lá.';});
  document.getElementById('copy-submission').addEventListener('click',async event=>{try{await navigator.clipboard.writeText(preparedBody);event.target.textContent='Texto copiado';}catch{const text=document.getElementById('submission-copy-text');text.hidden=false;text.value=preparedBody;text.focus();text.select();event.target.textContent='Selecione e copie o texto abaixo';}});

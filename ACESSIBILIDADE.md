@@ -1,5 +1,9 @@
 # Acessibilidade do Rota Delas
 
+## Correções de interação — 02/10/2026
+
+O leitor pausa ao abrir um diálogo e reaparece pausado ao fechá-lo. Caixas, rótulos de campos e resumos expansíveis não disparam leitura involuntária. Alt + A troca o diálogo atual pelo painel de acessibilidade; Alt + L inicia a leitura quando o conteúdo ou o próprio painel estão disponíveis. A cópia alternativa usa o diálogo ativo, com campo selecionável quando a permissão é recusada. O retorno de página pelo histórico não mantém um estado de voz que já foi cancelado. Sem síntese de voz, a interface informa a limitação e conserva os recursos escritos.
+
 ## Rotas e criação de Stories — 02/10/2026
 
 As novas preferências têm rótulos e avisos acessíveis. A troca e a escolha de próximo passo preservam o foco; o editor de Story é um diálogo nativo com fechamento por Esc e retorno ao botão que o abriu. A imagem tem descrição textual, controles de paleta e frase, e alternativa de download quando o compartilhamento não estiver disponível. Conferidos 320/390 px, orientação horizontal e letras de até 200%. Os rótulos dos temas e objetivos entram no leitor, sem incluir valores de controles.

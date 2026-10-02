@@ -1,5 +1,17 @@
 # Revisões da aplicação
 
+## Correções após uso — 02/10/2026
+
+O usuário relatou atualizações pouco claras ao marcar escolhas e limpeza da rota que não restaurava a seção. Adicionados resumo em tempo real e contador de temas; a limpeza agora reinicia preferências, seleção, próximo passo, estado salvo e Story, preservando favoritos e acessibilidade. Os objetivos aprender e criar passaram a usar sequências distintas. A ordem de temas recebidos por link foi normalizada para preservar os recursos e o próximo passo.
+
+A auditoria inicial reproduziu cinco falhas adicionais: cópia alternativa fora do diálogo ativo, cancelamento da imagem ao fechar/reabrir rapidamente, empilhamento de diálogos por atalho, aviso de link inválido substituído por mensagem de sucesso e foco não restaurado ao fechar a prévia do cadastro por Esc. Foram corrigidas e incorporadas à revisão.
+
+Também conferidos bloqueio de armazenamento/clipboard, cópia manual, compartilhamento indisponível ou repetido, arquivos PNG, navegador sem voz, retorno pelo histórico, leitura pausada nos diálogos, rótulos que não iniciam voz, cinco paletas, fontes, espaçamento e letras de até 200%.
+
+Resultado: **265 verificações funcionais aprovadas**, sendo 94 da auditoria ampliada e 171 das revisões anteriores repetidas. Não houve exceções JavaScript nos cenários de navegador verificados. Referências locais e IDs das duas páginas foram conferidos separadamente. Relatórios ficam em identidade-visual/revisao/auditoria e demais pastas de revisão.
+
+A revisão usa Chrome com emulação móvel; voz e compartilhamento nativo são simulados. Não houve publicação em rede social nem envio fictício de cadastro. A tentativa de conferir links institucionais por HTTP teve respostas 200, bloqueios 403 e falhas de conexão; não autoriza afirmar indisponibilidade das iniciativas nem atualizar suas datas de consulta documental. Isso não representa garantia universal de ausência de falhas ou certificação de acessibilidade.
+
 ## Rotas personalizadas e Stories — 02/10/2026
 
 Implementadas preferências de tema, objetivo e formato, justificativas das indicações, troca, próximo passo, salvamento local, exclusão e reabertura por link. Os critérios e limites estão em PERSONALIZACAO.md. O catálogo mantém 63 recursos; não foram inventados níveis ou requisitos que as fontes não informam.

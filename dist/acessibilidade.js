@@ -37,7 +37,7 @@
     let lastFocus = launcher;
     let guideY = innerHeight * 0.45;
     let dragging = false;
-    const supported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+    const supported = !!window.speechSynthesis && typeof window.SpeechSynthesisUtterance === 'function';
     let reader;
     const profiles = {
       assisted:{size:125,font:true,spacing:true,listen:true},
@@ -83,7 +83,10 @@
     launcher.hidden = false;
     sync();
     function openPanel() {
+      if(dialog.open)return;
       lastFocus = document.activeElement;
+      const otherDialogs=[...document.querySelectorAll('dialog[open]')].filter(d=>d!==dialog);
+      if(otherDialogs.length){lastFocus=launcher;otherDialogs.forEach(d=>d.close());}
       selection = window.getSelection()?.toString().trim() || '';
       const selected = window.getSelection();
       reader.setSelection(selection,selected?.rangeCount&&selection?selected.getRangeAt(0).cloneRange():null);
@@ -97,7 +100,7 @@
     }
     launcher.addEventListener('click', openPanel);
     $('close').addEventListener('click', () => dialog.close());
-    dialog.addEventListener('close', () => {launcher.setAttribute('aria-expanded','false');buttons();if(reader.reading)reader.locate();const target=lastFocus?.isConnected&&lastFocus.getClientRects().length&&!lastFocus.disabled?lastFocus:launcher;target.focus({preventScroll:true});});
+    dialog.addEventListener('close', () => {if(dialog.open)return;launcher.setAttribute('aria-expanded','false');buttons();if(document.querySelector('dialog[open]'))return;if(reader.reading)reader.locate();const target=lastFocus?.isConnected&&lastFocus.getClientRects().length&&!lastFocus.disabled?lastFocus:launcher;target.focus({preventScroll:true});});
     dialog.addEventListener('click', event => {const rect=dialog.getBoundingClientRect();if(event.target===dialog&&(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom))dialog.close();});
     $('size').addEventListener('input', event => {settings.size = Number(event.target.value);save('Letras em ' + settings.size + '%.');});
     for (const [id,delta] of [['smaller',-25],['larger',25]]) $(id).addEventListener('click', () => {settings.size = Math.max(100,Math.min(200,settings.size + delta));save('Letras em ' + settings.size + '%.');});
@@ -130,7 +133,7 @@
     document.addEventListener('keydown',event=>{
       if(event.altKey&&!event.ctrlKey&&!event.metaKey&&!event.repeat){
         if(event.key.toLowerCase()==='a'){event.preventDefault();dialog.open?dialog.close():openPanel();}
-        if(event.key.toLowerCase()==='l'){event.preventDefault();reader.startScope();}
+        if(event.key.toLowerCase()==='l'){event.preventDefault();if(!document.querySelector('dialog[open]:not(#a11y-panel)'))reader.startScope();}
       }else if(event.key==='Escape'&&!document.querySelector('dialog[open]')&&reader.reading){event.preventDefault();reader.stop();}
     });
     $('reset').addEventListener('click', () => {reader.reset();settings = {...defaults};positionGuide(innerHeight*.45);save('Preferências restauradas. As preferências de movimento do seu sistema continuam respeitadas.');$('transcript').hidden = true;});

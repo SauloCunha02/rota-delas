@@ -1,0 +1,202 @@
+{
+  "references": 49,
+  "missing": 0,
+  "checks": [
+    {
+      "file": "index.html",
+      "link": "assets/marca/favicon.svg"
+    },
+    {
+      "file": "index.html",
+      "link": "acessibilidade.js?v=20261002-4"
+    },
+    {
+      "file": "index.html",
+      "link": "styles.css"
+    },
+    {
+      "file": "index.html",
+      "link": "acessibilidade.css"
+    },
+    {
+      "file": "index.html",
+      "link": "mobile.css?v=20261002"
+    },
+    {
+      "file": "index.html",
+      "link": "brasil.css?v=20261001-2"
+    },
+    {
+      "file": "index.html",
+      "link": "interface.css?v=20261002"
+    },
+    {
+      "file": "index.html",
+      "link": "roteiro.css?v=20261002-4"
+    },
+    {
+      "file": "index.html",
+      "link": "leitor.js?v=20261002-4"
+    },
+    {
+      "file": "index.html",
+      "link": "catalogo.js?v=20261002"
+    },
+    {
+      "file": "index.html",
+      "link": "roteiro.js?v=20261002-4"
+    },
+    {
+      "file": "index.html",
+      "link": "app.js?v=20261002-4"
+    },
+    {
+      "file": "index.html",
+      "link": "navegacao.js?v=20261002-4"
+    },
+    {
+      "file": "index.html",
+      "link": "libras.js?v=20261001"
+    },
+    {
+      "file": "index.html",
+      "link": "assets/marca/logo-cabecalho.svg"
+    },
+    {
+      "file": "index.html",
+      "link": "cadastro.html"
+    },
+    {
+      "file": "index.html",
+      "link": "assets/marca/simbolo-claro.svg"
+    },
+    {
+      "file": "index.html",
+      "link": "assets/marca/simbolo-claro.svg"
+    },
+    {
+      "file": "index.html",
+      "link": "cadastro.html"
+    },
+    {
+      "file": "index.html",
+      "link": "dados/catalogo.json"
+    },
+    {
+      "file": "index.html",
+      "link": "assets/marca/logo-cabecalho.svg"
+    },
+    {
+      "file": "index.html",
+      "link": "cadastro.html"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "assets/marca/favicon.svg"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "acessibilidade.js?v=20261002-4"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "styles.css"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "acessibilidade.css"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "mobile.css?v=20261002"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "brasil.css?v=20261001-2"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "interface.css?v=20261002"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "leitor.js?v=20261002-4"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "catalogo.js?v=20261002"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "participar.js?v=20261002-4"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "navegacao.js?v=20261002-4"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "libras.js?v=20261001"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#inicio"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "assets/marca/logo-cabecalho.svg"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#explorar"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#rota"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "cadastro.html"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#metodo"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#explorar"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "assets/marca/logo-cabecalho.svg"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#inicio"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#explorar"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#rota"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#salvos"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "cadastro.html"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#metodo"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#inicio"
+    }
+  ]
+}

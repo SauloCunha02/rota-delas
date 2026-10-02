@@ -8,7 +8,7 @@ Primeiro são excluídos registros inativos, de outras áreas e de iniciativas l
 
 “Somente online” aceita apenas formato Online. “Presencial ou híbrido” aceita Presencial e Híbrido. Formato “Consultar fonte” não entra nessas duas escolhas. A base da instituição não comprova a existência de uma atividade no município da usuária. Requisitos, custos, vagas e datas precisam ser confirmados nas fontes.
 
-Os três papéis são descobrir (projetos/redes/visitas), aprender (estudos) e consultar desafio (competições). Explorar começa pela descoberta; aprender e criar começam pelo estudo; competir começa pelo desafio. A ordenação por papel é um critério de design, não conclusão de pesquisa sobre eficiência pedagógica.
+Os três papéis são descobrir (projetos/redes/visitas), aprender (estudos) e consultar desafio (competições). Explorar começa pela descoberta e inclui estudo e desafio; aprender começa pelo estudo; criar prioriza uma referência de iniciativa e duas fontes de estudo; competir começa pelo desafio. A ordenação por papel é um critério de design, não conclusão de pesquisa sobre eficiência pedagógica.
 
 A pontuação interna de cada candidato é: 120 por corresponder ao papel do passo, 30 por tema coincidente, 8 por corresponder ao primeiro papel do objetivo, 8 por ter base no estado escolhido e 5 pelo foco em meninas. Os pesos priorizam a estrutura do percurso e permitem até três temas. Empates são resolvidos pelo ID. Essa pontuação não é nota de qualidade das instituições nem do edital.
 
@@ -16,7 +16,9 @@ São escolhidos até três recursos distintos. Quando não há candidato do pape
 
 ## Estado, link e privacidade
 
-Salvar é uma ação explícita e usa a chave local rota-delas-minha-rota-v1, separada dos favoritos. Apagar remove somente essa rota. O próximo passo é uma intenção autodeclarada e não comprova atividade concluída.
+Salvar é uma ação explícita e usa a chave local rota-delas-minha-rota-v1, separada dos favoritos. “Limpar minha rota” apaga o salvamento e reinicia área, estado (Ceará), objetivo, formato, temas, próximo passo e imagem de Story. Fecha os temas expandidos e remove parâmetros de compartilhamento da URL. Favoritos e acessibilidade são preservados. Se o navegador bloquear a exclusão do armazenamento, a interface reinicia e informa que o salvamento pode permanecer. O próximo passo é uma intenção autodeclarada e não comprova atividade concluída.
+
+As alterações de área, objetivo, estado, formato e caixas de temas atualizam a seleção e o resumo visível imediatamente, com contador de até três temas. Antes de escolher uma área, as preferências já aparecem no resumo. Indicações só mudam quando os candidatos e critérios permitem; lacunas de cobertura recebem aviso. Temas são normalizados na ordem do catálogo para preservar rotas recebidas por link, independentemente da ordem do texto na URL.
 
 O link público contém IDs de recursos, área, estado opcional, temas, objetivo, formato e próximo passo. Não contém nome ou foto. Ao compartilhar e abrir o link, essas escolhas ficam na URL, podendo aparecer no histórico, no serviço de compartilhamento e nos registros da hospedagem. A interface avisa antes de copiar. IDs são conferidos novamente contra o catálogo; registros inativos ou incompatíveis não são mantidos.
 

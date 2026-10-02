@@ -16,18 +16,30 @@
  document.querySelectorAll('[data-open-accessibility],[data-open-libras]').forEach(button=>button.addEventListener('click',()=>{restoreMenuFocus=false;menu.close();document.getElementById('a11y-open').click();if(button.hasAttribute('data-open-libras'))document.getElementById('a11y-libras').click();}));
  document.addEventListener('click',event=>{
   const link=event.target.closest('a[href]');if(!link)return;
+  if(menu.open&&menu.contains(link)){restoreMenuFocus=false;menu.close();}
   const url=new URL(link.href,location.href);if(url.origin!==location.origin||url.pathname!==location.pathname||!url.hash||link.target==='_blank'||link.hasAttribute('download'))return;
   let hash;try{hash=decodeURIComponent(url.hash.slice(1));}catch{return;}
   const target=document.getElementById(hash);if(!target)return;
   event.preventDefault();if(menu.open){restoreMenuFocus=false;menu.close();}
-  history.pushState(null,'',url.hash);const heading=target.querySelector('h1,h2')||target;heading.tabIndex=-1;heading.focus({preventScroll:true});
+  if(location.hash!==url.hash)history.pushState(null,'',url.hash);const heading=target.querySelector('h1,h2')||target;heading.tabIndex=-1;heading.focus({preventScroll:true});
   target.scrollIntoView({block:'start',behavior:root.dataset.a11yMotion==='true'?'instant':'smooth'});
   mark(url.hash.slice(1)==='inicio'?'explorar':url.hash.slice(1));
   if(main.contains(target))window.dispatchEvent(new CustomEvent('rota-section-change',{detail:{id:target.id}}));
  });
  const observed=[...main.querySelectorAll('section[id]')];
  if(window.IntersectionObserver){const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio);if(visible[0])mark(visible[0].target.id==='inicio'?'explorar':visible[0].target.id);},{rootMargin:'-80px 0px -45% 0px',threshold:[0,.1,.5]});observed.forEach(s=>observer.observe(s));}
- window.addEventListener('popstate',()=>{const id=location.hash.slice(1)||'inicio';mark(id==='inicio'?'explorar':id);const target=document.getElementById(id);if(target){target.scrollIntoView({block:'start',behavior:'instant'});window.dispatchEvent(new CustomEvent('rota-section-change',{detail:{id}}));}});
+ let lastHash=location.hash;
+ function syncHash(scroll=false){
+  if(document.body.dataset.page==='catalogo'&&location.hash==='#participar'){location.replace('cadastro.html');return;}
+  let id;try{id=decodeURIComponent(location.hash.slice(1))||'inicio';}catch{return;}
+  const target=document.getElementById(id);if(!target)return;
+  mark(id==='inicio'?'explorar':id);
+  if(scroll)target.scrollIntoView({block:'start',behavior:'instant'});
+  if(main.contains(target))window.dispatchEvent(new CustomEvent('rota-section-change',{detail:{id}}));
+ }
+ window.addEventListener('popstate',()=>{lastHash=location.hash;syncHash(true);});
+ window.addEventListener('hashchange',()=>{if(location.hash!==lastHash){lastHash=location.hash;syncHash();}});
+ document.addEventListener('DOMContentLoaded',()=>{if(location.hash)syncHash();});
  function keyboard(){const typing=document.activeElement?.matches('textarea,input:not([type=checkbox]):not([type=range]):not([type=button])');document.body.classList.toggle('keyboard-open',!!typing&&!!window.visualViewport&&innerHeight-visualViewport.height>150);measure();}
  window.visualViewport?.addEventListener('resize',keyboard);document.addEventListener('focusin',keyboard);document.addEventListener('focusout',()=>requestAnimationFrame(keyboard));
  window.addEventListener('resize',measure);if(window.ResizeObserver){const sizes=new ResizeObserver(measure);sizes.observe(nav);sizes.observe(header);}

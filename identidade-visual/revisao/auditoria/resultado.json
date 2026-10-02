@@ -1,0 +1,383 @@
+{
+  "checks": 94,
+  "failed": [],
+  "errors": [],
+  "results": [
+    {
+      "name": "Cópia alternativa funciona dentro do diálogo",
+      "value": true
+    },
+    {
+      "name": "Fechar e reabrir rapidamente não cancela novo PNG",
+      "value": true
+    },
+    {
+      "name": "Atalho de acessibilidade não empilha modais",
+      "value": true
+    },
+    {
+      "name": "Link inválido tem aviso específico",
+      "value": true
+    },
+    {
+      "name": "Story cabe normal 320 100",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem normal 320 100",
+      "value": true
+    },
+    {
+      "name": "Story cabe normal 320 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem normal 320 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe normal 390 175",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem normal 390 175",
+      "value": true
+    },
+    {
+      "name": "Story cabe normal 844 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem normal 844 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe normal 1440 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem normal 1440 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe light 320 100",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem light 320 100",
+      "value": true
+    },
+    {
+      "name": "Story cabe light 320 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem light 320 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe light 390 175",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem light 390 175",
+      "value": true
+    },
+    {
+      "name": "Story cabe light 844 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem light 844 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe light 1440 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem light 1440 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe dark 320 100",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem dark 320 100",
+      "value": true
+    },
+    {
+      "name": "Story cabe dark 320 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem dark 320 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe dark 390 175",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem dark 390 175",
+      "value": true
+    },
+    {
+      "name": "Story cabe dark 844 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem dark 844 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe dark 1440 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem dark 1440 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe blue 320 100",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem blue 320 100",
+      "value": true
+    },
+    {
+      "name": "Story cabe blue 320 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem blue 320 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe blue 390 175",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem blue 390 175",
+      "value": true
+    },
+    {
+      "name": "Story cabe blue 844 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem blue 844 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe blue 1440 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem blue 1440 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe mono 320 100",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem mono 320 100",
+      "value": true
+    },
+    {
+      "name": "Story cabe mono 320 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem mono 320 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe mono 390 175",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem mono 390 175",
+      "value": true
+    },
+    {
+      "name": "Story cabe mono 844 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem mono 844 200",
+      "value": true
+    },
+    {
+      "name": "Story cabe mono 1440 200",
+      "value": true
+    },
+    {
+      "name": "Download acessível por rolagem mono 1440 200",
+      "value": true
+    },
+    {
+      "name": "Rota completa cabe 100",
+      "value": true
+    },
+    {
+      "name": "Rota completa cabe 125",
+      "value": true
+    },
+    {
+      "name": "Rota completa cabe 150",
+      "value": true
+    },
+    {
+      "name": "Rota completa cabe 175",
+      "value": true
+    },
+    {
+      "name": "Rota completa cabe 200",
+      "value": true
+    },
+    {
+      "name": "Rota com fonte e espaçamento não excede tela",
+      "value": true
+    },
+    {
+      "name": "Story com fonte e espaçamento não excede modal",
+      "value": true
+    },
+    {
+      "name": "Cadastro não tem IDs duplicados",
+      "value": true
+    },
+    {
+      "name": "Prévia de cadastro abre",
+      "value": true
+    },
+    {
+      "name": "Esc da prévia devolve foco ao botão de envio",
+      "value": true
+    },
+    {
+      "name": "Preferências atualizam antes da escolha de área",
+      "value": true
+    },
+    {
+      "name": "Criar e aprender têm percursos distintos",
+      "value": true
+    },
+    {
+      "name": "Formato atualiza resultado imediatamente",
+      "value": true
+    },
+    {
+      "name": "Caixa de tema atualiza perfil contador e resumo",
+      "value": true
+    },
+    {
+      "name": "Estado atualiza resumo e candidatos",
+      "value": true
+    },
+    {
+      "name": "Mudança de preferências remove próximo passo antigo",
+      "value": true
+    },
+    {
+      "name": "Temas fora de ordem não reconstroem a rota recebida",
+      "value": true
+    },
+    {
+      "name": "Leitor começa na seção do link",
+      "value": true
+    },
+    {
+      "name": "Limpar restaura área temas objetivo formato e estado",
+      "value": true
+    },
+    {
+      "name": "Limpar apaga salvamento e parâmetros mas preserva favoritos",
+      "value": true
+    },
+    {
+      "name": "Limpar invalida imagem e próximo passo",
+      "value": true
+    },
+    {
+      "name": "Recarregar após limpeza mantém seção inicial",
+      "value": {}
+    },
+    {
+      "name": "Rótulo da caixa não dispara voz e preserva seleção",
+      "value": true
+    },
+    {
+      "name": "Abrir justificativa não dispara leitura",
+      "value": true
+    },
+    {
+      "name": "Abrir Story pausa voz e mantém controle ao fechar",
+      "value": true
+    },
+    {
+      "name": "Leitor reaparece pausado após fechar Story",
+      "value": true
+    },
+    {
+      "name": "Mudança nativa de hash atualiza escopo",
+      "value": true
+    },
+    {
+      "name": "Falha de canShare preserva PNG download e aviso correto",
+      "value": true
+    },
+    {
+      "name": "Sem permissão de cópia existe alternativa selecionável no modal",
+      "value": true
+    },
+    {
+      "name": "Dois cliques não abrem dois compartilhamentos",
+      "value": true
+    },
+    {
+      "name": "Fim de compartilhamento libera botão",
+      "value": true
+    },
+    {
+      "name": "PNG funciona sem API roundRect",
+      "value": true
+    },
+    {
+      "name": "Salvar bloqueado não afirma persistência",
+      "value": true
+    },
+    {
+      "name": "Favoritos bloqueados continuam locais com aviso explícito",
+      "value": true
+    },
+    {
+      "name": "Limpeza bloqueada reinicia interface e informa limite",
+      "value": true
+    },
+    {
+      "name": "Armazenamento corrompido não trava inicialização",
+      "value": true
+    },
+    {
+      "name": "Retorno de página não apresenta áudio fantasma",
+      "value": true
+    },
+    {
+      "name": "Navegador sem voz tem aviso e conserva controles de navegação",
+      "value": true
+    },
+    {
+      "name": "Story funciona mesmo sem síntese de voz",
+      "value": true
+    },
+    {
+      "name": "Nenhuma exceção JavaScript",
+      "value": true
+    }
+  ]
+}

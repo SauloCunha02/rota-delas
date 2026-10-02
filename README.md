@@ -38,7 +38,7 @@ O workflow `.github/workflows/pages.yml` publica a pasta `dist` no GitHub Pages 
 
 ## Acessibilidade
 
-Na seção Minha rota, escolha a área e ajuste objetivo, formato e temas. Use “Quero começar aqui” para destacar uma indicação. “Criar meu Story” abre o editor do cartão; a publicação no Instagram é feita pela usuária. Sem suporte ao compartilhamento de arquivos, baixe o PNG. O link da rota inclui suas escolhas e IDs de recursos, sem nome ou foto, e deve ser conferido antes de compartilhar. As rotas salvas podem ser apagadas na própria seção.
+Na seção Minha rota, escolha a área e ajuste objetivo, formato e temas. As escolhas e o contador de temas atualizam o resumo e a seleção imediatamente. Use “Quero começar aqui” para destacar uma indicação. “Limpar minha rota” apaga a rota salva e devolve a seção e o Story ao estado inicial, preservando favoritos e acessibilidade. “Criar meu Story” abre o editor do cartão; a publicação no Instagram é feita pela usuária. Sem suporte ao compartilhamento de arquivos, baixe o PNG. O link da rota inclui suas escolhas e IDs de recursos, sem nome ou foto, e deve ser conferido antes de compartilhar.
 
 Use o botão com o **símbolo de acessibilidade**, visível no cabeçalho, ou **Alt + A**. O painel lateral segue a organização de [Cartografias do Abandono](https://saulocunha02.github.io/cartografias-do-abandono/), com quatro perfis rápidos: leitura assistida, baixa visão, menos movimento e foco na linha.
 

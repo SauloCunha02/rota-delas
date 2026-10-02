@@ -7,16 +7,16 @@
   <meta name="description" content="Descubra iniciativas para meninas na ciência em todo o Brasil. Projetos, competições, materiais de estudo e rotas com fontes públicas, com o Ceará em destaque.">
   <title>Rota Delas — ciência e tecnologia ao seu alcance</title>
   <link rel="icon" type="image/svg+xml" href="assets/marca/favicon.svg">
-  <script src="acessibilidade.js?v=20261002"></script>
+  <script src="acessibilidade.js?v=20261002-4"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="acessibilidade.css">
   <link rel="stylesheet" href="mobile.css?v=20261002">
   <link rel="stylesheet" href="brasil.css?v=20261001-2">
-  <link rel="stylesheet" href="interface.css?v=20261002"><link rel="stylesheet" href="roteiro.css?v=20261002-3">
-  <script defer src="leitor.js?v=20261002-3"></script>
+  <link rel="stylesheet" href="interface.css?v=20261002"><link rel="stylesheet" href="roteiro.css?v=20261002-4">
+  <script defer src="leitor.js?v=20261002-4"></script>
   <script defer src="catalogo.js?v=20261002"></script>
-  <script defer src="roteiro.js?v=20261002-3"></script><script defer src="app.js?v=20261002-3"></script>
-  <script defer src="navegacao.js?v=20261002"></script>
+  <script defer src="roteiro.js?v=20261002-4"></script><script defer src="app.js?v=20261002-4"></script>
+  <script defer src="navegacao.js?v=20261002-4"></script>
   <script defer src="libras.js?v=20261001"></script>
 </head>
 <body data-page="catalogo">
@@ -62,10 +62,10 @@
           <div class="route-options" id="route-options" role="group" aria-label="Escolha uma área de interesse"></div>
           <div class="route-personalize">
             <label for="route-goal">O que você quer fazer agora?<select id="route-goal"><option value="explorar">Explorar possibilidades</option><option value="aprender">Aprender uma habilidade</option><option value="criar">Criar um projeto</option><option value="competir">Conhecer competições</option></select></label>
-            <label for="route-mode">Como prefere participar?<select id="route-mode"><option value="">Online ou presencial · consultar condições</option><option value="Online">Somente online</option><option value="Presencial">Presencial ou híbrido</option></select></label>
-            <details><summary>Escolher temas de interesse · até 3</summary><fieldset><legend>O que desperta sua curiosidade?</legend><div class="route-topics" id="route-topics"></div></fieldset></details>
+            <label for="route-mode">Como prefere participar?<select id="route-mode"><option value="">Todos os formatos</option><option value="Online">Somente online</option><option value="Presencial">Presencial ou híbrido</option></select></label>
+            <p id="route-preferences" class="route-preferences" aria-live="polite"></p><details><summary>Escolher temas de interesse · <span id="route-topics-count">0 de 3 temas selecionados</span></summary><fieldset><legend>O que desperta sua curiosidade?</legend><div class="route-topics" id="route-topics"></div></fieldset></details>
             <p class="route-private">Sem nome, idade, foto ou cadastro. Salvar guarda a rota somente neste navegador. O link compartilhado inclui suas escolhas e indicações: confira antes de enviar.</p>
-            <div class="story-actions"><button id="restore-route" type="button" hidden>Abrir minha rota salva</button><button id="forget-route" type="button">Apagar rota salva</button></div>
+            <div class="story-actions"><button id="restore-route" type="button" hidden>Abrir minha rota salva</button><button id="forget-route" type="button">Limpar minha rota</button></div>
           </div>
           <p id="route-status" class="route-status" role="status" aria-live="polite"></p>
         </div>

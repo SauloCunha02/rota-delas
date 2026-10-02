@@ -240,7 +240,7 @@
     }
     reset() {this.stop();this.parts=[];this.index=0;this.completed=false;this.render();$('player-text').textContent='Ative Play ou toque em um parágrafo para escolher de onde começar.';}
     bind() {
-      window.addEventListener('rota-dialog-change',()=>this.render());
+      window.addEventListener('rota-dialog-change',()=>{if(document.querySelector('dialog[open]')&&this.reading&&!this.paused)this.playPause();this.render();});
       window.addEventListener('rota-section-change',event=>{const id=event.detail?.id;if(!document.getElementById(id))return;const choice=$('scope').querySelector(`[value="${id}"]`);if(!choice)return;if(this.options.getListen()||this.reading||this.parts.length)this.changeScope(id);else{$('scope').value=id;$('player-scope').value=id;}});
       $('read').addEventListener('click',()=>this.startScope());$('pause').addEventListener('click',()=>this.playPause());$('stop').addEventListener('click',()=>this.stop());
       $('player-play').addEventListener('click',()=>this.playPause());$('player-stop').addEventListener('click',()=>this.stop());
@@ -262,10 +262,12 @@
         else if((event.key===' '||event.key==='Enter')&&event.target===$('player')){event.preventDefault();this.playPause();}
       });
       document.querySelector('main').addEventListener('click',event=>{
-        if(!this.options.getListen()||$('panel').open||event.target.closest('a,button,input,select')||window.getSelection()?.toString().trim())return;
+        const label=event.target.closest('label');
+        if(!this.options.getListen()||document.querySelector('dialog[open]')||event.target.closest('a,button,input,select,textarea,summary')||label?.querySelector('input,select,textarea')||window.getSelection()?.toString().trim())return;
         const element=event.target.closest(blocks);if(element&&visible(element))this.startAt(element);
       });
       window.addEventListener('pagehide',()=>{++this.token;if(this.supported)window.speechSynthesis.cancel();});
+      window.addEventListener('pageshow',event=>{if(event.persisted){this.reading=false;this.paused=false;this.utterance=null;this.render();this.status('Página retomada. Pressione Play para continuar a leitura.');}});
     }
   };
 })();
