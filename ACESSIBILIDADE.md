@@ -1,5 +1,9 @@
 # Acessibilidade do Rota Delas
 
+## Rotas e criação de Stories — 02/10/2026
+
+As novas preferências têm rótulos e avisos acessíveis. A troca e a escolha de próximo passo preservam o foco; o editor de Story é um diálogo nativo com fechamento por Esc e retorno ao botão que o abriu. A imagem tem descrição textual, controles de paleta e frase, e alternativa de download quando o compartilhamento não estiver disponível. Conferidos 320/390 px, orientação horizontal e letras de até 200%. Os rótulos dos temas e objetivos entram no leitor, sem incluir valores de controles.
+
 ## Navegação atual — 02/10/2026
 
 O botão com símbolo de acessibilidade fica no cabeçalho, em ambas as páginas. No celular, Buscar, Rota, Salvos e Mais ficam na barra inferior; Mais também oferece atalhos de acessibilidade e Libras. O cabeçalho e a barra reservam espaço na rolagem. O player aparece acima da barra, sem ativar a voz por navegar entre seções. Seu estado acompanha a seção quando a leitura está habilitada.

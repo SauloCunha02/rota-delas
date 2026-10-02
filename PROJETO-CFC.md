@@ -17,7 +17,7 @@ Desenvolver e avaliar tecnicamente uma aplicação web que organize caminhos pú
 ## Objetivos específicos
 
 1. Localizar e classificar fontes institucionais sobre projetos, estudos, visitas e competições.
-2. Implementar busca, filtros, favoritos locais e rotas por área de interesse.
+2. Implementar busca, filtros, favoritos locais, rotas personalizadas com justificativas e cartões de compartilhamento voluntário.
 3. Conferir a correspondência entre os cartões e suas fontes, a operação das funções e a adaptação a telas pequenas.
 4. Documentar os limites da aplicação e o procedimento necessário para atualizar os dados.
 
@@ -29,7 +29,7 @@ O [Programa Meninas Digitais da Sociedade Brasileira de Computação](https://me
 
 1. **Levantamento documental:** consultar páginas oficiais de universidades, institutos, olimpíadas e programas. Registrar título, URL, tipo, área, local, descrição e data da verificação.
 2. **Curadoria:** incluir recursos pertinentes ao Ensino Médio ou úteis como preparação. Evitar anunciar vagas ou prazos sem confirmação na fonte.
-3. **Desenvolvimento:** implementar a interface em HTML/CSS/JavaScript. A busca normaliza acentos; os filtros combinam área, tipo, região, UF, formato e público; a paginação limita os cartões renderizados; as rotas têm três passos por área e estado; os favoritos ficam no navegador.
+3. **Desenvolvimento:** implementar a interface em HTML/CSS/JavaScript. A busca normaliza acentos; os filtros combinam área, tipo, região, UF, formato e público; a paginação limita os cartões renderizados; as rotas têm até três indicações por área, estado, temas, objetivo e formato; favoritos e rotas salvas ficam no navegador. Quando faltam recursos compatíveis, a interface informa a limitação.
 4. **Avaliação técnica:** testar busca, combinação de filtros, ausência de resultados, rotas, favoritos após recarga, cópia, navegação por teclado e disposição em computador e celular. Conferir os links por resposta HTTP e inspeção das páginas de origem.
 5. **Registro:** guardar versões, decisões, problemas e correções no caderno de campo da equipe.
 

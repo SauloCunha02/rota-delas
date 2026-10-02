@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-10-02T15:59:18.278Z",
+  "checks": 34,
+  "errors": 0,
+  "results": [
+    {
+      "name": "Preferências e 14 temas disponíveis",
+      "value": true
+    },
+    {
+      "name": "Entrada incompleta e malformada normalizada",
+      "value": true
+    },
+    {
+      "name": "Matriz de áreas estados objetivos e formatos respeita restrições",
+      "value": true
+    },
+    {
+      "name": "Rota tem três recursos e justificativas",
+      "value": true
+    },
+    {
+      "name": "Objetivo de competir muda a seleção",
+      "value": true
+    },
+    {
+      "name": "Tema informado entra no perfil",
+      "value": true
+    },
+    {
+      "name": "Até três temas, aviso acessível",
+      "value": true
+    },
+    {
+      "name": "Online não inclui formato desconhecido ou híbrido",
+      "value": true
+    },
+    {
+      "name": "Combinação sem cobertura não inventa recurso",
+      "value": true
+    },
+    {
+      "name": "Troca mantém três itens distintos e foco",
+      "value": true
+    },
+    {
+      "name": "Rota e próximo passo salvos somente no navegador",
+      "value": true
+    },
+    {
+      "name": "Link inclui IDs mas não nome foto ou identificação",
+      "value": true
+    },
+    {
+      "name": "Restaurar preserva objetivo e indicações",
+      "value": true
+    },
+    {
+      "name": "Modal do Story com foco e PNG real",
+      "value": true
+    },
+    {
+      "name": "Compartilhamento ausente oferece download",
+      "value": true
+    },
+    {
+      "name": "Download produz arquivo PNG real",
+      "value": true
+    },
+    {
+      "name": "PNG do modelo rota",
+      "value": true
+    },
+    {
+      "name": "PNG do modelo passo",
+      "value": true
+    },
+    {
+      "name": "PNG do modelo convite",
+      "value": true
+    },
+    {
+      "name": "PNG na paleta clara",
+      "value": true
+    },
+    {
+      "name": "PNG na paleta terracota",
+      "value": true
+    },
+    {
+      "name": "PNG na paleta menta",
+      "value": true
+    },
+    {
+      "name": "Modal e controles sem overflow 390 100",
+      "value": true
+    },
+    {
+      "name": "Modal e controles sem overflow 320 200",
+      "value": true
+    },
+    {
+      "name": "Modal e controles sem overflow 844 200",
+      "value": true
+    },
+    {
+      "name": "Modal e controles sem overflow 1440 100",
+      "value": true
+    },
+    {
+      "name": "Link da rota copiado",
+      "value": true
+    },
+    {
+      "name": "Legenda copia frase e link",
+      "value": true
+    },
+    {
+      "name": "Compartilhamento recebe arquivo PNG",
+      "value": true
+    },
+    {
+      "name": "Cancelar compartilhamento preserva imagem",
+      "value": true
+    },
+    {
+      "name": "Esc fecha modal e retorna foco",
+      "value": true
+    },
+    {
+      "name": "Link reabre exatamente os recursos e próximo passo",
+      "value": true
+    },
+    {
+      "name": "Apagar remove apenas a rota salva",
+      "value": true
+    },
+    {
+      "name": "Nenhuma exceção JavaScript",
+      "value": true
+    }
+  ]
+}

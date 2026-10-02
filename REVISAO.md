@@ -1,5 +1,17 @@
 # Revisões da aplicação
 
+## Rotas personalizadas e Stories — 02/10/2026
+
+Implementadas preferências de tema, objetivo e formato, justificativas das indicações, troca, próximo passo, salvamento local, exclusão e reabertura por link. Os critérios e limites estão em PERSONALIZACAO.md. O catálogo mantém 63 recursos; não foram inventados níveis ou requisitos que as fontes não informam.
+
+Adicionados três modelos de Story com três paletas e quatro frases. O navegador desenha a marca e exporta PNG 1080 × 1920, com prévia descrita em texto, download, cópia de link/legenda e compartilhamento de arquivo onde houver suporte. A publicação no Instagram é feita pela usuária.
+
+Passaram 171 verificações: 34 de personalização e Stories, 40 da interface, 39 mobile, 38 de catálogo/cadastro e 20 do leitor. A seleção foi conferida também em uma matriz de áreas, estados, objetivos e formatos. O teste de download produziu arquivo com assinatura PNG e dimensões verificadas. Os três cartões e as capturas finais foram inspecionados; o cabeçalho do modal foi corrigido em 200% para manter espaço de leitura e rolagem.
+
+Limites: compartilhamento exercitado com substitutos da API, sem publicação em rede social; emulação de telas não substitui aparelhos físicos. Não foram medidos engajamento ou participação feminina. Os links compartilhados expõem as escolhas na URL por iniciativa da usuária; a interface informa essa condição.
+
+Autoavaliação técnica interna: **9,5/10**, considerando funcionamento, documentação das fontes, clareza/acessibilidade, adequação documental ao CFC e privacidade. Mantêm-se as limitações de validação com aparelhos físicos, leitores de tela e impacto social. A nota não prevê avaliação da banca nem certifica acessibilidade.
+
 ## Organização, navegação e participação — 02/10/2026
 
 A versão anterior foi preservada pela tag e release `rotadelasv2`, no commit `f3bf7209c6d1430255723c386d02f1bc0c7ba50e`. A versão atual mantém os 63 registros e prioriza o Ceará junto com recursos nacionais, sem restringir a consulta ao Brasil. Foram definidas quatro áreas e 14 temas, com campos validados no gerador; a data desta organização não substitui as datas de consulta das fontes.

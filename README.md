@@ -28,13 +28,17 @@ O workflow `.github/workflows/pages.yml` publica a pasta `dist` no GitHub Pages 
 - Busca por nome, descrição, local e palavras-chave, inclusive sem acentos.
 - Filtros combináveis de área, tema, tipo, região, UF, formato e público; paginação com 12 cartões.
 - 63 recursos com fontes e datas de consulta; 61 visíveis inicialmente e 2 inativos consultáveis.
-- Rotas de três passos por área, considerando o estado escolhido e recursos nacionais.
+- Rotas personalizadas por área, estado, até três temas, objetivo e formato confirmado; até três indicações com justificativas e aviso de cobertura insuficiente.
+- Troca de indicações, escolha do próximo passo, salvamento local e link que reabre os recursos selecionados.
+- Três modelos de Stories, três paletas e frases selecionáveis; prévia, PNG 1080 × 1920, download, cópia de legenda/link e compartilhamento de arquivo em aparelhos compatíveis.
 - Favoritos salvos apenas no navegador do aparelho.
 - Cópia da rota para a área de transferência e versão para impressão.
 - Layout responsivo e controles utilizáveis por teclado.
 - Painel de acessibilidade com preferências de leitura salvas no navegador.
 
 ## Acessibilidade
+
+Na seção Minha rota, escolha a área e ajuste objetivo, formato e temas. Use “Quero começar aqui” para destacar uma indicação. “Criar meu Story” abre o editor do cartão; a publicação no Instagram é feita pela usuária. Sem suporte ao compartilhamento de arquivos, baixe o PNG. O link da rota inclui suas escolhas e IDs de recursos, sem nome ou foto, e deve ser conferido antes de compartilhar. As rotas salvas podem ser apagadas na própria seção.
 
 Use o botão com o **símbolo de acessibilidade**, visível no cabeçalho, ou **Alt + A**. O painel lateral segue a organização de [Cartografias do Abandono](https://saulocunha02.github.io/cartografias-do-abandono/), com quatro perfis rápidos: leitura assistida, baixa visão, menos movimento e foco na linha.
 
