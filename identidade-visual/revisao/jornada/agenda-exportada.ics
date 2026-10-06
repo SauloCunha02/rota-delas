@@ -1,0 +1,119 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Rota Delas//Agenda Delas//PT-BR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agenda Delas
+BEGIN:VEVENT
+UID:cfc-inscricao-2026@rotadelas-ceara2026.web.app
+DTSTAMP:20261006T150000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Ceará Faz Ciência: prazo de inscrição
+DESCRIPTION:O edital informa submissão de 11/09 a 10/10/2026\, com resumo 
+ e vídeo. A consulta da agenda não realiza a inscrição.\nPúblico: Equi
+ pes elegíveis de escolas públicas do Ceará\nInformado no edital. Fonte 
+ conferida em 2026-10-06\nhttps://feiradoconhecimento.com.br/wp-content/upl
+ oads/2026/09/Edital-CFC-202601.pdf\nExportar não realiza inscrição nem 
+ atualiza alterações futuras automaticamente.
+LOCATION:Envio online pelo portal oficial
+URL:https://feiradoconhecimento.com.br/wp-content/uploads/2026/09/Edital-CF
+ C-202601.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:obmep-prova-2026@rotadelas-ceara2026.web.app
+DTSTAMP:20261006T150000Z
+DTSTART:20261017T173000Z
+SUMMARY:OBMEP: prova da 2ª fase
+DESCRIPTION:Início às 14h30\, horário de Brasília. Confirme seu centro 
+ de aplicação com a escola. Não é uma nova inscrição.\nPúblico: Estu
+ dantes classificados para a 2ª fase\nData informada na fonte. Fonte confe
+ rida em 2026-10-06\nhttps://www.obmep.org.br/docs/2026/anexoI.pdf\nExporta
+ r não realiza inscrição nem atualiza alterações futuras automaticamen
+ te.
+LOCATION:Centro de aplicação definido pela OBMEP
+URL:https://www.obmep.org.br/docs/2026/anexoI.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cfc-resultado-2026@rotadelas-ceara2026.web.app
+DTSTAMP:20261006T150000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Ceará Faz Ciência: resultado previsto
+DESCRIPTION:Data prevista no item 9.2 do edital para divulgação dos class
+ ificados. Acompanhe eventuais comunicados oficiais.\nPúblico: Equipes que
+  enviaram projetos\nPrevisto no edital. Fonte conferida em 2026-10-06\nhtt
+ ps://feiradoconhecimento.com.br/wp-content/uploads/2026/09/Edital-CFC-2026
+ 01.pdf\nExportar não realiza inscrição nem atualiza alterações futura
+ s automaticamente.
+LOCATION:Portal da Feira do Conhecimento
+URL:https://feiradoconhecimento.com.br/wp-content/uploads/2026/09/Edital-CF
+ C-202601.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cfc-mostra-2026@rotadelas-ceara2026.web.app
+DTSTAMP:20261006T150000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261107
+SUMMARY:Mostra Ceará Faz Ciência
+DESCRIPTION:Dias da mostra indicados no cabeçalho do regulamento. A aprese
+ ntação depende da seleção do projeto.\nPúblico: Apresentação dos pr
+ ojetos selecionados\nData informada na fonte. Fonte conferida em 2026-10-0
+ 6\nhttps://feiradoconhecimento.com.br/wp-content/uploads/2026/09/Edital-CF
+ C-202601.pdf\nExportar não realiza inscrição nem atualiza alterações 
+ futuras automaticamente.
+LOCATION:Centro de Eventos do Ceará · Fortaleza
+URL:https://feiradoconhecimento.com.br/wp-content/uploads/2026/09/Edital-CF
+ C-202601.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:feira-conhecimento-2026@rotadelas-ceara2026.web.app
+DTSTAMP:20261006T150000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261108
+SUMMARY:Feira do Conhecimento 2026
+DESCRIPTION:Evento de ciência\, tecnologia e inovação. O portal oficial 
+ informa os dias e orienta o acesso dos visitantes.\nPúblico: Visitantes e
+  participantes\, conforme regras da feira\nData informada na fonte. Fonte 
+ conferida em 2026-10-06\nhttps://feiradoconhecimento.com.br/\nExportar nã
+ o realiza inscrição nem atualiza alterações futuras automaticamente.
+LOCATION:Centro de Eventos do Ceará · Fortaleza
+URL:https://feiradoconhecimento.com.br/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:obi-semana-2026@rotadelas-ceara2026.web.app
+DTSTAMP:20261006T150000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261213
+SUMMARY:Semana Olímpica da OBI
+DESCRIPTION:Período informado no calendário da OBI. A atividade é presen
+ cial\; alcance nacional não significa acesso remoto ou vaga aberta.\nPúb
+ lico: Participantes selecionados ou convidados pela OBI\nData informada na
+  fonte. Fonte conferida em 2026-10-06\nhttps://olimpiada.ic.unicamp.br/cal
+ endario/datas_importantes\nExportar não realiza inscrição nem atualiza 
+ alterações futuras automaticamente.
+LOCATION:Instituto de Computação da Unicamp · Campinas\, SP
+URL:https://olimpiada.ic.unicamp.br/calendario/datas_importantes
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:obmep-premiados-2026@rotadelas-ceara2026.web.app
+DTSTAMP:20261006T150000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:OBMEP: divulgação dos premiados
+DESCRIPTION:Data de divulgação indicada no calendário oficial. Consulte 
+ a lista no portal da organização.\nPúblico: Participantes da edição d
+ e 2026\nData informada na fonte. Fonte conferida em 2026-10-06\nhttps://ww
+ w.obmep.org.br/docs/2026/anexoI.pdf\nExportar não realiza inscrição nem
+  atualiza alterações futuras automaticamente.
+LOCATION:Portal oficial da OBMEP
+URL:https://www.obmep.org.br/docs/2026/anexoI.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

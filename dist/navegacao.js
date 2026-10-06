@@ -6,7 +6,7 @@
  if(document.body.dataset.page==='catalogo'&&location.hash==='#participar'){location.replace('cadastro.html');return;}
  let restoreMenuFocus=true;
  function measure(){root.style.setProperty('--bottom-nav-height',getComputedStyle(nav).display==='none'?'0px':nav.getBoundingClientRect().height+'px');root.style.setProperty('--site-header-height',header.getBoundingClientRect().height+'px');}
- function mark(section){nav.querySelectorAll('[data-section]').forEach(a=>{if(a.dataset.section===section&&document.body.dataset.page==='catalogo')a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});open.classList.toggle('is-current',document.body.dataset.page==='cadastro'||['metodo','contribuir'].includes(section));}
+ function mark(section){nav.querySelectorAll('[data-section]').forEach(a=>{if(a.dataset.section===section&&document.body.dataset.page==='catalogo')a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});open.classList.toggle('is-current',document.body.dataset.page==='cadastro'||['metodo','contribuir','missoes','agenda'].includes(section));}
  function syncDialogs(){const active=!!document.querySelector('dialog[open]');document.body.classList.toggle('dialog-open',active);open.setAttribute('aria-expanded',String(menu.open));window.dispatchEvent(new Event('rota-dialog-change'));}
  open.addEventListener('click',()=>{restoreMenuFocus=true;menu.showModal();close.focus();syncDialogs();});
  close.addEventListener('click',()=>menu.close());

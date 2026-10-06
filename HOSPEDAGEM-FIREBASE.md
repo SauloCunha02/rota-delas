@@ -5,6 +5,7 @@ Configuração de publicação estática do catálogo e da aplicação, sem serv
 - Projeto e site: rotadelas-ceara2026.
 - Endereço: https://rotadelas-ceara2026.web.app/
 - Diretório publicado: dist.
+- Gerar dados: `node scripts/gerar-catalogo.mjs` e `node scripts/gerar-jornada.mjs`.
 - Publicar: firebase deploy --only hosting --project rotadelas-ceara2026
 - A autenticação da CLI pertence à máquina e não deve ser adicionada ao repositório.
 

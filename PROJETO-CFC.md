@@ -65,3 +65,11 @@ O público prioritário permanece sendo meninas do Ensino Médio de escolas púb
 A página inicial mostra Ceará + nacionais e permite mudar o alcance. A classificação separa área, tema, tipo, público e formato. Há quatro áreas e temas específicos, atribuídos com base no conteúdo documental. A navegação móvel inclui barra inferior, acesso à acessibilidade no cabeçalho e leitor com espaço reservado. O cadastro de iniciativas ocupa uma página própria, com curadoria antes de publicar.
 
 O problema demonstrado por este levantamento é a dispersão das informações entre fontes institucionais. Não foi investigado se as estudantes desconhecem as iniciativas nem comprovado aumento da participação feminina. Os resultados da entrega são técnicos e documentais. A interface acessível apoia o objetivo de inclusão; não é, por si, resultado de sustentabilidade ambiental. A equipe deve descrever apenas práticas ou resultados ambientais que efetivamente consiga demonstrar.
+
+## Missões e agenda — 06/10/2026
+
+O percurso de consulta passa a incluir 12 atividades autorais em três trilhas: Programação, Matemática e Investigação Científica. Cada atividade tem materiais, etapas, referências e uma entrega concreta. A estudante registra sua atividade, acompanha o progresso, pausa e retoma neste navegador ou exporta seus registros. A conclusão é autodeclarada, sem certificação. As tarefas de investigação usam documentos públicos; o exercício de gráfico identifica seus números como fictícios.
+
+A Agenda Delas organiza nove registros com datas consultadas em quatro fontes oficiais: edital CFC, portal da Feira do Conhecimento, calendário OBI e calendário OBMEP. Filtros, calendário mensal, favoritos e exportação ICS permitem planejar próximos passos. Público, restrições, datas previstas, histórico e data de conferência aparecem nas fichas. Exportar não realiza inscrição nem sincroniza alterações futuras; a revisão da equipe é manual e periódica.
+
+As áreas novas mantêm a identidade visual, navegação móvel, teclado, ampliação de letras, paletas e escopos de leitura assistida. Não coletam anotações das estudantes para pesquisa. Fontes, decisões e critérios estão documentados em JORNADA.md. Estes são resultados de implementação e revisão documental, não uma medição de participação feminina.

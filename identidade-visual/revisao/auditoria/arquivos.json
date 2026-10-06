@@ -1,5 +1,5 @@
 {
-  "references": 49,
+  "references": 54,
   "missing": 0,
   "checks": [
     {
@@ -36,7 +36,11 @@
     },
     {
       "file": "index.html",
-      "link": "leitor.js?v=20261002-4"
+      "link": "jornada.css?v=20261006-1"
+    },
+    {
+      "file": "index.html",
+      "link": "leitor.js?v=20261006-1"
     },
     {
       "file": "index.html",
@@ -44,7 +48,7 @@
     },
     {
       "file": "index.html",
-      "link": "roteiro.js?v=20261002-4"
+      "link": "roteiro.js?v=20261006-2"
     },
     {
       "file": "index.html",
@@ -52,7 +56,15 @@
     },
     {
       "file": "index.html",
-      "link": "navegacao.js?v=20261002-4"
+      "link": "jornada-dados.js?v=20261006-1"
+    },
+    {
+      "file": "index.html",
+      "link": "jornada.js?v=20261006-1"
+    },
+    {
+      "file": "index.html",
+      "link": "navegacao.js?v=20261006-1"
     },
     {
       "file": "index.html",
@@ -120,7 +132,7 @@
     },
     {
       "file": "cadastro.html",
-      "link": "leitor.js?v=20261002-4"
+      "link": "leitor.js?v=20261006-1"
     },
     {
       "file": "cadastro.html",
@@ -132,7 +144,7 @@
     },
     {
       "file": "cadastro.html",
-      "link": "navegacao.js?v=20261002-4"
+      "link": "navegacao.js?v=20261006-1"
     },
     {
       "file": "cadastro.html",
@@ -185,6 +197,14 @@
     {
       "file": "cadastro.html",
       "link": "index.html#salvos"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#missoes"
+    },
+    {
+      "file": "cadastro.html",
+      "link": "index.html#agenda"
     },
     {
       "file": "cadastro.html",

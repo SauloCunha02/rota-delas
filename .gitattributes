@@ -1,0 +1,2 @@
+# Preserve CRLF e o dobramento de linhas dos arquivos de calendário (RFC 5545).
+*.ics -text -diff

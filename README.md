@@ -2,7 +2,10 @@
 
 Aplicação web de consulta a iniciativas, competições, visitas e materiais de estudo em ciência e tecnologia, com foco em meninas do Ensino Médio no Ceará, apoiado por recursos locais e nacionais. Feita em HTML, CSS e JavaScript, com catálogo documental e envio público de sugestões pelo GitHub.
 
-**Site:** https://saulocunha02.github.io/rota-delas/  
+**Site:** https://rotadelas-ceara2026.web.app/
+
+**Espelho no GitHub Pages:** https://saulocunha02.github.io/rota-delas/
+
 **Código:** https://github.com/SauloCunha02/rota-delas
 
 ## Identidade visual
@@ -31,6 +34,8 @@ O workflow `.github/workflows/pages.yml` publica a pasta `dist` no GitHub Pages 
 - Rotas personalizadas por área, estado, até três temas, objetivo e formato confirmado; até três indicações com justificativas e aviso de cobertura insuficiente.
 - Troca de indicações, escolha do próximo passo, salvamento local e link que reabre os recursos selecionados.
 - Três modelos de Stories, três paletas e frases selecionáveis; prévia, PNG 1080 × 1920, download, cópia de legenda/link e compartilhamento de arquivo em aparelhos compatíveis.
+- Missões Delas: 12 atividades em três trilhas, com instruções, referências, entregas, conferências, progresso, pausa, retomada e exportação em TXT.
+- Agenda Delas: nove registros com datas e fontes oficiais, calendário mensal, filtros, eventos salvos e exportação ICS com lembrete opcional.
 - Favoritos salvos apenas no navegador do aparelho.
 - Cópia da rota para a área de transferência e versão para impressão.
 - Layout responsivo e controles utilizáveis por teclado.
@@ -38,7 +43,7 @@ O workflow `.github/workflows/pages.yml` publica a pasta `dist` no GitHub Pages 
 
 ## Acessibilidade
 
-Na seção Minha rota, escolha a área e ajuste objetivo, formato e temas. As escolhas e o contador de temas atualizam o resumo e a seleção imediatamente. Use “Quero começar aqui” para destacar uma indicação. “Limpar minha rota” apaga a rota salva e devolve a seção e o Story ao estado inicial, preservando favoritos e acessibilidade. “Criar meu Story” abre o editor do cartão; a publicação no Instagram é feita pela usuária. Sem suporte ao compartilhamento de arquivos, baixe o PNG. O link da rota inclui suas escolhas e IDs de recursos, sem nome ou foto, e deve ser conferido antes de compartilhar.
+Na seção Minha rota, escolha a área e ajuste objetivo, formato e temas. As escolhas e o contador de temas atualizam o resumo e a seleção imediatamente. Use “Quero começar aqui” para destacar uma indicação. “Limpar minha rota” apaga a rota salva e devolve a seção e o Story ao estado inicial, preservando favoritos, missões, eventos salvos e acessibilidade. “Criar meu Story” abre o editor do cartão; a publicação no Instagram é feita pela usuária. Sem suporte ao compartilhamento de arquivos, baixe o PNG. O link da rota inclui suas escolhas e IDs de recursos, sem nome ou foto, e deve ser conferido antes de compartilhar.
 
 Use o botão com o **símbolo de acessibilidade**, visível no cabeçalho, ou **Alt + A**. O painel lateral segue a organização de [Cartografias do Abandono](https://saulocunha02.github.io/cartografias-do-abandono/), com quatro perfis rápidos: leitura assistida, baixa visão, menos movimento e foco na linha.
 
@@ -60,13 +65,15 @@ A narração destaca o trecho na página e a palavra quando a voz do navegador f
 
 ## Dados e atualização
 
-Os registros são editados em `dados/*.json`. Execute `node scripts/gerar-catalogo.mjs` para validar e produzir `dist/catalogo.js` e `dist/dados/catalogo.json`. O workflow também gera o catálogo. Cada item tem ID estável, título, tipo, área, instituição, localização, alcance, formato, público, descrição, URL, palavras-chave, fontes com datas e função na rota. Veja `CURADORIA.md`. Antes de acrescentar um item, confira na fonte oficial se a iniciativa existe e se o texto descreve corretamente o público e a disponibilidade. A aplicação não apresenta inscrições como abertas sem confirmação no site de origem.
+Os registros do catálogo são editados em `dados/*.json`. Execute `node scripts/gerar-catalogo.mjs` para validar e produzir `dist/catalogo.js` e `dist/dados/catalogo.json`. O workflow também gera o catálogo. Cada item tem ID estável, título, tipo, área, instituição, localização, alcance, formato, público, descrição, URL, palavras-chave, fontes com datas e função na rota. Veja `CURADORIA.md`. Antes de acrescentar um item, confira na fonte oficial se a iniciativa existe e se o texto descreve corretamente o público e a disponibilidade. A aplicação não apresenta inscrições como abertas sem confirmação no site de origem.
 
 Os recursos originais preservam a consulta de 28/09/2026. Novos registros consultados em 01/10/2026 incluem fichas do Programa Meninas Digitais, Technovation Brasil, TM², Quimeninas, Maratona Feminina de Programação, TFM, OBR, FEBRACE, APICE, Code IoT, Instituto Butantan, OBQ e BitGirls/UFMG. Os endereços específicos estão nos cartões. A disponibilidade de cursos, projetos, visitas e competições pode mudar; cada estudante deve conferir a página oficial antes de participar.
 
+Missões e datas da agenda são mantidas em `dados/jornada-fonte.mjs`. Execute `node scripts/gerar-jornada.mjs` depois de gerar o catálogo. Veja [JORNADA.md](JORNADA.md) para critérios, fontes, atualização e uso dos arquivos de calendário. O GitHub Actions gera as duas bases antes de publicar.
+
 ## Privacidade e limites
 
-A busca, os filtros e a rota são calculados no navegador. Os favoritos e as preferências de acessibilidade usam `localStorage` e não são enviados pela aplicação. Não há contas próprias, análise de uso ou questionários de avaliação. O formulário de iniciativas prepara uma issue pública no GitHub: exige conta nesse serviço e confirmação final do remetente. Os dados da iniciativa e a conta que publicar ficarão públicos; não inclua informações pessoais de estudantes. Nenhuma sugestão entra automaticamente no catálogo. O carregamento da fonte tipográfica usa Google Fonts, e a abertura dos links externos passa a seguir as práticas de cada site de origem. A leitura em voz alta usa o serviço de voz do navegador; o processamento local ou pela internet depende da voz disponível. O VLibras carrega o widget oficial de `vlibras.gov.br` e usa os serviços externos da ferramenta para tradução.
+A busca, os filtros e a rota são calculados no navegador. Os favoritos, as preferências de acessibilidade, as anotações/progresso das missões e os eventos salvos usam `localStorage` e não são enviados pela aplicação. Não há contas próprias, análise de uso ou questionários de avaliação. O formulário de iniciativas prepara uma issue pública no GitHub: exige conta nesse serviço e confirmação final do remetente. Os dados da iniciativa e a conta que publicar ficarão públicos; não inclua informações pessoais de estudantes. Nenhuma sugestão entra automaticamente no catálogo. O carregamento da fonte tipográfica usa Google Fonts, e a abertura dos links externos passa a seguir as práticas de cada site de origem. A leitura em voz alta usa o serviço de voz do navegador; o processamento local ou pela internet depende da voz disponível. O VLibras carrega o widget oficial de `vlibras.gov.br` e usa os serviços externos da ferramenta para tradução.
 
 A aplicação demonstra uma solução técnica; ainda não há evidência de que ela aumente a participação de meninas na ciência. Qualquer estudo posterior com participantes deve ser planejado com o professor orientador e conforme as exigências éticas aplicáveis.
 
@@ -83,7 +90,7 @@ A versão anterior à expansão nacional está na tag/release [rotadelasv1](http
 
 A consulta inicia em Ceará + nacionais (26 recursos disponíveis nesse recorte), com opção de explorar todo o Brasil. Área e temas específicos são classificações diferentes; iniciativas de pesquisa ampla não são classificadas automaticamente como Ciências Naturais. O catálogo mantém 63 registros e suas datas reais de consulta. A nova organização não é uma nova conferência de disponibilidade das fontes.
 
-No celular, a barra inferior oferece Buscar, Rota, Salvos e Mais. O menu Mais reúne cadastro, metodologia e atalhos de acessibilidade e Libras. A navegação funciona também no celular deitado. O leitor reserva espaço acima da barra; menus e prévias são modais e restauram o foco ao fechar. Navegar não ativa a voz automaticamente.
+No celular, a barra inferior oferece Buscar, Rota, Salvos e Mais. O menu Mais reúne Missões Delas, Agenda Delas, cadastro, metodologia e atalhos de acessibilidade e Libras. A navegação funciona também no celular deitado. O leitor reserva espaço acima da barra; menus e prévias são modais e restauram o foco ao fechar. Navegar não ativa a voz automaticamente.
 
 O formulário completo está em cadastro.html. As sugestões continuam públicas e dependem de conta no GitHub e confirmação do remetente. O endereço não pede permissões de atribuição de etiquetas; o workflow cadastro.yml aplica cadastro e em-revisao após a abertura de uma issue com o prefixo [Cadastro]. A aprovação e a inclusão no catálogo continuam manuais.
 

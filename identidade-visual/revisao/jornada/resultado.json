@@ -1,0 +1,306 @@
+{
+  "checkedAt": "2026-10-06T17:49:10.719Z",
+  "site": "file:///C:/Users/PC/Documents/CFC26/publicacao-rota-delas/dist/index.html",
+  "controlledDate": "2026-10-06",
+  "checks": 74,
+  "failed": [],
+  "errors": [],
+  "results": [
+    {
+      "name": "3 trilhas e 12 missões completas",
+      "value": true
+    },
+    {
+      "name": "9 datas oficiais com consulta",
+      "value": true
+    },
+    {
+      "name": "Começar abre e registra andamento",
+      "value": true
+    },
+    {
+      "name": "Conclusão exige entrega e conferências",
+      "value": true
+    },
+    {
+      "name": "Entrega salva sem perda de foco",
+      "value": true
+    },
+    {
+      "name": "Conclusão atualiza progresso imediatamente",
+      "value": true
+    },
+    {
+      "name": "Reabrir preserva entrega e atualiza progresso",
+      "value": true
+    },
+    {
+      "name": "Pausar fecha e guarda a missão",
+      "value": true
+    },
+    {
+      "name": "Trilha escolhida persiste após recarga",
+      "value": true
+    },
+    {
+      "name": "Trilha acompanha interesse da rota",
+      "value": true
+    },
+    {
+      "name": "Escolha manual prevalece sobre rota após recarga",
+      "value": true
+    },
+    {
+      "name": "Seguir rota mantém seleção após recarga",
+      "value": true
+    },
+    {
+      "name": "Limpar rota preserva missões e reinicia sugestão",
+      "value": true
+    },
+    {
+      "name": "Filtros de agenda combinam e atualizam",
+      "value": true
+    },
+    {
+      "name": "Histórico diferencia competição encerrada",
+      "value": true
+    },
+    {
+      "name": "Reset restaura todos os controles e histórico traz 9 registros",
+      "value": true
+    },
+    {
+      "name": "Salvar e somente salvos funcionam",
+      "value": true
+    },
+    {
+      "name": "Eventos salvos persistem",
+      "value": true
+    },
+    {
+      "name": "Dia selecionado filtra prova e mantém seleção",
+      "value": true
+    },
+    {
+      "name": "Clicar novamente remove o filtro do dia",
+      "value": true
+    },
+    {
+      "name": "Intervalos aparecem em dias intermediários",
+      "value": true
+    },
+    {
+      "name": "Setas navegam entre meses",
+      "value": true
+    },
+    {
+      "name": "ICS de intervalo tem fim exclusivo",
+      "value": true
+    },
+    {
+      "name": "ICS de prova respeita Brasília e não inventa fim",
+      "value": true
+    },
+    {
+      "name": "ICS tem UID estável, CRLF e lembrete opcional",
+      "value": true
+    },
+    {
+      "name": "Download efetivo usa blob de calendário",
+      "value": true
+    },
+    {
+      "name": "Arquivo exportado contém eventos visíveis",
+      "value": true
+    },
+    {
+      "name": "Missões exportam arquivo local",
+      "value": true
+    },
+    {
+      "name": "Estado vazio e exportação desabilitada",
+      "value": {}
+    },
+    {
+      "name": "Sem overflow normal 320 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow normal 320 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow normal 390 175",
+      "value": true
+    },
+    {
+      "name": "Sem overflow normal 844 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow normal 1440 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow light 320 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow light 320 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow light 390 175",
+      "value": true
+    },
+    {
+      "name": "Sem overflow light 844 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow light 1440 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow dark 320 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow dark 320 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow dark 390 175",
+      "value": true
+    },
+    {
+      "name": "Sem overflow dark 844 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow dark 1440 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow blue 320 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow blue 320 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow blue 390 175",
+      "value": true
+    },
+    {
+      "name": "Sem overflow blue 844 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow blue 1440 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow mono 320 100",
+      "value": true
+    },
+    {
+      "name": "Sem overflow mono 320 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow mono 390 175",
+      "value": true
+    },
+    {
+      "name": "Sem overflow mono 844 200",
+      "value": true
+    },
+    {
+      "name": "Sem overflow mono 1440 100",
+      "value": true
+    },
+    {
+      "name": "Calendário mantém números em uma linha",
+      "value": true
+    },
+    {
+      "name": "Escopos de leitura incluem novas seções",
+      "value": {}
+    },
+    {
+      "name": "Fluxo completo da missão prog-descobrir",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão prog-aprender",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão prog-criar",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão prog-continuar",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão mat-explorar",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão mat-resolver",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão mat-dados",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão mat-continuar",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão pesq-pergunta",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão pesq-fontes",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão pesq-analisar",
+      "value": true
+    },
+    {
+      "name": "Fluxo completo da missão pesq-comunicar",
+      "value": true
+    },
+    {
+      "name": "Progresso total alcança 12 missões",
+      "value": true
+    },
+    {
+      "name": "Leitor reconhece seção missoes",
+      "value": true
+    },
+    {
+      "name": "Leitor reconhece seção agenda",
+      "value": true
+    },
+    {
+      "name": "IDs únicos",
+      "value": true
+    },
+    {
+      "name": "Armazenamento bloqueado tem aviso honesto",
+      "value": true
+    },
+    {
+      "name": "Sem exceções JavaScript",
+      "value": true
+    }
+  ]
+}

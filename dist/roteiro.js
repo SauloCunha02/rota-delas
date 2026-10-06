@@ -46,6 +46,7 @@
   const p=preferences(state.routeArea,state.routeUf),count=p.topics.length;
   $('route-topics-count').textContent=count+' de 3 temas selecionados';
   $('route-preferences').textContent=(state.routeArea?state.routeArea:'Área ainda não escolhida')+' · '+goals[p.goal]+' · '+(p.mode==='Presencial'?'Presencial ou híbrido':p.mode||'Todos os formatos')+' · '+(p.uf?catalog.states[p.uf][0]:'Alcance nacional')+(count?' · '+p.topics.join(', '):'');
+  window.dispatchEvent(new Event('rota-profile-change'));
  }
  function update(){
   removeSharedQuery();syncPreferences();
