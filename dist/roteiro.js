@@ -5,6 +5,7 @@
  const $=id=>document.getElementById(id),e=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const goals={explorar:'Explorar possibilidades',aprender:'Aprender uma habilidade',criar:'Criar um projeto',competir:'Conhecer competições'};
  const stages={explorar:['inspirar','aprender','desafiar'],aprender:['aprender','inspirar','desafiar'],criar:['inspirar','aprender','aprender'],competir:['desafiar','aprender','inspirar']};
+ const publicBase=/^https?:$/.test(location.protocol)?new URL('./',location.href):new URL('https://rotadelas-ceara2026.web.app/');
  const key='rota-delas-minha-rota-v1';let current=null,signature='',nextId='',saved=null,swaps=[[],[],[]],trigger=null;
  function clean(p={}){if(!p||typeof p!=='object')p={};return {area:['Tecnologia e Computação','Ciência','Matemática'].includes(p.area)?p.area:'Tecnologia e Computação',uf:Object.hasOwn(catalog.states,p.uf)?p.uf:'',topics:Array.isArray(p.topics)?catalog.topics.filter(t=>p.topics.includes(t)).slice(0,3):[],goal:Object.hasOwn(goals,p.goal)?p.goal:'explorar',mode:['Online','Presencial'].includes(p.mode)?p.mode:''};}
  function role(r){return r.kind==='Competição'?'desafiar':r.kind==='Estudo'?'aprender':'inspirar';}
@@ -27,7 +28,7 @@
    (chosen?'<p class="route-next-note">Seu próximo passo: <strong>'+e(chosen.title)+'</strong>.</p>':'')+
    (n?'<div class="route-actions"><button type="button" id="save-route">Salvar minha rota</button><button type="button" id="copy-route">Copiar rota</button><button type="button" id="copy-route-link">Copiar link</button><button type="button" id="print-route">Imprimir</button><button type="button" id="create-story" class="story-call">Criar meu Story ↗</button></div>':'')+'</div>';
  }
- function routeLink(){if(!current)return '';const u=new URL('https://saulocunha02.github.io/rota-delas/'),p=current.profile;u.searchParams.set('rota',current.items.map(r=>r.id).join(','));u.searchParams.set('area',p.area);if(p.uf)u.searchParams.set('uf',p.uf);if(p.topics.length)u.searchParams.set('temas',p.topics.join(','));u.searchParams.set('objetivo',p.goal);if(p.mode)u.searchParams.set('formato',p.mode);if(nextId)u.searchParams.set('passo',nextId);u.hash='rota';return u.href;}
+ function routeLink(){if(!current)return '';const u=new URL(publicBase),p=current.profile;u.searchParams.set('rota',current.items.map(r=>r.id).join(','));u.searchParams.set('area',p.area);if(p.uf)u.searchParams.set('uf',p.uf);if(p.topics.length)u.searchParams.set('temas',p.topics.join(','));u.searchParams.set('objetivo',p.goal);if(p.mode)u.searchParams.set('formato',p.mode);if(nextId)u.searchParams.set('passo',nextId);u.hash='rota';return u.href;}
  async function copy(text){
   try{await navigator.clipboard.writeText(text);return true;}catch{
    const active=document.activeElement,host=[...document.querySelectorAll('dialog[open]')].at(-1)||$('route-output')||document.body;
@@ -108,7 +109,7 @@
    }else{
     current.items.forEach((r,i)=>{const y=890+i*170;round(ctx,72,y,936,152,palette.soft);ctx.fillStyle=palette.accent;ctx.font='700 35px "DM Sans",Arial';ctx.fillText(String(i+1).padStart(2,'0'),104,y+58);ctx.fillStyle=palette.ink;ctx.font='600 38px "DM Sans",Arial';lines(ctx,r.title,184,y+56,780,46,2);});
    }
-   ctx.fillStyle=palette.ink;ctx.font='600 39px "DM Sans",Arial';ctx.fillText('Monte sua rota também.',88,1500);ctx.fillStyle=palette.accent;ctx.font='500 29px "DM Sans",Arial';ctx.fillText('saulocunha02.github.io/rota-delas',88,1552);
+   ctx.fillStyle=palette.ink;ctx.font='600 39px "DM Sans",Arial';ctx.fillText('Monte sua rota também.',88,1500);ctx.fillStyle=palette.accent;ctx.font='500 29px "DM Sans",Arial';ctx.fillText((publicBase.host+publicBase.pathname).replace(/\/$/,''),88,1552);
    ctx.fillStyle=palette.ink;ctx.globalAlpha=.8;ctx.font='400 24px "DM Sans",Arial';lines(ctx,'Sugestões para explorar. Confirme vagas e requisitos nas fontes.',88,1640,900,34,2);ctx.font='600 25px "DM Sans",Arial';ctx.fillText('#RotaDelas  #CiênciaDelas',88,1740);ctx.globalAlpha=1;
    const result=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('Não foi possível gerar o PNG.')),'image/png'));if(ticket!==generation)return;blob=result;
    if(objectUrl)URL.revokeObjectURL(objectUrl);objectUrl=URL.createObjectURL(blob);$('story-preview').src=objectUrl;$('story-preview').alt='Prévia do Story. '+phrase+' '+(template==='rota'?current.items.map(r=>r.title).join('; '):template==='passo'?(current.items.find(r=>r.id===nextId)||current.items[0]).title:'Convite para montar uma rota na ciência.');$('story-transcript').textContent=$('story-preview').alt;
