@@ -1,0 +1,26 @@
+{
+  "duracao_segundos": 179,
+  "falas_anteriores_preservadas": true,
+  "bloco_novo": "06A",
+  "blocos": 12,
+  "pdfs": [
+    {
+      "arquivo": "rota-delas-01-roteiro-falas-e-tempos.pdf",
+      "paginas": 6,
+      "bytes": 92541
+    },
+    {
+      "arquivo": "rota-delas-02-cenas-e-edicao.pdf",
+      "paginas": 7,
+      "bytes": 95018
+    }
+  ],
+  "base_anterior": "37492fcf4add242378083f2f053ef433f9d63652",
+  "falas_anteriores": 10,
+  "palavras_anteriores": 353,
+  "palavras_novas": 20,
+  "tempo_novo_segundos": 9,
+  "paginas_inspecionadas_visualmente": 13,
+  "limite_segundos": 180,
+  "observacao": "Duração planejada, incluindo cartela. A duração real deve ser medida no ensaio e no arquivo exportado; nenhuma aceleração autorizada."
+}
